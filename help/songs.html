@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Songs · PraiseAV Help</title>
+<meta name="description" content="Find, add, edit and import songs: SongSelect, EasyWorship, OpenSong and plain lyrics files. Labels, slides, song order and backing tracks.">
+<link rel="stylesheet" href="help.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="PraiseAV"> <span>Help</span></a>
+  <div class="search">
+    <input id="search" type="search" placeholder="Search the help" aria-label="Search the help" autocomplete="off">
+    <ol id="results" hidden></ol>
+  </div>
+  <button class="menu" id="menu" aria-label="Show the contents">☰</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"><div class="nav-section"><h3>Start here</h3><ul><li><a href="index.html">PraiseAV Help</a></li><li><a href="first-sunday.html">Your first Sunday</a></li><li><a href="coming-from-easyworship.html">Coming from EasyWorship</a></li><li><a href="keyboard-shortcuts.html">Keyboard shortcuts</a></li></ul></div><div class="nav-section"><h3>Building a service</h3><ul><li><a href="songs.html" class="current" aria-current="page">Songs</a></li><li><a href="bible.html">The Bible</a></li><li><a href="services.html">Services</a></li><li><a href="printing.html">Printing</a></li><li><a href="ccli-report.html">CCLI report</a></li></ul></div><div class="nav-section"><h3>Running a service</h3><ul><li><a href="running-a-service.html">Running a service</a></li><li><a href="sermons.html">Sermons and the preacher’s screen</a></li><li><a href="timers-and-prompts.html">Timers and prompts</a></li><li><a href="parent-alerts.html">Parent alerts and notices</a></li></ul></div><div class="nav-section"><h3>Media and slides</h3><ul><li><a href="media.html">Media: videos, pictures and backgrounds</a></li><li><a href="music-and-audio.html">Music and audio</a></li><li><a href="powerpoint-and-pdf.html">PowerPoint and PDF</a></li><li><a href="slide-designer.html">Slide designer</a></li><li><a href="announcement-loops.html">Announcement loops</a></li><li><a href="themes.html">Themes: how the words look</a></li></ul></div><div class="nav-section"><h3>Screens and livestream</h3><ul><li><a href="screens.html">Screens</a></li><li><a href="live-video.html">Live video on the screen</a></li><li><a href="livestream-and-atem.html">Livestream and ATEM</a></li><li><a href="phone-remote.html">Phone and tablet remote</a></li></ul></div><div class="nav-section"><h3>Setups and hardware</h3><ul><li><a href="example-setups.html">Example setups</a></li><li><a href="hardware.html">Hardware: what to buy</a></li></ul></div><div class="nav-section"><h3>Looking after PraiseAV</h3><ul><li><a href="church-setup.html">Church setup</a></li><li><a href="backups.html">Backups and moving to a new computer</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li></ul></div></nav>
+  <main>
+    <p class="crumb">Building a service</p>
+    <h1>Songs</h1>
+<p>Your songs live in the <strong>Songs</strong> tab on the left. PraiseAV comes with some well-known hymns, and you can bring in your own from SongSelect, EasyWorship, OpenSong or a text file.</p>
+<p><figure><img src="images/songs-library.png" alt="The Songs tab" loading="lazy"></figure></p>
+<h2 id="find-a-song">Find a song</h2>
+<p>Type into the search box: a few words of the <strong>title</strong>, the <strong>words</strong>, or the <strong>author</strong>. You don’t need the start of the title: “saved a wretch” finds <em>Amazing Grace</em>.</p>
+<h2 id="add-a-song-to-the-service">Add a song to the service</h2>
+<p>Any of these:</p>
+<ul>
+<li><strong>Double-click</strong> the song.</li>
+<li>Point at the song and click <strong>+</strong>.</li>
+<li><strong>Drag</strong> it into the service, to the place you want.</li>
+</ul>
+<p>New items go just after whatever is selected in the service.</p>
+<h2 id="make-a-new-song-or-change-one">Make a new song, or change one</h2>
+<p>Click <strong>+ New</strong> (top of the Songs tab), or select a song in the service and click <strong>Edit song</strong> above its slides. You can also point at a song in the list and click <strong>✎</strong>.</p>
+<p><figure><img src="images/song-editor.png" alt="The song editor" loading="lazy"></figure></p>
+<table>
+<thead>
+<tr>
+<th>Box</th>
+<th>What to put</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Title</strong></td>
+<td>The song’s name</td>
+</tr>
+<tr>
+<td><strong>Author</strong></td>
+<td>Who wrote it (shown small on the first slide)</td>
+</tr>
+<tr>
+<td><strong>CCLI song number</strong></td>
+<td>From SongSelect or the songbook. Needed for your <a href="ccli-report.html">CCLI report</a>.</td>
+</tr>
+<tr>
+<td><strong>Copyright</strong></td>
+<td>For example “Public Domain” or “© 2019 Publisher”</td>
+</tr>
+<tr>
+<td><strong>Song order</strong></td>
+<td>Optional. The order to sing the sections, for example <code>V1 C V2 C B C</code>. Leave it blank to go in the order written.</td>
+</tr>
+<tr>
+<td><strong>Backing track</strong></td>
+<td>Optional. Music that plays when the song goes on screen. See <a href="music-and-audio.html#backing-tracks">Music and audio</a>.</td>
+</tr>
+<tr>
+<td><strong>Lyrics</strong></td>
+<td>The words (see below)</td>
+</tr>
+</tbody></table>
+<h3 id="writing-the-words">Writing the words</h3>
+<ul>
+<li>Put each section’s name in square brackets on its own line: <code>[Verse 1]</code>, <code>[Chorus]</code>, <code>[Bridge]</code>, <code>[Pre-Chorus]</code>, <code>[Tag]</code>.</li>
+<li>A <strong>blank line</strong> starts a new slide within a section.</li>
+<li>Long sections are split into slides of about four lines by themselves, evenly.</li>
+</ul>
+<pre><code>[Verse 1]
+Amazing grace! How sweet the sound
+That saved a wretch like me!
+
+[Chorus]
+...</code></pre>
+<p>The preview on the right shows the slides as you type. Click <strong>Save song</strong>.</p>
+<aside class="callout tip"><p><strong>Tip:</strong> With a song order like <code>V1 C V2 C</code>, you only type the chorus once, and it’s shown each time it comes round.</p>
+</aside>
+<h3 id="delete-a-song">Delete a song</h3>
+<p>Open it in the editor and click <strong>Delete song</strong>. It’s taken out of the library (and today’s service). Saved services keep their own copy, so they still work.</p>
+<h2 id="import-songs">Import songs</h2>
+<p>Click <strong>Import</strong> in the Songs tab and choose the files, or drag them onto the song list. PraiseAV understands:</p>
+<table>
+<thead>
+<tr>
+<th>From</th>
+<th>What to use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>SongSelect</strong> (CCLI)</td>
+<td>Download the <strong>chord chart (PDF)</strong> or the <strong>lyrics (TXT)</strong> file from SongSelect, then import it. The CCLI number, author, copyright and key come too.</td>
+</tr>
+<tr>
+<td><strong>EasyWorship</strong></td>
+<td><strong>From EasyWorship</strong> finds its whole song library on this computer. Or import a <code>Songs.db</code> file, or a schedule (<code>.ewsx</code>). See <a href="coming-from-easyworship.html">Coming from EasyWorship</a>.</td>
+</tr>
+<tr>
+<td><strong>OpenSong</strong></td>
+<td><strong>From OpenSong</strong> (shown when OpenSong is on this computer), or import its song files or drag in its Songs folder.</td>
+</tr>
+<tr>
+<td><strong>A text file</strong></td>
+<td>A <code>.txt</code> file of lyrics, with section names like <code>Verse 1</code> or <code>[Chorus]</code> on their own lines.</td>
+</tr>
+</tbody></table>
+<p>When it’s done, PraiseAV lists what it brought in, what it skipped (songs you already have) and anything that didn’t work, with the reason.</p>
+<aside class="callout note"><p><strong>Note:</strong> Showing song words in church needs a <strong>CCLI Church Copyright Licence</strong> (or permission for each song), however you got the words. Traditional hymns like <em>Amazing Grace</em> are free to use.</p>
+</aside>
+<h2 id="themes-for-a-song">Themes for a song</h2>
+<p>How the words look comes from the theme for songs. To give one song a different look (a Christmas carol, say), pick a theme in the box above its slides. See <a href="themes.html">Themes</a>.</p>
+
+    <nav class="pager">
+      <a class="prev" href="keyboard-shortcuts.html">← Keyboard shortcuts</a>
+      <a class="next" href="bible.html">The Bible →</a>
+    </nav>
+  </main>
+</div>
+<script src="search-index.js"></script>
+<script src="help.js"></script>
+</body>
+</html>

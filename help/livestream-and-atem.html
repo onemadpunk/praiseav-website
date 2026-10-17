@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Livestream and ATEM · PraiseAV Help</title>
+<meta name="description" content="Put the song words over your camera on a livestream, with a Blackmagic ATEM Mini or OBS. Start and stop streaming and recording from PraiseAV.">
+<link rel="stylesheet" href="help.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="PraiseAV"> <span>Help</span></a>
+  <div class="search">
+    <input id="search" type="search" placeholder="Search the help" aria-label="Search the help" autocomplete="off">
+    <ol id="results" hidden></ol>
+  </div>
+  <button class="menu" id="menu" aria-label="Show the contents">☰</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"><div class="nav-section"><h3>Start here</h3><ul><li><a href="index.html">PraiseAV Help</a></li><li><a href="first-sunday.html">Your first Sunday</a></li><li><a href="coming-from-easyworship.html">Coming from EasyWorship</a></li><li><a href="keyboard-shortcuts.html">Keyboard shortcuts</a></li></ul></div><div class="nav-section"><h3>Building a service</h3><ul><li><a href="songs.html">Songs</a></li><li><a href="bible.html">The Bible</a></li><li><a href="services.html">Services</a></li><li><a href="printing.html">Printing</a></li><li><a href="ccli-report.html">CCLI report</a></li></ul></div><div class="nav-section"><h3>Running a service</h3><ul><li><a href="running-a-service.html">Running a service</a></li><li><a href="sermons.html">Sermons and the preacher’s screen</a></li><li><a href="timers-and-prompts.html">Timers and prompts</a></li><li><a href="parent-alerts.html">Parent alerts and notices</a></li></ul></div><div class="nav-section"><h3>Media and slides</h3><ul><li><a href="media.html">Media: videos, pictures and backgrounds</a></li><li><a href="music-and-audio.html">Music and audio</a></li><li><a href="powerpoint-and-pdf.html">PowerPoint and PDF</a></li><li><a href="slide-designer.html">Slide designer</a></li><li><a href="announcement-loops.html">Announcement loops</a></li><li><a href="themes.html">Themes: how the words look</a></li></ul></div><div class="nav-section"><h3>Screens and livestream</h3><ul><li><a href="screens.html">Screens</a></li><li><a href="live-video.html">Live video on the screen</a></li><li><a href="livestream-and-atem.html" class="current" aria-current="page">Livestream and ATEM</a></li><li><a href="phone-remote.html">Phone and tablet remote</a></li></ul></div><div class="nav-section"><h3>Setups and hardware</h3><ul><li><a href="example-setups.html">Example setups</a></li><li><a href="hardware.html">Hardware: what to buy</a></li></ul></div><div class="nav-section"><h3>Looking after PraiseAV</h3><ul><li><a href="church-setup.html">Church setup</a></li><li><a href="backups.html">Backups and moving to a new computer</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li></ul></div></nav>
+  <main>
+    <p class="crumb">Screens and livestream</p>
+    <h1>Livestream and ATEM</h1>
+<p>When you stream a service, viewers at home want to see the room <strong>and</strong> read the words. The <strong>Livestream</strong> screen gives a video mixer just the words, in a strip, ready to lay over the camera.</p>
+<p><figure><img src="images/livestream-screen.png" alt="The Livestream screen" loading="lazy"></figure></p>
+<h2 id="how-it-fits-together">How it fits together</h2>
+<div class="diagram" role="img" aria-label="Camera → HDMI → ATEM Mini Pro · input 1; PraiseAV computer · Livestream screen → HDMI → ATEM Mini Pro · input 2; Sound desk · a separate mix for the stream → 3.5 mm audio → ATEM Mini Pro · mic input; ATEM Mini Pro → Ethernet to the router → YouTube or Facebook · and PraiseAV controls it"><div class="dg-group"><div class="dg-box"><strong>Camera</strong></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">HDMI</span><div class="dg-box"><strong>ATEM Mini Pro</strong><small>input 1</small></div></div></div></div><div class="dg-group"><div class="dg-box"><strong>PraiseAV computer</strong><small>Livestream screen</small></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">HDMI</span><div class="dg-box"><strong>ATEM Mini Pro</strong><small>input 2</small></div></div></div></div><div class="dg-group"><div class="dg-box"><strong>Sound desk</strong><small>a separate mix for the stream</small></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">3.5 mm audio</span><div class="dg-box"><strong>ATEM Mini Pro</strong><small>mic input</small></div></div></div></div><div class="dg-group"><div class="dg-box"><strong>ATEM Mini Pro</strong></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">Ethernet to the router</span><div class="dg-box"><strong>YouTube or Facebook</strong><small>and PraiseAV controls it</small></div></div></div></div></div>
+<p>The ATEM <strong>keys</strong> the words over the camera: it cuts out the black (or green) and keeps the words.</p>
+<p>See <a href="example-setups.html#4-livestreaming-with-an-atem-mini">Example setups</a> for the whole picture.</p>
+<h2 id="setting-up-the-livestream-screen">Setting up the Livestream screen</h2>
+<ol>
+<li>Plug a second HDMI output of the computer into an ATEM input.</li>
+<li>In <strong>Screens…</strong>, give that screen the <strong>Livestream</strong> job.</li>
+<li>Under <strong>Livestream</strong> in the same window, choose the <strong>Background</strong>:<ul>
+<li><strong>Black: for a luma key</strong>: the usual for an ATEM.</li>
+<li><strong>Green: for a chroma key</strong> (the words sit on a dark band): for OBS, vMix or mixers that key on green.</li>
+</ul>
+</li>
+<li>Optional: your <strong>CCLI Streaming Licence number</strong>. It shows small under the song details.</li>
+</ol>
+<p>Only songs and verses show on the Livestream screen. <strong>Parent alerts never go on it</strong>, so children’s numbers stay private.</p>
+<h2 id="controlling-an-atem-from-praiseav">Controlling an ATEM from PraiseAV</h2>
+<p>PraiseAV can talk to a Blackmagic <strong>ATEM Mini</strong> (any model) over the network.</p>
+<ol>
+<li>Plug the ATEM into the same network as the computer <strong>with an Ethernet cable</strong> (USB alone isn’t enough).</li>
+<li>Click <strong>ATEM…</strong> at the top of PraiseAV, and tick <strong>Control a Blackmagic ATEM switcher from PraiseAV</strong>.</li>
+<li>Type the ATEM’s address and click <strong>Connect</strong>. A new ATEM Mini uses <code>192.168.10.240</code>. Blackmagic’s <strong>ATEM Setup</strong> app shows it.</li>
+<li>When it says <strong>Connected</strong>, choose:<ul>
+<li><strong>Which input is this computer (the slides)?</strong></li>
+<li><strong>Keyer that puts the livestream words over the camera</strong>: usually <strong>Downstream key 1</strong>. Or <strong>None</strong> if you’d rather do it on the ATEM’s buttons.</li>
+<li>Tick <strong>Turn the words on and off by themselves</strong> so the words appear when a song or verse is on screen and go away for the sermon.</li>
+</ul>
+</li>
+<li>Under <strong>Try it</strong>: <strong>Show slides</strong>, <strong>Back to camera</strong>, <strong>Words on</strong>, <strong>Words off</strong>. Check each one works.</li>
+</ol>
+<p>The window also shows the ATEM’s model and firmware. If the firmware is older than 8.0, update it with ATEM Setup.</p>
+<h3 id="during-the-service">During the service</h3>
+<ul>
+<li>At the top of PraiseAV: <strong>● Go live</strong> starts streaming, <strong>● Record</strong> starts recording (on models that can). They show <strong>ON AIR</strong> and <strong>REC</strong> with the time. PraiseAV asks before starting or stopping the stream.</li>
+<li>In the right-hand column, <strong>Livestream</strong> shows what’s on the stream, with <strong>Show slides</strong> and <strong>Back to camera</strong> for full-screen slides (a video, notices).</li>
+</ul>
+<p>The stream key and YouTube scheduling stay in <strong>ATEM Software Control</strong> and <strong>YouTube Studio</strong>: set them up once there.</p>
+<p>If something isn’t working, <strong>Open the ATEM log</strong> (bottom of the ATEM window) keeps a record to send to whoever helps you.</p>
+<h2 id="with-obs-instead">With OBS instead</h2>
+<p>OBS Studio is free streaming software for a computer.</p>
+<ol>
+<li>Use a capture card to bring the Livestream screen into the OBS computer (or run OBS on the PraiseAV computer and use a <strong>Window capture</strong> of a Livestream window: <strong>Screens… › Open a view in a window › Livestream</strong>).</li>
+<li>Choose the <strong>Green</strong> background.</li>
+<li>In OBS, add a <strong>Chroma Key</strong> filter to that source and put it above the camera.</li>
+</ol>
+
+    <nav class="pager">
+      <a class="prev" href="live-video.html">← Live video on the screen</a>
+      <a class="next" href="phone-remote.html">Phone and tablet remote →</a>
+    </nav>
+  </main>
+</div>
+<script src="search-index.js"></script>
+<script src="help.js"></script>
+</body>
+</html>

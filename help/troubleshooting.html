@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Troubleshooting · PraiseAV Help</title>
+<meta name="description" content="What to do when the projector shows nothing, the wrong screen shows the words, a video won't play, there's no sound, or a phone or ATEM won't connect.">
+<link rel="stylesheet" href="help.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="PraiseAV"> <span>Help</span></a>
+  <div class="search">
+    <input id="search" type="search" placeholder="Search the help" aria-label="Search the help" autocomplete="off">
+    <ol id="results" hidden></ol>
+  </div>
+  <button class="menu" id="menu" aria-label="Show the contents">☰</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"><div class="nav-section"><h3>Start here</h3><ul><li><a href="index.html">PraiseAV Help</a></li><li><a href="first-sunday.html">Your first Sunday</a></li><li><a href="coming-from-easyworship.html">Coming from EasyWorship</a></li><li><a href="keyboard-shortcuts.html">Keyboard shortcuts</a></li></ul></div><div class="nav-section"><h3>Building a service</h3><ul><li><a href="songs.html">Songs</a></li><li><a href="bible.html">The Bible</a></li><li><a href="services.html">Services</a></li><li><a href="printing.html">Printing</a></li><li><a href="ccli-report.html">CCLI report</a></li></ul></div><div class="nav-section"><h3>Running a service</h3><ul><li><a href="running-a-service.html">Running a service</a></li><li><a href="sermons.html">Sermons and the preacher’s screen</a></li><li><a href="timers-and-prompts.html">Timers and prompts</a></li><li><a href="parent-alerts.html">Parent alerts and notices</a></li></ul></div><div class="nav-section"><h3>Media and slides</h3><ul><li><a href="media.html">Media: videos, pictures and backgrounds</a></li><li><a href="music-and-audio.html">Music and audio</a></li><li><a href="powerpoint-and-pdf.html">PowerPoint and PDF</a></li><li><a href="slide-designer.html">Slide designer</a></li><li><a href="announcement-loops.html">Announcement loops</a></li><li><a href="themes.html">Themes: how the words look</a></li></ul></div><div class="nav-section"><h3>Screens and livestream</h3><ul><li><a href="screens.html">Screens</a></li><li><a href="live-video.html">Live video on the screen</a></li><li><a href="livestream-and-atem.html">Livestream and ATEM</a></li><li><a href="phone-remote.html">Phone and tablet remote</a></li></ul></div><div class="nav-section"><h3>Setups and hardware</h3><ul><li><a href="example-setups.html">Example setups</a></li><li><a href="hardware.html">Hardware: what to buy</a></li></ul></div><div class="nav-section"><h3>Looking after PraiseAV</h3><ul><li><a href="church-setup.html">Church setup</a></li><li><a href="backups.html">Backups and moving to a new computer</a></li><li><a href="troubleshooting.html" class="current" aria-current="page">Troubleshooting</a></li></ul></div></nav>
+  <main>
+    <p class="crumb">Looking after PraiseAV</p>
+    <h1>Troubleshooting</h1>
+<aside class="callout important"><p><strong>Important:</strong> In the middle of a service, press <strong>Black</strong> (<kbd>B</kbd>). It always works, and gives you a moment to sort things out.</p>
+</aside>
+<h2 id="the-projector-shows-nothing">The projector shows nothing</h2>
+<ol>
+<li>Is <strong>Black</strong> or <strong>Logo</strong> on at the top? Press it again.</li>
+<li>Is the projector on, and on the right input (HDMI 1, HDMI 2…)? Use its remote.</li>
+<li>Press <kbd>Windows</kbd>+<kbd>P</kbd> and choose <strong>Extend</strong>.</li>
+<li>In PraiseAV, click <strong>Hide</strong> then <strong>Show</strong> at the top right.</li>
+<li>Open <strong>Screens…</strong>. Is the projector listed, with the <strong>Congregation</strong> job?</li>
+<li>Unplug the HDMI cable at both ends and plug it back in.</li>
+</ol>
+<h2 id="the-projector-shows-my-desktop-or-a-copy-of-my-screen">The projector shows my desktop, or a copy of my screen</h2>
+<p>Windows is copying (duplicating) your screen. Press <kbd>Windows</kbd>+<kbd>P</kbd> and choose <strong>Extend</strong>. PraiseAV then finds the projector.</p>
+<h2 id="the-words-are-on-the-wrong-screen">The words are on the wrong screen</h2>
+<p>Open <strong>Screens…</strong>. On the <a href="screens.html#the-screen-map">screen map</a>, tap the two screens to swap them. PraiseAV remembers this for next time.</p>
+<h2 id="a-video-won-t-play">A video won’t play</h2>
+<p>PraiseAV says if a file won’t play. Some formats (WMV, AVI, ProRes) can’t be read. Convert the video to <strong>MP4</strong> with the free <strong>HandBrake</strong> app (choose the “Fast 1080p30” preset) and add it again.</p>
+<p>If a video stutters, it may be 4K or very large. A 1080p MP4 plays smoothly on almost any computer.</p>
+<h2 id="no-sound">No sound</h2>
+<ul>
+<li>Click the speaker icon by the clock (bottom right of Windows) and check the right output is chosen and not muted.</li>
+<li>Check the <strong>Volume</strong> under Music and audio.</li>
+<li>Check the sound desk channel is up.</li>
+<li>Videos play their sound from the congregation screen’s window; music from Music and audio. Both use the Windows output.</li>
+</ul>
+<h2 id="the-words-are-too-small-or-too-big">The words are too small or too big</h2>
+<p>Go to the <strong>Themes</strong> tab, click the theme, and change <strong>Largest text size</strong>. See <a href="themes.html">Themes</a>. Long verses shrink by themselves to fit.</p>
+<h2 id="a-powerpoint-won-t-come-in">A PowerPoint won’t come in</h2>
+<p>PraiseAV needs <strong>Microsoft PowerPoint</strong> or the free <strong>LibreOffice</strong> to open PowerPoint files. Install LibreOffice, or ask for a PDF. See <a href="powerpoint-and-pdf.html">PowerPoint and PDF</a>.</p>
+<h2 id="the-camera-isn-t-in-the-list">The camera isn’t in the list</h2>
+<ul>
+<li>Click <strong>Refresh</strong> in Live video.</li>
+<li>Close any other program using the camera (Zoom, Teams, OBS, the Camera app).</li>
+<li>Plug the capture device into a <strong>blue USB 3</strong> socket, directly, not through a hub.</li>
+<li>See <a href="live-video.html">Live video</a>.</li>
+</ul>
+<h2 id="a-phone-can-t-connect-to-the-remote">A phone can’t connect to the remote</h2>
+<p>It must be on the same Wi-Fi as the PraiseAV computer (not guest Wi-Fi), and Windows must allow PraiseAV on private networks. See <a href="phone-remote.html#phones-can-t-connect">Phone remote</a>.</p>
+<h2 id="the-atem-won-t-connect">The ATEM won’t connect</h2>
+<ul>
+<li>The ATEM must be plugged into the network with an <strong>Ethernet cable</strong>, the same network as the computer.</li>
+<li>Check its address in Blackmagic’s <strong>ATEM Setup</strong> app (with the ATEM plugged in by USB).</li>
+<li>A new ATEM Mini uses <code>192.168.10.240</code>. If your router gives addresses like <code>192.168.1.x</code>, change the ATEM’s address in ATEM Setup to one in that range (for example <code>192.168.1.240</code>).</li>
+<li>See <a href="livestream-and-atem.html">Livestream and ATEM</a>.</li>
+</ul>
+<h2 id="the-power-went-off-or-praiseav-closed">The power went off, or PraiseAV closed</h2>
+<p>Open PraiseAV again. Your current service is still there: it’s kept as you work, all the time.</p>
+<h2 id="a-song-or-service-is-missing">A song or service is missing</h2>
+<ul>
+<li>Saved services: click <strong>Open</strong>. Check <strong>Where services are kept</strong>: are they in OneDrive on the other computer?</li>
+<li>Songs: search in the Songs tab by a line of the words, not just the title.</li>
+<li>Bring them back from a backup: <strong>Open › Backup and moving… › Choose a backup…</strong>. Nothing you have is deleted. See <a href="backups.html">Backups</a>.</li>
+</ul>
+<h2 id="still-stuck">Still stuck?</h2>
+<p>Ask through <a href="https://praiseav.com">praiseav.com</a>. Say what you were doing, what you expected, and what happened. A photo of the screen helps.</p>
+
+    <nav class="pager">
+      <a class="prev" href="backups.html">← Backups and moving to a new computer</a>
+      <span></span>
+    </nav>
+  </main>
+</div>
+<script src="search-index.js"></script>
+<script src="help.js"></script>
+</body>
+</html>
