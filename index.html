@@ -110,6 +110,18 @@
       summary { cursor: pointer; font-weight: 600; font-size: 17.5px; }
       details p { color: var(--muted); margin: 10px 0 2px; }
 
+      /* Why PraiseAV exists */
+      .story { display: grid; grid-template-columns: 1.6fr 1fr; gap: 28px; align-items: start; max-width: 1000px; margin: 0 auto; }
+      @media (max-width: 820px) { .story { grid-template-columns: 1fr; } }
+      .story-text p { color: var(--muted); font-size: 18px; margin: 0 0 16px; }
+      .story-text p.big { color: var(--text); font-size: clamp(21px, 2.6vw, 25px); line-height: 1.4; font-weight: 600; }
+      .story-text p.punch { color: var(--text); font-size: 20px; font-weight: 600; border-left: 4px solid var(--accent-2); padding-left: 14px; }
+      .made-by { background: var(--panel); border: 1px solid var(--rule); border-radius: 14px; padding: 22px 24px; }
+      .made-by h3 { margin: 0 0 4px; font-size: 21px; }
+      .made-by .who { color: var(--accent-2); font-weight: 600; margin: 0 0 12px; }
+      .made-by p { color: var(--muted); margin: 0 0 12px; font-size: 16px; }
+      .made-by .btn { margin-top: 4px; }
+
       footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; text-align: center; padding: 22px 16px 34px; margin-top: 40px; }
       footer a { margin: 0 8px; }
     </style>
@@ -120,6 +132,7 @@
         <a href="#top" aria-label="PraiseAV home"><img src="logo.svg" alt="PraiseAV" /></a>
         <div class="nav-links">
           <a href="#features" class="hide-narrow">Features</a>
+          <a href="#story" class="hide-narrow">Our story</a>
           <a href="#questions" class="hide-narrow">Questions</a>
           <a href="help/" class="hide-narrow">Help</a>
           <a href="#demo" class="btn primary small">Free demo</a>
@@ -297,6 +310,47 @@
         </div>
       </section>
 
+      <section id="story" aria-labelledby="story-title">
+        <h2 id="story-title">Why PraiseAV exists</h2>
+        <p class="sub">A church plant, a PowerPoint, and a bit of punk.</p>
+        <div class="story">
+          <div class="story-text">
+            <p class="big">
+              A while ago I visited a church plant. There weren’t many people there, and the song words were up on the screen in a
+              basic PowerPoint. They were doing their best with what they had.
+            </p>
+            <p>
+              It stayed with me. Most church AV teams take certain things for granted: words that keep up with the band, notes and a
+              countdown for the preacher, a camera and a livestream for the people who can’t be there. But nearly all of it comes with
+              a subscription, and for a small church or a new plant, every pound counts. I thought there should be free software that
+              lets any church do what’s normal for a church AV team, without the money worry.
+            </p>
+            <p>
+              I also run <a href="https://www.wakenthedead.com/">Waken the Dead</a>, a site for Christian punk, metal and alternative
+              music. To me, a big part of punk is simple: if you see something that needs doing, don’t wait for someone else to do it.
+              Do it yourself.
+            </p>
+            <p class="punch">So I did. That’s where PraiseAV comes from.</p>
+            <p>
+              It’s free, and it takes some of the pressure off you having to do it all yourself too, so your team can get on with
+              Sunday.
+            </p>
+          </div>
+          <aside class="made-by" aria-label="Made by">
+            <h3>Made by</h3>
+            <p class="who">OneMadPunk, in the UK</p>
+            <p>An independent developer, and the person behind <a href="https://www.wakenthedead.com/">wakenthedead.com</a>.</p>
+            <h3>Support the project</h3>
+            <p>
+              PraiseAV is free, and always will be. If you’d like to support it, a donation is very welcome, either for PraiseAV or for
+              Waken the Dead.
+            </p>
+            <a class="btn" href="mailto:onemadpunk+praiseav@gmail.com?subject=Supporting%20PraiseAV">Get in touch to donate</a>
+            <p class="note">onemadpunk+praiseav@gmail.com</p>
+          </aside>
+        </div>
+      </section>
+
       <section id="demo" aria-labelledby="demo-title">
         <div class="demo">
           <h2 id="demo-title">Book a free demo</h2>
@@ -323,7 +377,7 @@
         <div class="faq">
           <details>
             <summary>Is it really free?</summary>
-            <p>Yes. No subscription, no paid version, no account and no adverts. PraiseAV is made by an independent developer in the UK so that churches on tight budgets can do everything bigger churches do.</p>
+            <p>Yes. No subscription, no paid version, no account and no adverts. PraiseAV is made by an independent developer in the UK so that churches on tight budgets can do everything bigger churches do. If you’d like to help, donations are welcome: see <a href="#story">why PraiseAV exists</a>.</p>
           </details>
           <details>
             <summary>When can we get it?</summary>
