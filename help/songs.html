@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Songs · PraiseAV Help</title>
-<meta name="description" content="Find, add, edit, import and export songs: SongSelect, EasyWorship, OpenSong, OpenLyrics and plain lyrics files. Labels, slides, song order, backing tracks and videos.">
+<meta name="description" content="Find, add, edit, import and export songs: SongSelect, chord sheet PDFs and song books, EasyWorship, OpenSong, OpenLyrics and plain lyrics files. Labels, slides, song order, backing tracks and videos.">
 <link rel="stylesheet" href="help.css">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
@@ -22,7 +22,7 @@
   <main>
     <p class="crumb">Building a service</p>
     <h1>Songs</h1>
-<p>Your songs live in the <strong>Songs</strong> tab on the left. PraiseAV comes with some well-known hymns, and you can bring in your own from SongSelect, EasyWorship, OpenSong or a text file.</p>
+<p>Your songs live in the <strong>Songs</strong> tab on the left. PraiseAV comes with some well-known hymns, and you can bring in your own from SongSelect, a chord sheet PDF, EasyWorship, OpenSong or a text file.</p>
 <p><figure><img src="images/songs-library.png" alt="The Songs tab" loading="lazy"></figure></p>
 <h2 id="find-a-song">Find a song</h2>
 <p>Type into the search box: a few words of the <strong>title</strong>, the <strong>words</strong>, or the <strong>author</strong>. You don’t need the start of the title: “saved a wretch” finds <em>Amazing Grace</em>.</p>
@@ -89,10 +89,23 @@ That saved a wretch like me!
 <aside class="callout tip"><p><strong>Tip:</strong> With a song order like <code>V1 C V2 C</code>, you only type the chorus once, and it’s shown each time it comes round.</p>
 </aside>
 <h3 id="chords-for-the-band">Chords for the band</h3>
-<p>Click <strong>Chords for the band</strong> in the song window to add chords. Put each chord in square brackets just before the word (or syllable) it goes over:</p>
-<pre><code>[G]Amazing [G7]grace! How [C]sweet the [G]sound
+<p>Click <strong>Chords for the band</strong> in the song window to add chords. There are two ways.</p>
+<p><strong>Paste a chord sheet.</strong> Most bands already have the chords on their own line above the words, from a website, a document or their own notes:</p>
+<pre><code>Verse 1
+G       G7         C         G
+Amazing grace! How sweet the sound
+                         D
+That saved a wretch like me!</code></pre>
+<p>Copy it and paste it into the chords box. PraiseAV puts each chord into the words, just before the letter it was sitting over, so you see this:</p>
+<pre><code>{comment: Verse 1}
+[G]Amazing [G7]grace! How [C]sweet the [G]sound
 That saved a wretch like [D]me!</code></pre>
-<p>The chords then appear above the words on the <a href="sermons.html#words-for-the-band">band’s screen</a>. Songs imported from SongSelect chord charts and OpenSong bring their chords with them, and <em>Amazing Grace</em> comes with its traditional chords.</p>
+<p>Headings like <em>Verse 1</em>, <em>Chorus:</em> or <em>[Chorus]</em> become <code>{comment: …}</code> lines, and a line of chords with no words under it (an intro, say) is kept as it is. A chord sheet you type in yourself is put into the words the same way when you click out of the box.</p>
+<aside class="callout tip"><p><strong>Tip:</strong> Text copied out of a PDF usually loses the spaces that line the chords up, so the chords land in the wrong places. For a PDF, <a href="#import-songs">import the PDF itself</a> instead: PraiseAV reads where each chord sits on the page.</p>
+</aside>
+<p><strong>Or start from the words.</strong> Click <strong>Start from the words</strong> to copy the song’s words into the chords box, then type each chord in square brackets just before the word (or syllable) it goes over: <code>[G]Amazing [G7]grace</code>. If the box already has chords in it, PraiseAV asks before replacing them.</p>
+<p><strong>Chords on the first verse only?</strong> Hymn books often print the chords over the first verse and leave them off the rest, because every verse has the same tune. You can do the same: if a verse has no chords of its own (and the same number of lines as the first), the band’s screen shows the first verse’s chords over it, each on the word in the same place in the line. Check it once, as the words of later verses don’t always fall in exactly the same places; give a verse its own chords to change any.</p>
+<p>The chords then appear above the words on the <a href="sermons.html#words-for-the-band">band’s screen</a>. Songs imported from SongSelect chord charts, chord sheet PDFs and OpenSong bring their chords with them, and <em>Amazing Grace</em> comes with its traditional chords.</p>
 <h3 id="delete-a-song">Delete a song</h3>
 <p>Open it in the editor and click <strong>Delete song</strong>. It’s taken out of the library (and today’s service). Saved services keep their own copy, so they still work.</p>
 <h2 id="songs-from-songselect">Songs from SongSelect</h2>
@@ -124,6 +137,10 @@ That saved a wretch like [D]me!</code></pre>
 <td>The easiest way is <strong>From SongSelect</strong> (<a href="#songs-from-songselect">above</a>). Files already downloaded work too: the <strong>chord chart (PDF)</strong> or the <strong>lyrics</strong> file (<code>.txt</code>, or <code>.usr</code> from older downloads). The CCLI number, author, copyright and key come too.</td>
 </tr>
 <tr>
+<td><strong>Chord sheets (PDF)</strong></td>
+<td>Chord sheets from a band’s website (Rend Collective’s, for one) and church song books, with the chords on their own line above the words. Each chord goes on the syllable it was printed over, and the title, writers, key and sections (<em>Verse 1</em>, <em>Chorus</em>, <em>Repeat Chorus</em>…) come too. A song book becomes one song for each song in it. Sheets with numbers instead of chords (1 4 5) get proper chords if the sheet says its key; if not, just the words come in. Check a song or two afterwards: in song books typed up by hand the chords are sometimes a little out of place. A scanned PDF (a photo of the page) can’t be read.</td>
+</tr>
+<tr>
 <td><strong>EasyWorship</strong></td>
 <td><strong>From EasyWorship</strong> finds its whole song library on this computer. Or import a <code>Songs.db</code> file, or a schedule (<code>.ewsx</code>). See <a href="coming-from-easyworship.html">Coming from EasyWorship</a>.</td>
 </tr>
@@ -145,6 +162,9 @@ That saved a wretch like [D]me!</code></pre>
 </tr>
 </tbody></table>
 <p>When it’s done, PraiseAV lists what it brought in, what it skipped (songs you already have) and anything that didn’t work, with the reason.</p>
+<p>A song counts as one you already have when it has the same CCLI number, or the same title and the same words. Small differences don’t matter: commas and full stops, capital letters, the kind of apostrophe, extra spaces and section labels like <em>Verse 1</em> or <em>Chorus:</em>. So the same hymn copied from another book isn’t added twice. A song with the same title but really different words (a modern version of an old hymn, say) is added as a song of its own.</p>
+<p>If the song you already have has no chords and the one coming in does, PraiseAV keeps your song (its words, title and author) and adds the chords to it. The results say <em>Already had “Holy, Holy, Holy”; added its chords</em>. If both have chords, yours are kept.</p>
+<p>Sheet music (notes on staves, with the words under the notes) can’t be imported: PraiseAV needs the words, or a chord sheet with the chords above the words.</p>
 <aside class="callout note"><p><strong>Note:</strong> Showing song words in church needs a <strong>CCLI Church Copyright Licence</strong> (or permission for each song), however you got the words. Traditional hymns like <em>Amazing Grace</em> are free to use.</p>
 </aside>
 <h2 id="export-songs">Export songs</h2>
