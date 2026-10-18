@@ -57,7 +57,7 @@
     </header>
     <main>
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated 17 October 2026 · applies to PraiseAV for Windows</p>
+      <p class="updated">Last updated 18 October 2026 · applies to PraiseAV for Windows</p>
 
       <div class="short">
         <strong>The short version</strong>
@@ -80,14 +80,19 @@
       <ul>
         <li><strong>Your song library</strong>: words, authors, copyright and CCLI numbers, and any chords or backing tracks you add.</li>
         <li><strong>Song usage</strong>: which songs were shown, printed or streamed and when, so you can make your CCLI report. It stays on your computer; PraiseAV doesn’t send reports to CCLI or anyone else.</li>
-        <li><strong>Services</strong> you save, <strong>media</strong> you add (pictures, videos, music, slides) and <strong>settings</strong> such as themes, your church’s name and logo, parent-alert group names and screen setup.</li>
+        <li><strong>Services</strong> you save, <strong>media</strong> you add (pictures, videos, music, slides) and <strong>settings</strong> such as themes, your church’s name and logo, congregation-alert group names and screen setup.</li>
         <li><strong>Backups</strong>: a weekly automatic backup of songs, settings and services in your Documents folder (the last 8 are kept), and any backups you make yourself.</li>
         <li><strong>Phone remote</strong>: if you use it, the names of the phones and tablets you allow, and a scrambled key for each (the key itself is only on that device).</li>
-        <li><strong>A small log</strong> of messages to and from your ATEM video switcher, if you connect one, to help fix connection problems.</li>
+        <li><strong>Recordings</strong> you make with <strong>● Record</strong> or while going live: video files in the recordings folder you choose (Documents › PraiseAV Recordings unless you pick another). They’re copied to a USB stick only when you ask.</li>
+        <li><strong>Your stream key</strong>, if you go live: kept encrypted with Windows’ own protection, and only ever sent to the streaming service you chose (see below).</li>
+        <li><strong>Small logs</strong> to help fix problems: messages to and from your ATEM video switcher if you connect one, and how a livestream connected (never the stream key).</li>
+        <li><strong>Phone cameras and sound timing</strong>: the names you give phone cameras, and how much to hold the sound back for each camera.</li>
       </ul>
       <p>
-        <strong>Parent alerts are never saved.</strong> A child’s number or name you put on screen is only kept while the alert is showing,
-        and is gone once it’s cleared. Only the group names (for example “Crèche”) and the wording are remembered.
+        <strong>Congregation alerts are never saved.</strong> A child’s number or name you put on screen is only kept while the alert is showing,
+        and is gone once it’s cleared. Only the group names (for example “Crèche”) and the wording are remembered. Alerts are never
+        sent to the network screens or the Livestream screen. Note that <strong>● Record</strong> and <strong>◉ Go live</strong> capture the
+        congregation screen, so an alert showing while you record or livestream from PraiseAV is included in the recording or stream.
       </p>
       <p>You can delete any of this at any time: delete songs, services or media in PraiseAV, or remove PraiseAV and its folders from your computer.</p>
 
@@ -132,6 +137,16 @@
             </td>
           </tr>
           <tr>
+            <td>Going live</td>
+            <td>Only while you’re livestreaming with <strong>◉ Go live</strong>.</td>
+            <td>
+              What’s on the congregation screen and the sound you chose are sent, with your stream key, to the service you picked
+              (YouTube, Facebook, or another address you enter). That service’s own privacy policy applies:
+              <a href="https://policies.google.com/privacy">Google (YouTube)</a>, <a href="https://www.facebook.com/privacy/policy">Meta (Facebook)</a>.
+              Nothing is sent to us.
+            </td>
+          </tr>
+          <tr>
             <td>Links that open your browser</td>
             <td>When you click one, for example to download LibreOffice.</td>
             <td>Your normal web browser opens the page; that website’s own policy applies.</td>
@@ -140,8 +155,9 @@
       </table>
       <p>
         <strong>On your church’s own network only:</strong> the phone remote (a page served from the PraiseAV computer to phones on
-        the same Wi-Fi, after you allow each one) and an ATEM video switcher. These don’t go out to the internet, and only answer
-        devices on your local network.
+        the same Wi-Fi, after you allow each one), phone cameras (a phone’s camera picture sent over the Wi-Fi to the PraiseAV
+        computer), screens on the network (the words or the congregation screen as web pages, only while you have them turned on), and
+        an ATEM video switcher. These don’t go out to the internet, and only answer devices on your local network.
       </p>
 
       <h2>Folders you choose to sync</h2>
@@ -153,8 +169,17 @@
 
       <h2>Camera, microphone and screen</h2>
       <p>
-        If you choose a capture device or camera for live video, PraiseAV shows its picture and sound on your screens. Nothing is
-        recorded, saved or sent anywhere by PraiseAV. Windows will tell you when it’s in use.
+        If you choose a camera, capture device or phone camera for live video, PraiseAV shows its picture on your screens. If you
+        choose a sound input (such as the sound desk), PraiseAV uses it for recordings and livestreams. The congregation screen is only
+        recorded when you press <strong>● Record</strong> (or go live with “Also save a recording” ticked), and only sent anywhere while
+        you’re going live. Windows shows when the camera or microphone is in use.
+      </p>
+
+      <h2>Background music (Spotify and other music apps)</h2>
+      <p>
+        If you use the music controls in PraiseAV’s top bar, PraiseAV works the music app on the same computer through Windows’ own media
+        controls: play, pause, next, its volume and which speakers it plays through. It reads the song’s title to show it. PraiseAV
+        doesn’t connect to Spotify or sign in to anything; the music app’s own privacy policy applies to the app itself.
       </p>
 
       <h2>The clipboard</h2>
@@ -174,7 +199,7 @@
       <h2>Children</h2>
       <p>
         PraiseAV is used by churches and isn’t directed at children. It doesn’t collect information from anyone, including children.
-        Parent alerts are shown on screen and not saved (see above).
+        Congregation alerts are shown on screen and not saved (see above).
       </p>
 
       <h2>Your rights</h2>

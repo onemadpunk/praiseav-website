@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Screens on the network · PraiseAV Help</title>
+<meta name="description" content="Put the words into OBS or vMix, or show the congregation screen on a TV in another room, through the church network. No cables, no NDI, no licence.">
+<link rel="stylesheet" href="help.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="PraiseAV"> <span>Help</span></a>
+  <div class="search">
+    <input id="search" type="search" placeholder="Search the help" aria-label="Search the help" autocomplete="off">
+    <ol id="results" hidden></ol>
+  </div>
+  <button class="menu" id="menu" aria-label="Show the contents">☰</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"><div class="nav-section"><h3>Start here</h3><ul><li><a href="index.html">PraiseAV Help</a></li><li><a href="first-sunday.html">Your first Sunday</a></li><li><a href="coming-from-easyworship.html">Coming from EasyWorship</a></li><li><a href="keyboard-shortcuts.html">Keyboard shortcuts</a></li></ul></div><div class="nav-section"><h3>Building a service</h3><ul><li><a href="songs.html">Songs</a></li><li><a href="bible.html">The Bible</a></li><li><a href="services.html">Services</a></li><li><a href="printing.html">Printing</a></li><li><a href="ccli-report.html">CCLI report</a></li></ul></div><div class="nav-section"><h3>Running a service</h3><ul><li><a href="running-a-service.html">Running a service</a></li><li><a href="without-a-volunteer.html">Running a service without an AV volunteer</a></li><li><a href="sermons.html">Sermons and the preacher’s screen</a></li><li><a href="timers-and-prompts.html">Timers and prompts</a></li><li><a href="parent-alerts.html">Congregation alerts: parents and notices</a></li><li><a href="controllers.html">MIDI and Stream Deck</a></li></ul></div><div class="nav-section"><h3>Media and slides</h3><ul><li><a href="media.html">Media: videos, pictures and backgrounds</a></li><li><a href="music-and-audio.html">Music and audio</a></li><li><a href="powerpoint-and-pdf.html">PowerPoint and PDF</a></li><li><a href="slide-designer.html">Slide designer</a></li><li><a href="announcement-loops.html">Announcement loops</a></li><li><a href="themes.html">Themes: how the words look</a></li></ul></div><div class="nav-section"><h3>Screens and livestream</h3><ul><li><a href="screens.html">Screens</a></li><li><a href="live-video.html">Live video on the screen</a></li><li><a href="go-live.html">Going live on YouTube</a></li><li><a href="recording.html">Recording the service</a></li><li><a href="livestream-and-atem.html">Livestream and ATEM</a></li><li><a href="screens-on-the-network.html" class="current" aria-current="page">Screens on the network</a></li><li><a href="phone-remote.html">Phone and tablet remote</a></li></ul></div><div class="nav-section"><h3>Setups and hardware</h3><ul><li><a href="example-setups.html">Example setups</a></li><li><a href="hardware.html">Hardware: what to buy</a></li></ul></div><div class="nav-section"><h3>Looking after PraiseAV</h3><ul><li><a href="church-setup.html">Church setup</a></li><li><a href="backups.html">Backups and moving to a new computer</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li></ul></div></nav>
+  <main>
+    <p class="crumb">Screens and livestream</p>
+    <h1>Screens on the network</h1>
+<p>PraiseAV can show what it shows as a <strong>web page</strong> on the church’s own network. Two pages:</p>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>What it shows</th>
+<th>For</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Words for OBS or vMix</strong></td>
+<td>Just the words (and the song details), on a see-through background</td>
+<td>Laying the words over the cameras on a livestream</td>
+</tr>
+<tr>
+<td><strong>Congregation screen</strong></td>
+<td>The words, verses, pictures and backgrounds, full screen</td>
+<td>A TV or computer in another room: an overflow hall, the foyer, the parents’ room</td>
+</tr>
+</tbody></table>
+<p>Nothing to install, no extra cables and no licence. Any computer, laptop, tablet or smart TV on the same network can open them.</p>
+<p><strong>Congregation alerts never go on these pages.</strong> Children’s numbers and notices are for the main room only, so they never reach the stream or the other rooms. The preacher’s notes and prompts don’t go out either.</p>
+<h2 id="turning-it-on">Turning it on</h2>
+<ol>
+<li>Click <strong>Screens…</strong> at the top right.</li>
+<li>Scroll down to <strong>Show on the network</strong> and click <strong>Turn on</strong>.</li>
+<li>The first time, Windows may ask whether to allow PraiseAV on the network. Tick <strong>Private networks</strong> and click <strong>Allow</strong>.</li>
+</ol>
+<p>PraiseAV shows the addresses to use, with a <strong>Copy</strong> button next to each. It stays on next time you open PraiseAV, until you click <strong>Turn off</strong>.</p>
+<h2 id="words-in-obs">Words in OBS</h2>
+<ol>
+<li>In <strong>Screens… › Show on the network</strong>, choose <strong>Where the words go</strong> (a strip along the bottom, a strip along the top, or full screen) and the <strong>Background</strong> (see-through is best for OBS).</li>
+<li>Click <strong>Copy</strong> next to the address:<ul>
+<li><strong>OBS or vMix on this computer</strong>: when OBS runs on the PraiseAV computer.</li>
+<li><strong>On another computer</strong>: when OBS runs on a different computer.</li>
+</ul>
+</li>
+<li>In OBS, under <strong>Sources</strong>, click <strong>+</strong> and choose <strong>Browser</strong>. Give it a name, such as <em>Words</em>, and click <strong>OK</strong>.</li>
+<li>Paste the address into <strong>URL</strong>. Set <strong>Width</strong> to <code>1920</code> and <strong>Height</strong> to <code>1080</code>. Click <strong>OK</strong>.</li>
+<li>In the <strong>Sources</strong> list, drag <strong>Words</strong> above your camera.</li>
+</ol>
+<p>The words appear over the camera on a dark band and change the moment you change the slide. <strong>Black</strong>, <strong>Clear text</strong> and <strong>Logo</strong> take them off the stream.</p>
+<aside class="callout tip"><p><strong>Tip:</strong> If the words look blurry, right-click the Words source, choose <strong>Transform › Fit to screen</strong>, and check the Width and Height are 1920 and 1080.</p>
+</aside>
+<h2 id="words-in-vmix">Words in vMix</h2>
+<ol>
+<li>Copy the address, as for OBS.</li>
+<li>In vMix, click <strong>Add Input</strong> and choose <strong>Web Browser</strong>.</li>
+<li>Paste the address, set the size to <strong>1920 × 1080</strong>, and click <strong>OK</strong>.</li>
+<li>Put the input on an <strong>Overlay</strong> channel over the cameras (click the <strong>1</strong> under the input to show it as Overlay 1).</li>
+</ol>
+<h2 id="other-choices-in-the-address">Other choices in the address</h2>
+<p>The address can say where the words go and what’s behind them. PraiseAV builds it for you when you choose in the Screens window, but you can also type it:</p>
+<table>
+<thead>
+<tr>
+<th>Add to the address</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>?place=top</code></td>
+<td>A strip along the top</td>
+</tr>
+<tr>
+<td><code>?place=full</code></td>
+<td>The words big, in the middle of the screen</td>
+</tr>
+<tr>
+<td><code>?bg=green</code></td>
+<td>A green background, for programs that key out green</td>
+</tr>
+<tr>
+<td><code>?bg=black</code></td>
+<td>A black background</td>
+</tr>
+</tbody></table>
+<p>For example: <code>http://192.168.1.20:8260/words?place=top&amp;bg=green</code>. Without any of them the words are in a strip along the bottom, see-through.</p>
+<h2 id="a-screen-in-another-room">A screen in another room</h2>
+<p>For an overflow hall, the foyer TV, a parents’ room or a crèche.</p>
+<ol>
+<li>In <strong>Screens… › Show on the network</strong>, find <strong>A screen in another room</strong>.</li>
+<li>On the TV, tablet or laptop in the other room, open the <strong>web browser</strong> and type the address shown (it ends in <strong>/screen</strong>). On a tablet you can scan the QR code with the camera instead.</li>
+<li>Click or tap the page once to make it <strong>full screen</strong>.</li>
+</ol>
+<p>It shows what the congregation screen shows: the words, verses, pictures, backgrounds and the logo, and goes black when you click <strong>Black</strong>. Camera pictures (live video) and YouTube videos don’t go to the other room; there it shows the words over the background instead.</p>
+<p>The other room has no sound from PraiseAV: run a speaker cable or use the sound desk for that.</p>
+<aside class="callout tip"><p><strong>Tip:</strong> An old smart TV’s browser may not show the page. A cheap streaming stick with a web browser (such as a Fire TV Stick with the Silk browser), or an old laptop plugged into the TV, works well.</p>
+</aside>
+<h2 id="if-it-doesn-t-work">If it doesn’t work</h2>
+<ul>
+<li><strong>Same network</strong>: the other computer or TV must be on the same network (the same Wi-Fi) as the PraiseAV computer. Guest Wi-Fi often keeps devices apart: use the staff Wi-Fi or a network cable.</li>
+<li><strong>The firewall</strong>: if Windows asked about the firewall and someone clicked <strong>Cancel</strong>, other devices can’t reach PraiseAV. Search the Start menu for <strong>Allow an app through Windows Firewall</strong>, find <strong>PraiseAV</strong>, and tick <strong>Private</strong>. (Ask whoever looks after the computer if you’re not sure.)</li>
+<li><strong>The address changed</strong>: if the PraiseAV computer joined a different network, its address changes. Copy the new one from <strong>Screens…</strong>. OBS on the same computer can use the <strong>on this computer</strong> address, which never changes.</li>
+<li><strong>Black in OBS where the camera should be</strong>: the Background is set to <strong>Black</strong>. Choose <strong>See-through</strong> and copy the address again.</li>
+<li><strong>The other room says “Can’t reach PraiseAV”</strong>: PraiseAV was closed or the pages were turned off. It carries on by itself when PraiseAV is back.</li>
+</ul>
+<aside class="callout note"><p><strong>Note:</strong> These pages only work inside your building’s network. They aren’t on the internet, and they can only show: nobody can change anything from them.</p>
+</aside>
+
+    <nav class="pager">
+      <a class="prev" href="livestream-and-atem.html">← Livestream and ATEM</a>
+      <a class="next" href="phone-remote.html">Phone and tablet remote →</a>
+    </nav>
+  </main>
+</div>
+<script src="search-index.js"></script>
+<script src="help.js"></script>
+</body>
+</html>

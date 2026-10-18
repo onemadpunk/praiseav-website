@@ -4,92 +4,362 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PraiseAV · Free presentation software for churches</title>
-    <meta name="description" content="Free presentation software for churches: songs, Bible readings, videos, PowerPoint, preacher and livestream screens. Coming soon for Windows." />
+    <meta
+      name="description"
+      content="Free church presentation software for Windows: songs, Bible readings, preacher and band screens, cameras, livestreaming to YouTube and recording, all from one laptop. Book a free demo."
+    />
+    <meta property="og:title" content="PraiseAV · Free presentation software for churches" />
+    <meta property="og:description" content="Songs, Bible, cameras, livestream and recording from one laptop. Free, with no subscription. Book a free demo." />
+    <meta property="og:image" content="https://praiseav.com/help/images/overview.png" />
+    <meta property="og:url" content="https://praiseav.com/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <style>
       :root {
         --bg: #08121e;
+        --bg-2: #0b1826;
         --panel: #0f1d2c;
         --text: #f7f9fc;
-        --muted: #9fb0c3;
+        --muted: #a9b8c8;
         --rule: #24384d;
         --accent: #078df8;
         --accent-2: #00c9ff;
+        --accent-3: #0752de;
       }
       * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; scroll-padding-top: 72px; }
       body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif; }
       a { color: var(--accent-2); }
-      .hero { text-align: center; padding: 64px 16px 48px; background: radial-gradient(ellipse at top, #13314f 0%, var(--bg) 70%); }
-      .hero img { width: min(360px, 80vw); height: auto; }
-      .hero h1 { font-size: clamp(26px, 5vw, 40px); line-height: 1.2; margin: 24px auto 12px; max-width: 760px; }
-      .hero p { color: var(--muted); max-width: 640px; margin: 0 auto; font-size: 19px; }
-      .badge { display: inline-block; margin-top: 28px; padding: 10px 20px; border: 1px solid var(--accent); border-radius: 999px; color: var(--text); font-weight: 600; }
-      main { max-width: 980px; margin: 0 auto; padding: 16px 16px 64px; }
-      h2 { font-size: 24px; margin: 40px 0 16px; text-align: center; }
-      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+      img { max-width: 100%; height: auto; display: block; }
+
+      /* Top bar */
+      .nav { position: sticky; top: 0; z-index: 10; background: rgba(8, 18, 30, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); }
+      .nav-in { max-width: 1120px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center; gap: 18px; }
+      .nav img { height: 30px; width: auto; }
+      .nav-links { display: flex; gap: 18px; margin-left: auto; align-items: center; }
+      .nav-links a { color: var(--text); text-decoration: none; font-size: 15px; }
+      .nav-links a:hover { color: var(--accent-2); }
+      .btn { display: inline-block; padding: 12px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; border: 1px solid var(--accent); color: var(--text); }
+      .btn.primary { background: linear-gradient(90deg, var(--accent-2), var(--accent) 45%, var(--accent-3)); border: 0; color: #fff; }
+      .btn.small { padding: 7px 16px; font-size: 15px; }
+      .nav-links .btn.small { color: #fff; }
+      @media (max-width: 720px) { .nav-links a.hide-narrow { display: none; } }
+
+      /* Hero */
+      .hero { text-align: center; padding: 56px 16px 32px; background: radial-gradient(ellipse at top, #13314f 0%, var(--bg) 70%); }
+      .hero .logo { width: min(320px, 72vw); margin: 0 auto; }
+      .hero h1 { font-size: clamp(30px, 5.4vw, 48px); line-height: 1.15; margin: 26px auto 14px; max-width: 820px; }
+      .hero p.lead { color: var(--muted); max-width: 700px; margin: 0 auto; font-size: clamp(18px, 2.2vw, 20px); }
+      .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 28px 0 10px; }
+      .note { color: var(--muted); font-size: 15px; margin: 6px 0 0; }
+      .shot { border-radius: 12px; border: 1px solid var(--rule); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45); background: var(--panel); }
+      .hero .shot { width: 100%; max-width: 1060px; margin: 36px auto 0; }
+
+      main { max-width: 1120px; margin: 0 auto; padding: 0 16px 40px; }
+      section { padding: 48px 0 8px; }
+      h2 { font-size: clamp(26px, 4vw, 34px); line-height: 1.2; margin: 0 0 10px; text-align: center; }
+      .sub { color: var(--muted); text-align: center; max-width: 720px; margin: 0 auto 30px; }
+
+      /* Three reasons */
+      .why { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+      .why div { background: var(--panel); border: 1px solid var(--rule); border-radius: 14px; padding: 20px; }
+      .why strong { display: block; font-size: 19px; margin-bottom: 4px; }
+      .why span { color: var(--muted); font-size: 16px; }
+
+      /* Feature rows */
+      .feature { display: grid; grid-template-columns: 1fr 1.15fr; gap: 36px; align-items: center; padding: 34px 0; border-top: 1px solid var(--rule); }
+      .feature:nth-of-type(even) .text { order: 2; }
+      .feature h3 { font-size: clamp(22px, 3vw, 27px); line-height: 1.25; margin: 0 0 10px; }
+      .feature p { color: var(--muted); margin: 0 0 10px; }
+      .feature ul { margin: 0; padding-left: 20px; color: var(--muted); }
+      .feature li { margin: 5px 0; }
+      .feature li strong { color: var(--text); font-weight: 600; }
+      .feature .more { display: inline-block; margin-top: 10px; font-size: 15px; }
+      .tall { max-height: 520px; width: auto; margin: 0 auto; }
+      @media (max-width: 820px) {
+        .feature { grid-template-columns: 1fr; gap: 18px; }
+        .feature:nth-of-type(even) .text { order: 0; }
+      }
+
+      /* Smaller features */
+      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
       .card { background: var(--panel); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 18px; }
-      .card h3 { margin: 0 0 6px; font-size: 18px; }
-      .card p { margin: 0; color: var(--muted); font-size: 16px; }
-      .free { text-align: center; color: var(--muted); max-width: 680px; margin: 40px auto 0; }
-      footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; text-align: center; padding: 20px 16px 32px; }
+      .card h4 { margin: 0 0 4px; font-size: 17px; }
+      .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+
+      /* Coming from EasyWorship, what you need */
+      .split { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      @media (max-width: 820px) { .split { grid-template-columns: 1fr; } }
+      .box { background: var(--panel); border: 1px solid var(--rule); border-radius: 14px; padding: 22px 24px; }
+      .box h3 { margin: 0 0 8px; font-size: 21px; }
+      .box p, .box li { color: var(--muted); }
+      .box ul { padding-left: 20px; margin: 8px 0; }
+      .box li { margin: 5px 0; }
+      .box li strong { color: var(--text); }
+
+      /* Demo */
+      .demo { text-align: center; background: radial-gradient(ellipse at center, #13314f 0%, var(--bg-2) 75%); border: 1px solid var(--rule); border-radius: 18px; padding: 40px 22px; margin-top: 12px; }
+      .demo p { color: var(--muted); max-width: 680px; margin: 0 auto 14px; }
+      .demo ul { list-style: none; padding: 0; margin: 18px auto 24px; max-width: 560px; text-align: left; }
+      .demo li { padding: 6px 0 6px 30px; position: relative; color: var(--text); }
+      .demo li::before { content: '✓'; position: absolute; left: 4px; color: var(--accent-2); font-weight: 700; }
+      .demo .note { margin-top: 12px; }
+
+      /* Questions */
+      .faq { max-width: 820px; margin: 0 auto; }
+      details { background: var(--panel); border: 1px solid var(--rule); border-radius: 12px; padding: 14px 18px; margin: 10px 0; }
+      summary { cursor: pointer; font-weight: 600; font-size: 17.5px; }
+      details p { color: var(--muted); margin: 10px 0 2px; }
+
+      footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; text-align: center; padding: 22px 16px 34px; margin-top: 40px; }
       footer a { margin: 0 8px; }
     </style>
   </head>
   <body>
-    <section class="hero">
-      <img src="logo-stacked.svg" alt="PraiseAV: audio visual presentation software" />
-      <h1>Free presentation software for churches</h1>
-      <p>Songs, Bible readings, videos and sermons on your screens, simple enough for any volunteer to run on a Sunday morning.</p>
-      <span class="badge">Coming soon for Windows</span>
-    </section>
-
-    <main>
-      <h2>What it does</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Songs and the Bible</h3>
-          <p>A song library you can search by any words. Bible readings as you type a reference, and the NIV and other translations by copying from bible.com.</p>
-        </div>
-        <div class="card">
-          <h3>Coming from EasyWorship?</h3>
-          <p>Bring your songs, schedules and backgrounds across. OpenSong and SongSelect files too.</p>
-        </div>
-        <div class="card">
-          <h3>Videos, PowerPoint and PDF</h3>
-          <p>Moving backgrounds, videos, music, and PowerPoint or PDF slides, without needing PowerPoint. Or design your own slides.</p>
-        </div>
-        <div class="card">
-          <h3>Screens for everyone</h3>
-          <p>Words for the congregation, notes and a timer for the preacher, and a words strip for the livestream, each on its own screen.</p>
-        </div>
-        <div class="card">
-          <h3>Livestream ready</h3>
-          <p>Works with ATEM video switchers. Show another church’s live stream with your own words and logo.</p>
-        </div>
-        <div class="card">
-          <h3>Parent alerts and notices</h3>
-          <p>Crèche and Sunday school alerts with your own group names, scrolling notices and announcement loops.</p>
-        </div>
-        <div class="card">
-          <h3>Phone remote</h3>
-          <p>Run it from a phone or tablet on your church Wi-Fi, with nothing to install. A preacher’s remote for their own slides and notes.</p>
-        </div>
-        <div class="card">
-          <h3>Plan at home, run at church</h3>
-          <p>Save services to OneDrive, Google Drive or a USB stick. Print service sheets and the song report for your CCLI licence.</p>
+    <nav class="nav" aria-label="Main">
+      <div class="nav-in">
+        <a href="#top" aria-label="PraiseAV home"><img src="logo.svg" alt="PraiseAV" /></a>
+        <div class="nav-links">
+          <a href="#features" class="hide-narrow">Features</a>
+          <a href="#questions" class="hide-narrow">Questions</a>
+          <a href="help/" class="hide-narrow">Help</a>
+          <a href="#demo" class="btn primary small">Free demo</a>
         </div>
       </div>
+    </nav>
 
-      <p class="free">
-        PraiseAV is free, with no subscription, no account and no adverts, made independently in the UK for churches of every size.
+    <header class="hero" id="top">
+      <img class="logo" src="logo-stacked.svg" alt="PraiseAV: audio visual presentation software" />
+      <h1>Free presentation software for churches</h1>
+      <p class="lead">
+        Songs, Bible readings, sermons, cameras, a livestream to YouTube and a recording of the service, all run from one laptop,
+        simple enough for any volunteer on a Sunday morning.
       </p>
-      <p class="free">
-        New to it? The <a href="help/">help and guides</a> cover your first Sunday, every feature, example setups and what equipment to buy.
-      </p>
+      <div class="ctas">
+        <a class="btn primary" href="#demo">Book a free demo</a>
+        <a class="btn" href="#features">See what it does</a>
+      </div>
+      <p class="note">For Windows · free, with no subscription, no account and no adverts · coming soon to the Microsoft Store</p>
+      <img class="shot" src="help/images/overview.png" width="1400" height="848" alt="PraiseAV running a service: the song list, the service order, the verses of Amazing Grace, and what's on screen now" />
+    </header>
+
+    <main>
+      <section aria-labelledby="why">
+        <h2 id="why">Everything a small church needs, on one laptop</h2>
+        <p class="sub">
+          Many churches pay for presentation software every year, plus a video switcher for cameras and streaming. PraiseAV does
+          the lot, for free, on the laptop you already have.
+        </p>
+        <div class="why">
+          <div><strong>Free, for good</strong><span>No subscription, no account and no adverts. Made independently in the UK for churches on tight budgets.</span></div>
+          <div><strong>Cameras, livestream and recording built in</strong><span>Go live on YouTube and save a recording without an ATEM, OBS or any other program. Old phones can be your cameras.</span></div>
+          <div><strong>Made for volunteers</strong><span>Big clear buttons, plain words, a beginner’s guide, and warnings before anything goes wrong, like a recording with no sound.</span></div>
+        </div>
+      </section>
+
+      <section id="features" aria-labelledby="features-title">
+        <h2 id="features-title">What it does</h2>
+        <p class="sub">Every picture here is PraiseAV itself.</p>
+
+        <div class="feature">
+          <div class="text">
+            <h3>Songs and the Bible, in seconds</h3>
+            <ul>
+              <li><strong>Find any song</strong> by its title, a line of the words or the author.</li>
+              <li><strong>Bring your songs with you</strong> from EasyWorship, OpenSong, OpenLyrics and SongSelect (words and chord charts), or paste the words.</li>
+              <li><strong>Bible readings as you type a reference</strong>, with the BSB, KJV and WEB built in. The NIV and others by copying from bible.com.</li>
+              <li><strong>Chords</strong> for the band, song order, backing tracks, and videos that sing along with the words.</li>
+            </ul>
+            <a class="more" href="help/songs.html">Songs</a> · <a class="more" href="help/bible.html">The Bible</a>
+          </div>
+          <img class="shot" src="help/images/bible-on-screen.png" width="1349" height="758" loading="lazy" alt="Psalm 23 from the Berean Standard Bible on the congregation screen" />
+        </div>
+
+        <div class="feature">
+          <div class="text">
+            <h3>A screen for everyone</h3>
+            <ul>
+              <li><strong>The congregation</strong>: words, verses, videos and pictures, on a projector or TVs.</li>
+              <li><strong>The preacher and band</strong>: the clock, a sermon countdown, the next slide, private notes, chords, and quiet prompts like “5 minutes left”.</li>
+              <li><strong>Practice screens</strong> on one laptop at home, to set up the whole service before Sunday.</li>
+              <li><strong>Screens on the network</strong>: the words in OBS or vMix, or the service on a TV in another room, with no cables.</li>
+            </ul>
+            <a class="more" href="help/screens.html">Screens</a> · <a class="more" href="help/sermons.html">Sermons</a>
+          </div>
+          <img class="shot" src="help/images/preacher-chords.png" width="1349" height="758" loading="lazy" alt="The preacher and band screen: the time, a sermon countdown, the words with chords above them, and the next verse" />
+        </div>
+
+        <div class="feature">
+          <div class="text">
+            <h3>Cameras, a livestream and a recording</h3>
+            <ul>
+              <li><strong>Go live on YouTube</strong> (or Facebook) with your stream key: the camera, the words and the sound desk’s sound, in up to 1080p.</li>
+              <li><strong>Record the service</strong> to the laptop, then copy it to a USB stick, checked before it says it’s safe to take out.</li>
+              <li><strong>Old phones as cameras</strong> over the church Wi-Fi, with nothing to install, plus webcams and capture devices. Click a camera to cut to it.</li>
+              <li><strong>Sound and picture kept in step</strong>, and a sound meter so you know the desk’s sound is coming in.</li>
+              <li>Already have an <strong>ATEM Mini</strong>? PraiseAV works with it too.</li>
+            </ul>
+            <a class="more" href="help/go-live.html">Going live</a> · <a class="more" href="help/recording.html">Recording</a> · <a class="more" href="help/live-video.html">Live video</a>
+          </div>
+          <img class="shot" src="help/images/record-dialog.png" width="1110" height="692" loading="lazy" alt="The Record the service window: where recordings are saved, how many hours fit, and the sound input" />
+        </div>
+
+        <div class="feature">
+          <div class="text">
+            <h3>Run it from a phone, or with no volunteer at all</h3>
+            <ul>
+              <li><strong>Phone remote</strong>: Next, Back, Black and the whole service on any phone or tablet on the church Wi-Fi. No app to install.</li>
+              <li><strong>A preacher’s remote</strong> for their own slides and notes.</li>
+              <li><strong>No one free at the laptop?</strong> The worship leader runs the words and the preacher runs the sermon, each from their phone.</li>
+              <li>Clickers, MIDI foot pedals and Stream Deck buttons work too.</li>
+            </ul>
+            <a class="more" href="help/phone-remote.html">Phone remote</a> · <a class="more" href="help/without-a-volunteer.html">Without a volunteer</a>
+          </div>
+          <img class="shot tall" src="help/images/phone-remote.png" width="579" height="1236" loading="lazy" alt="The phone remote: the live verse, the next one, Back and Next buttons, and the service order" />
+        </div>
+
+        <div class="feature">
+          <div class="text">
+            <h3>Music, videos and slides</h3>
+            <ul>
+              <li><strong>Spotify in the top bar</strong>: play your pre-service playlist, skip a song, and fade it out as the service starts, without leaving PraiseAV.</li>
+              <li><strong>Videos, pictures and moving backgrounds</strong>, with free starter backgrounds included.</li>
+              <li><strong>A guest speaker’s PowerPoint or PDF</strong>, and your own slides from ready-made layouts.</li>
+              <li><strong>Notices that loop</strong> before the service, and a countdown to the start.</li>
+            </ul>
+            <a class="more" href="help/music-and-audio.html">Music and audio</a> · <a class="more" href="help/slide-designer.html">Slide designer</a>
+          </div>
+          <img class="shot" src="help/images/slide-designer.png" width="1400" height="839" loading="lazy" alt="The slide designer: a welcome slide with words, a picture and a background" />
+        </div>
+
+        <div class="feature">
+          <div class="text">
+            <h3>Congregation alerts</h3>
+            <ul>
+              <li><strong>Call a parent</strong> from the crèche or children’s groups with a number on screen, using your own group names.</li>
+              <li><strong>Scrolling notices</strong> like “car lights left on”.</li>
+              <li><strong>Never saved</strong>: a child’s number is gone as soon as the alert is cleared.</li>
+            </ul>
+            <a class="more" href="help/parent-alerts.html">Congregation alerts</a>
+          </div>
+          <img class="shot" src="help/images/alert-on-screen.png" width="1349" height="758" loading="lazy" alt="A crèche alert with a number along the bottom of the congregation screen, under the song words" />
+        </div>
+
+        <div class="feature">
+          <div class="text">
+            <h3>Plan at home, run at church</h3>
+            <ul>
+              <li><strong>Save services</strong> to OneDrive, Google Drive or a USB stick, and open them on the church laptop.</li>
+              <li><strong>Print a service sheet</strong> for the congregation, as A4 or a folded A5 booklet.</li>
+              <li><strong>Your CCLI report</strong>: every song shown, printed and streamed, ready to send.</li>
+              <li><strong>Weekly backups</strong> by themselves, and your whole church setup in one file.</li>
+            </ul>
+            <a class="more" href="help/services.html">Services</a> · <a class="more" href="help/ccli-report.html">CCLI report</a>
+          </div>
+          <img class="shot tall" src="help/images/service-sheet.png" width="1170" height="1473" loading="lazy" alt="A printed service sheet with the order of service and the words of the songs" />
+        </div>
+      </section>
+
+      <section aria-labelledby="also">
+        <h2 id="also">And also</h2>
+        <div class="grid">
+          <div class="card"><h4>Themes</h4><p>Fonts, colours and backgrounds for songs, verses and sermons, including a high-contrast theme that’s easy to read.</p></div>
+          <div class="card"><h4>Words over the camera</h4><p>A strip along the bottom, along the top for small rooms, or above the picture so nothing covers faces.</p></div>
+          <div class="card"><h4>Church logo</h4><p>On screen between items, and in the corner over the camera.</p></div>
+          <div class="card"><h4>Timed words</h4><p>Record a song’s slide changes once with its music, and they move on by themselves after that.</p></div>
+          <div class="card"><h4>Screen map</h4><p>See every screen, and tap two to swap them when the projector and TV come up the wrong way round.</p></div>
+          <div class="card"><h4>Built-in help</h4><p>Press F1 for step-by-step guides, written for people who’ve never done this before.</p></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="switch">
+        <h2 id="switch">Easy to switch to</h2>
+        <div class="split">
+          <div class="box">
+            <h3>Coming from EasyWorship?</h3>
+            <p>PraiseAV finds your EasyWorship songs on the computer and brings them across in one click, with your schedules and backgrounds.</p>
+            <ul>
+              <li>Next, Black, Clear text and Logo work the way you’re used to.</li>
+              <li>A guide shows where everything is.</li>
+              <li>OpenSong and SongSelect files come across too.</li>
+            </ul>
+            <a href="help/coming-from-easyworship.html">Coming from EasyWorship</a>
+          </div>
+          <div class="box">
+            <h3>What you need</h3>
+            <ul>
+              <li>A <strong>Windows</strong> laptop or PC (Windows 10 or 11).</li>
+              <li>A <strong>projector or TV</strong>, and a second screen at the back for the preacher if you like.</li>
+              <li>To livestream or record the sound desk: a small <strong>USB audio box</strong> from the desk to the laptop.</li>
+              <li>For cameras: <strong>old phones</strong> on the Wi-Fi, a webcam, or a camera with a USB capture device.</li>
+            </ul>
+            <a href="help/hardware.html">What to buy, and what not to</a> · <a href="help/example-setups.html">Example setups</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="demo" aria-labelledby="demo-title">
+        <div class="demo">
+          <h2 id="demo-title">Book a free demo</h2>
+          <p>
+            See PraiseAV running a real service before you change anything. We’ll show you on a video call, or in person where we
+            can, and answer your questions.
+          </p>
+          <ul>
+            <li>See it with your own songs, screens and the way your church does things.</li>
+            <li>Help moving your songs across from EasyWorship or anything else.</li>
+            <li>Be one of the first churches to use PraiseAV, and help shape what comes next.</li>
+          </ul>
+          <a
+            class="btn primary"
+            href="mailto:onemadpunk+praiseav@gmail.com?subject=PraiseAV%20demo&amp;body=Church%3A%20%0ATown%3A%20%0AWhat%20we%20use%20now%20(for%20example%20EasyWorship%20or%20PowerPoint)%3A%20%0AScreens%2C%20cameras%20or%20livestream%3A%20%0AA%20good%20time%20for%20a%20demo%3A%20"
+            >Email to book a demo</a
+          >
+          <p class="note">onemadpunk+praiseav@gmail.com</p>
+        </div>
+      </section>
+
+      <section id="questions" aria-labelledby="questions-title">
+        <h2 id="questions-title">Questions</h2>
+        <div class="faq">
+          <details>
+            <summary>Is it really free?</summary>
+            <p>Yes. No subscription, no paid version, no account and no adverts. PraiseAV is made by an independent developer in the UK so that churches on tight budgets can do everything bigger churches do.</p>
+          </details>
+          <details>
+            <summary>When can we get it?</summary>
+            <p>PraiseAV is coming to the Microsoft Store for Windows. Book a demo and we’ll let you know as soon as it’s ready, or help you try it at your church sooner.</p>
+          </details>
+          <details>
+            <summary>Do we need the internet?</summary>
+            <p>No. Songs, the Bible, videos, recording and all the screens work without it. You only need the internet to livestream, to show a YouTube link, or to copy the NIV from bible.com.</p>
+          </details>
+          <details>
+            <summary>What about song licences?</summary>
+            <p>You still need your CCLI licence to show song words, and a CCLI Streaming Licence (or your country’s equivalent) to livestream them. PraiseAV keeps track of every song you use and makes the report for you.</p>
+          </details>
+          <details>
+            <summary>Which Bibles come with it?</summary>
+            <p>The Berean Standard Bible (BSB), the King James Version (KJV) and the World English Bible (WEB) are built in. The NIV and many others can be shown by copying the verses from bible.com, and PraiseAV turns them into slides.</p>
+          </details>
+          <details>
+            <summary>Do we still need an ATEM or OBS to livestream?</summary>
+            <p>No. PraiseAV can go live on YouTube or Facebook by itself, and record at the same time. If you already have an ATEM Mini or use OBS, PraiseAV works with those too.</p>
+          </details>
+          <details>
+            <summary>Does it work on a Mac?</summary>
+            <p>Not at the moment: PraiseAV is for Windows. An old Windows laptop is usually enough.</p>
+          </details>
+          <details>
+            <summary>What about our privacy?</summary>
+            <p>PraiseAV has no account and no tracking. Your songs, services and recordings stay on your computer. See the <a href="privacy.html">privacy policy</a>.</p>
+          </details>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <a href="help/">Help</a>·<a href="privacy.html">Privacy</a>·<a href="mailto:onemadpunk+praiseav@gmail.com">Contact</a>
+      <a href="help/">Help</a>·<a href="#demo">Free demo</a>·<a href="privacy.html">Privacy</a>·<a href="mailto:onemadpunk+praiseav@gmail.com">Contact</a>
+      <p>PraiseAV · Free presentation software for churches · made in the UK</p>
     </footer>
   </body>
 </html>
