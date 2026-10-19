@@ -113,8 +113,10 @@
       /* Why PraiseAV exists */
       .story { display: grid; grid-template-columns: 1.6fr 1fr; gap: 28px; align-items: start; max-width: 1000px; margin: 0 auto; }
       @media (max-width: 820px) { .story { grid-template-columns: 1fr; } }
+      @media (min-width: 821px) { .story .made-by { position: sticky; top: 90px; } }
       .story-text p { color: var(--muted); font-size: 18px; margin: 0 0 16px; }
       .story-text p.big { color: var(--text); font-size: clamp(21px, 2.6vw, 25px); line-height: 1.4; font-weight: 600; }
+      .story-text h3 { font-size: 22px; margin: 34px 0 12px; }
       .story-text p.punch { color: var(--text); font-size: 20px; font-weight: 600; border-left: 4px solid var(--accent-2); padding-left: 14px; }
       .made-by { background: var(--panel); border: 1px solid var(--rule); border-radius: 14px; padding: 22px 24px; }
       .made-by h3 { margin: 0 0 4px; font-size: 21px; }
@@ -312,29 +314,74 @@
       </section>
 
       <section id="story" aria-labelledby="story-title">
-        <h2 id="story-title">Why PraiseAV exists</h2>
-        <p class="sub">A church plant, a PowerPoint, and a bit of punk.</p>
+        <h2 id="story-title">Why I created PraiseAV</h2>
+        <p class="sub">Built for churches. Rooted in faith. Shaped by a DIY attitude.</p>
         <div class="story">
           <div class="story-text">
             <p class="big">
-              A while ago I visited a church plant. There weren’t many people there, and the song words were up on the screen in a
-              basic PowerPoint. They were doing their best with what they had.
+              PraiseAV wasn’t born in a software company’s boardroom. It started with a simple idea: churches shouldn’t have to spend
+              a fortune on software just to put song lyrics, Bible passages and other content on a screen.
             </p>
             <p>
-              It stayed with me. Most church AV teams take certain things for granted: words that keep up with the band, notes and a
-              countdown for the preacher, a camera and a livestream for the people who can’t be there. But nearly all of it comes with
-              a subscription, and for a small church or a new plant, every pound counts. I thought there should be free software that
-              lets any church do what’s normal for a church AV team, without the money worry.
+              Having been involved in church life and audio-visual technology, I know how much work goes on behind the scenes every
+              Sunday. Much of it is done by volunteers, often giving up their own time to make sure everything runs smoothly.
             </p>
             <p>
-              I also run <a href="https://www.wakenthedead.com/">Waken the Dead</a>, a site for Christian punk, metal and alternative
-              music. To me, a big part of punk is simple: if you see something that needs doing, don’t wait for someone else to do it.
-              Do it yourself.
+              Good presentation software should make their lives easier, not add another complication or another bill to the church
+              budget.
             </p>
-            <p class="punch">So I did. That’s where PraiseAV comes from.</p>
+            <p class="punch">That’s why I started developing PraiseAV.</p>
             <p>
-              It’s free, and it takes some of the pressure off you having to do it all yourself too, so your team can get on with
-              Sunday.
+              I grew up with the DIY mentality that runs through punk and alternative music. The idea that you don’t need to wait for
+              somebody else to make something happen. If you’ve got the skills, the tools and the determination, you get stuck in and
+              give it a go.
+            </p>
+            <p>
+              I’m developing PraiseAV independently, not as a commercial venture, but because that DIY spirit has always been part of
+              who I am. If I can build something that helps other churches, takes a bit of pressure off their AV teams and makes life
+              easier for the volunteers working behind the scenes, then that’s a job worth doing.
+            </p>
+
+            <h3>The connection to Waken The Dead</h3>
+            <p>
+              If you’ve come across my other project, <a href="https://www.wakenthedead.com/">Waken The Dead</a>, you might be
+              wondering what Christian punk, metal and alternative music have to do with church presentation software.
+            </p>
+            <p>On the surface, not very much!</p>
+            <p>
+              Waken The Dead began back in 2000 as a photocopied music zine, driven by my love of alternative music and my Christian
+              faith. It eventually grew into a website dedicated to discovering and sharing Christian music that didn’t always fit
+              into the mainstream.
+            </p>
+            <p>
+              It was DIY from the beginning. No big company behind it, just a passion for the music, the message and a willingness to
+              put the work in.
+            </p>
+            <p class="punch">PraiseAV comes from exactly that same mentality.</p>
+            <p>
+              They’re different projects, but they’re both rooted in my Christian faith, a love of creating things and a belief that
+              what we make should have a purpose beyond ourselves.
+            </p>
+            <p>
+              Waken The Dead is about helping people discover music and connecting with a community. PraiseAV is about giving churches
+              the tools to share music, Scripture and the Gospel without unnecessary expense or complication.
+            </p>
+            <p>
+              And while Waken The Dead has its roots firmly in the alternative Christian scene, PraiseAV is for everyone. Traditional
+              churches, contemporary churches, small fellowships and larger congregations.
+            </p>
+
+            <h3>More than just software</h3>
+            <p>I’m not expecting PraiseAV to change the world.</p>
+            <p>
+              But if it helps a small church working with a tight budget, makes preparing a service a little easier, or means the
+              person running the projector can spend less time fighting with software and more time being part of the service, I’ll
+              consider that a success.
+            </p>
+            <p>Ultimately, the technology isn’t the important part.</p>
+            <p class="punch">It’s the people, the worship and the message that matter.</p>
+            <p>
+              PraiseAV is simply something I can contribute, built with the same DIY spirit that’s been with me all these years.
             </p>
           </div>
           <aside class="made-by" aria-label="Made by">
@@ -344,7 +391,7 @@
             <h3>Support the project</h3>
             <p>
               PraiseAV is free. If you’d like to support it, a donation is very welcome, either for PraiseAV or for
-              Waken the Dead.
+              Waken The Dead.
             </p>
             <a class="btn" href="mailto:onemadpunk+praiseav@gmail.com?subject=Supporting%20PraiseAV">Get in touch to donate</a>
             <p class="note">onemadpunk+praiseav@gmail.com</p>
@@ -376,7 +423,7 @@
         <div class="faq">
           <details>
             <summary>Is it really free?</summary>
-            <p>Yes. No subscription, no paid version, no account and no adverts. PraiseAV is made by an independent developer in the UK so that churches on tight budgets can do everything bigger churches do. If you’d like to help, donations are welcome: see <a href="#story">why PraiseAV exists</a>.</p>
+            <p>Yes. No subscription, no paid version, no account and no adverts. PraiseAV is made by an independent developer in the UK so that churches on tight budgets can do everything bigger churches do. If you’d like to help, donations are welcome: see <a href="#story">why I created PraiseAV</a>.</p>
           </details>
           <details>
             <summary>When can we get it?</summary>
