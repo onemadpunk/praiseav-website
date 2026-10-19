@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Songs · PraiseAV Help</title>
-<meta name="description" content="Find, add, edit, import and export songs: SongSelect, chord sheet PDFs and song books, EasyWorship, OpenSong, OpenLyrics and plain lyrics files. Labels, slides, song order, backing tracks and videos.">
+<meta name="description" content="Find, add, edit, import and export songs: SongSelect, chord sheet PDFs and song books, EasyWorship, OpenSong, OpenLyrics and plain lyrics files. Labels, slides, song order, backing tracks and videos, and a picture or extra words for one verse or slide.">
 <link rel="stylesheet" href="help.css">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
@@ -88,6 +88,21 @@ That saved a wretch like me!
 <p>The preview on the right shows the slides as you type. Click <strong>Save song</strong>.</p>
 <aside class="callout tip"><p><strong>Tip:</strong> With a song order like <code>V1 C V2 C</code>, you only type the chorus once, and it’s shown each time it comes round.</p>
 </aside>
+<h3 id="a-different-picture-for-one-verse-or-the-chorus">A different picture for one verse or the chorus</h3>
+<p>Most of the time a song keeps one look all the way through (its <a href="themes.html">theme</a>). But you can put one verse, or the chorus, on a picture of its own, and add a few extra words to a slide, like <em>Key change</em> or <em>Men only</em>.</p>
+<ol>
+<li>In the song window, click the slide in the preview on the right. It opens up underneath.</li>
+<li><strong>Picture behind the words:</strong> choose a picture or video from your Media tab. Choose <strong>The song’s usual background</strong> to go back.</li>
+<li><strong>Extra words</strong> (optional): type a few words, then choose <strong>At the top</strong> or <strong>At the bottom</strong>. They show smaller than the song’s words, in the same lettering.</li>
+<li>The little picture under the slide shows how it will look. Click <strong>Save song</strong>.</li>
+</ol>
+<p>If a section has more than one slide, choose <strong>All of Chorus</strong> (every slide of it) or <strong>Just this slide</strong>. With a song order like <code>V1 C V2 C</code>, the chorus shows its picture every time it comes round.</p>
+<p>The other slides keep the song’s usual look. In the service, slides with their own picture or extra words show them on their slide card, and the congregation screen changes just for those slides.</p>
+<ul>
+<li>The pictures need to be in the <a href="media.html">Media tab</a>. A saved service lists them, so you can bring them along on another computer.</li>
+<li>If the song plays its own video behind the words (a <a href="music-and-audio.html#backing-tracks-and-videos">backing video</a>), or its theme plays a video with sound, that video stays, so the music doesn’t stop. The slide’s own picture shows when the video is switched off for the service.</li>
+<li>To make a whole slide by hand, with pictures and text boxes anywhere you like, use the <a href="slide-designer.html">slide designer</a> instead.</li>
+</ul>
 <h3 id="chords-for-the-band">Chords for the band</h3>
 <p>Click <strong>Chords for the band</strong> in the song window to add chords. There are two ways.</p>
 <p><strong>Paste a chord sheet.</strong> Most bands already have the chords on their own line above the words, from a website, a document or their own notes:</p>
@@ -105,7 +120,11 @@ That saved a wretch like [D]me!</code></pre>
 </aside>
 <p><strong>Or start from the words.</strong> Click <strong>Start from the words</strong> to copy the song’s words into the chords box, then type each chord in square brackets just before the word (or syllable) it goes over: <code>[G]Amazing [G7]grace</code>. If the box already has chords in it, PraiseAV asks before replacing them.</p>
 <p><strong>Chords on the first verse only?</strong> Hymn books often print the chords over the first verse and leave them off the rest, because every verse has the same tune. You can do the same: if a verse has no chords of its own (and the same number of lines as the first), the band’s screen shows the first verse’s chords over it, each on the word in the same place in the line. Check it once, as the words of later verses don’t always fall in exactly the same places; give a verse its own chords to change any.</p>
+<p><strong>Play it in another key.</strong> If a song sits too high or too low for your singers, use <strong>Band plays it in</strong>, just above the chords box. <strong>+ Higher</strong> moves every chord up half a step and <strong>− Lower</strong> moves it down; or pick a key from the list (the key the chords are written in says <em>as written</em>). Under the chords box you see the chords the way the band’s screen will show them: <em>Amazing Grace</em>, written in G and played in A, shows <code>[A]Amazing [A7]grace</code>. PraiseAV writes them the way a chord sheet in that key would have them (Bb, not A#), and a chord with a bass note moves both notes, so D/F# becomes E/G#.</p>
+<p>The chords in the box stay as they were written, so keep typing or changing them in that key. The key you choose is saved with the song: next time it comes up in the key you used last, in saved services and the shared songs folder too. To go back, click <strong>Back to G</strong> (or whichever key it’s written in).</p>
+<p><strong>A capo for guitars.</strong> Choose <strong>Capo for guitars</strong> to put a capo on a fret. Each choice says which chord shapes the guitarist plays then: for a song played in A, <em>Capo 2: play G shapes</em>. The band’s screen then shows those shapes, with <em>Capo 2 · G shapes (sounds in A)</em> above the words, so a keyboard player knows the song is really in A. The key and the capo show as <code>{transpose: 2}</code> and <code>{capo: 2}</code> lines at the top of the chords box.</p>
 <p>The chords then appear above the words on the <a href="sermons.html#words-for-the-band">band’s screen</a>. Songs imported from SongSelect chord charts, chord sheet PDFs and OpenSong bring their chords with them, and <em>Amazing Grace</em> comes with its traditional chords.</p>
+<p><strong>Print it for the band.</strong> Click <strong>Print chord sheet…</strong> at the bottom of the song window for the song on paper, in the key the band plays it in (with the capo shapes, if it has a capo). To print chord sheets for every song in the service, click <strong>Print</strong> in the Service column and choose <strong>Chord sheets (for the band)</strong>. See <a href="printing.html#chord-sheets-for-the-band">Printing</a>.</p>
 <h3 id="delete-a-song">Delete a song</h3>
 <p>Open it in the editor and click <strong>Delete song</strong>. It’s taken out of the library (and today’s service). Saved services keep their own copy, so they still work.</p>
 <h2 id="songs-from-songselect">Songs from SongSelect</h2>
@@ -174,6 +193,38 @@ That saved a wretch like [D]me!</code></pre>
 <li><strong>OpenLyrics</strong>: an <code>.xml</code> file for each song, in the free standard format that other worship programs (OpenLP, FreeShow, Quelea…) can import, with verses, song order, authors, copyright and CCLI number.</li>
 </ul>
 <p>Either kind can be imported back into PraiseAV on another computer. To move <em>everything</em> (services, settings and media too), use a <a href="backups.html">backup</a> instead.</p>
+<h2 id="share-songs-with-other-computers">Share songs with other computers</h2>
+<p>Use one song library on more than one computer: the church laptop and the office computer, or a volunteer’s computer at home. Type a new song in the office on Wednesday, and it’s on the church laptop on Sunday.</p>
+<p>You need a folder that both computers can see:</p>
+<ul>
+<li><strong>OneDrive</strong> or <strong>Google Drive</strong>, signed in to the same account (the church’s) on both computers. Best when one computer is at someone’s home.</li>
+<li>A <strong>shared folder</strong> on the church network.</li>
+<li>A <strong>USB stick</strong> you move between the computers. Songs go across each time it’s plugged in while PraiseAV is open.</li>
+</ul>
+<h3 id="turning-it-on">Turning it on</h3>
+<ol>
+<li>At the bottom of the Songs tab, click <strong>Share songs…</strong>.</li>
+<li>Click <strong>Use OneDrive</strong>, <strong>Use Google Drive</strong> or <strong>Choose a folder…</strong>. PraiseAV makes a folder called <strong>PraiseAV Songs</strong> there.</li>
+<li>On the other computer, do the same, and choose the same place.</li>
+</ol>
+<p>Your songs go into the folder, and the songs already there come into this computer. Songs that both computers have (the same title and words) aren’t doubled.</p>
+<h3 id="after-that">After that</h3>
+<ul>
+<li>A song added, changed or deleted on one computer is added, changed or deleted on the others by itself. OneDrive and Google Drive can take a few minutes to copy it across the internet.</li>
+<li>The computers don’t need to be on at the same time. Changes wait in the folder.</li>
+<li>If the folder can’t be reached (the USB stick isn’t in, or the network is off), PraiseAV carries on as normal. Songs changed meanwhile go across when it’s back.</li>
+<li>While sharing is on, the link at the bottom of the Songs tab says <strong>Sharing songs…</strong>. Click it to see when PraiseAV last checked the folder, or to <strong>Check now</strong>.</li>
+<li>A song’s backing track and slide timings stay on the computer they were set up on. Pictures on a song’s slides go across, but each computer needs the picture in its own Media tab: without it, that slide shows the theme’s background.</li>
+</ul>
+<h3 id="if-two-people-change-the-same-song">If two people change the same song</h3>
+<p>Sometimes a song is changed on two computers before either has seen the other’s change. PraiseAV then keeps <strong>both</strong>, so no words are lost. One keeps its name, and the other gets a name like <em>Amazing Grace (changed on OFFICE-PC)</em>. A message above the song list says so. Look at both, keep the one you want, and delete the other.</p>
+<h3 id="deleting-a-shared-song">Deleting a shared song</h3>
+<p>Delete a song in PraiseAV as usual, and it’s deleted on the other computers too. If someone had changed it on another computer meanwhile, it’s kept, and PraiseAV says so.</p>
+<p>Don’t delete files from the PraiseAV Songs folder yourself: PraiseAV puts back any song file it finds missing.</p>
+<h3 id="turning-it-off">Turning it off</h3>
+<p>Click <strong>Sharing songs…</strong>, then <strong>Stop sharing</strong>. Every computer keeps all the songs it has, and the folder is left as it is. You can turn it on again later: songs that are the same aren’t doubled.</p>
+<aside class="callout important"><p><strong>Important:</strong> Don’t move PraiseAV’s own data folder into OneDrive, Google Drive or a network folder, and don’t copy PraiseAV’s files there yourself. Those can damage a song library that’s in use. Share songs this way instead: it’s made for this. If PraiseAV finds its own data folder in OneDrive or Google Drive, the Share songs window warns you.</p>
+</aside>
 <h2 id="themes-for-a-song">Themes for a song</h2>
 <p>How the words look comes from the theme for songs. To give one song a different look (a Christmas carol, say), pick a theme in the box above its slides. See <a href="themes.html">Themes</a>.</p>
 

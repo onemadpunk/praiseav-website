@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PowerPoint and PDF · PraiseAV Help</title>
-<meta name="description" content="Bring in a guest speaker's PowerPoint or a PDF. Each slide becomes a picture in the service. Needs PowerPoint or the free LibreOffice for PowerPoint files.">
+<meta name="description" content="Bring in a guest speaker's PowerPoint or a PDF. With Microsoft PowerPoint on the computer, animations and videos play as they should; without it, each slide is a picture.">
 <link rel="stylesheet" href="help.css">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
@@ -25,7 +25,7 @@
 <p>A visiting speaker brings slides on a USB stick? Add them to the service.</p>
 <h2 id="adding-slides">Adding slides</h2>
 <p>In the <strong>Media</strong> tab, click <strong>+ Add PowerPoint or PDF</strong> and choose the file. Or drag the file onto the service.</p>
-<p>PraiseAV turns each slide into a picture. It says how far it’s got (“Making slides… 4 of 12”), then adds the slides to the service.</p>
+<p>PraiseAV makes a picture of each slide. It says how far it’s got (“Making slides… 4 of 12”), then adds the slides to the service.</p>
 <p><figure><img src="images/presentation-added.png" alt="The slides added to the service" loading="lazy"></figure></p>
 <p><figure><img src="images/presentation-slides.png" alt="A presentation's slides" loading="lazy"></figure></p>
 <p>Click a slide to put it on screen, and use <strong>Next</strong> as normal. The slides are kept in the Media tab under <strong>Presentations</strong>, so you can add them to another service.</p>
@@ -37,13 +37,39 @@
 <p>If neither is installed, PraiseAV offers to open the LibreOffice download page. Install it once, then add the PowerPoint again.</p>
 <aside class="callout tip"><p><strong>Tip:</strong> Ask speakers to send a PDF too (in PowerPoint: <strong>File › Export › PDF</strong>). It’s quicker and always looks right.</p>
 </aside>
-<h2 id="what-doesn-t-come-across">What doesn’t come across</h2>
-<p>Each slide becomes a still picture, so:</p>
+<h2 id="animations-and-videos-with-microsoft-powerpoint">Animations and videos (with Microsoft PowerPoint)</h2>
+<p>If <strong>Microsoft PowerPoint</strong> is installed on the computer that runs the service, a PowerPoint plays just as the speaker made it:</p>
 <ul>
-<li><strong>Animations</strong> (points appearing one by one) and <strong>transitions</strong> aren’t kept. Each slide shows as it looks at the end.</li>
-<li><strong>Videos inside the PowerPoint</strong> don’t play. Ask for the video file separately and add it from the Media tab.</li>
-<li>The <strong>speaker’s notes</strong> aren’t brought in. Paste them into a <a href="sermons.html">sermon</a> to show on the preacher’s screen.</li>
+<li><strong>Animations</strong> work: points appear one at a time.</li>
+<li><strong>Transitions</strong> between slides work (a fade, a wipe…).</li>
+<li><strong>Videos inside the slides</strong> play, with their sound.</li>
 </ul>
+<p>Above the slides it says <strong>Plays in PowerPoint</strong>. Put the first slide on screen and press <strong>Next</strong> as usual (the arrow keys, Space, a clicker, or the phone remote). Each press does what a click would do in PowerPoint: the next point, then the next slide. <strong>Back</strong> goes back a step. While it plays, the line above the slides says where you are, for example “slide 2 of 12, step 1 of 3”.</p>
+<p>After the last slide, <strong>Next</strong> goes on to the next item in the service, as with songs. Putting anything else on screen (a song, a reading) closes the slide show by itself.</p>
+<p><strong>Black</strong> and <strong>Logo</strong> work as normal, and so do <a href="parent-alerts.html">parent alerts</a>.</p>
+<p>Good to know:</p>
+<ul>
+<li>PowerPoint opens out of sight when you click the presentation in the service, so it starts quickly when you show it. The very first time can take a few seconds; the screen stays black meanwhile, so nobody sees all the points before the speaker gets to them.</li>
+<li><strong>Don’t close PowerPoint</strong> or click on it while the slides are showing. PraiseAV works it for you.</li>
+<li>The <strong>sound</strong> of videos in the slides comes out of the computer’s normal sound output, the same as PraiseAV’s own videos.</li>
+<li>Slides that move on by themselves (if the speaker set timings in PowerPoint) do so here too, and the slide cards follow.</li>
+<li>If PowerPoint can’t play the file, PraiseAV says so above the slides and shows the pictures instead.</li>
+</ul>
+<h3 id="what-the-livestream-recording-and-other-screens-show">What the livestream, recording and other screens show</h3>
+<ul>
+<li><strong>◉ Go live</strong> and <strong>● Record</strong> show the slides exactly as the room sees them, animations and videos included. (The sound of a video in the slides reaches the livestream the way your other sound does: through the mixer or microphone.)</li>
+<li>The <strong>preacher’s screen</strong> says which slide is on and what’s next, as it does for pictures.</li>
+<li><strong>Screens on the network</strong> (such as OBS) show each slide as a still picture: the slide as it looks when all its points are in.</li>
+</ul>
+<h2 id="without-microsoft-powerpoint">Without Microsoft PowerPoint</h2>
+<p>On a computer with only LibreOffice, or for a PDF, each slide is a still picture, so:</p>
+<ul>
+<li><strong>Animations</strong> (points appearing one by one) and <strong>transitions</strong> don’t happen. Each slide shows as it looks at the end.</li>
+<li><strong>Videos inside the PowerPoint</strong> don’t play. Ask for the video file separately and add it from the Media tab.</li>
+</ul>
+<p>Above the slides it says <strong>Shown as pictures</strong>. The PowerPoint file itself is kept with the pictures in the media folder, so on a computer that has PowerPoint (and the same media folder) it plays with its animations.</p>
+<h2 id="speaker-s-notes">Speaker’s notes</h2>
+<p>The <strong>speaker’s notes</strong> aren’t brought in. Paste them into a <a href="sermons.html">sermon</a> to show on the preacher’s screen.</p>
 <h2 id="moving-on-by-itself">Moving on by itself</h2>
 <p>Tick <strong>Loop by itself</strong> above the slides to make them move on every few seconds and go round again: good for a notices presentation before the service. See <a href="announcement-loops.html">Announcement loops</a>.</p>
 
