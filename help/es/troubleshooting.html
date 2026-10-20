@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solución de problemas · Ayuda de PraiseAV</title>
+<meta name="description" content="Qué hacer cuando el proyector no muestra nada, la letra sale en la pantalla equivocada, un vídeo no se reproduce, no hay sonido, PraiseAV se cerró a mitad del culto, o un teléfono o el ATEM no se conecta.">
+<link rel="stylesheet" href="../help.css">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="../images/logo.svg" alt="PraiseAV"> <span>Ayuda</span></a>
+  <div class="search">
+    <input id="search" type="search" placeholder="Buscar en la ayuda" aria-label="Buscar en la ayuda" autocomplete="off">
+    <ol id="results" hidden></ol>
+  </div>
+  <button class="menu" id="menu" aria-label="Mostrar el índice">☰</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"><div class="nav-section"><h3>Para empezar</h3><ul><li><a href="index.html">Ayuda de PraiseAV</a></li><li><a href="first-sunday.html">Tu primer domingo</a></li><li><a href="coming-from-easyworship.html">Si vienes de EasyWorship</a></li><li><a href="keyboard-shortcuts.html">Atajos de teclado</a></li></ul></div><div class="nav-section"><h3>Preparar un culto</h3><ul><li><a href="songs.html">Canciones</a></li><li><a href="bible.html">La Biblia</a></li><li><a href="services.html">Cultos</a></li><li><a href="printing.html">Imprimir</a></li><li><a href="ccli-report.html">Informe de CCLI</a></li></ul></div><div class="nav-section"><h3>Llevar un culto</h3><ul><li><a href="running-a-service.html">Llevar un culto</a></li><li><a href="without-a-volunteer.html">Llevar un culto sin voluntario de AV</a></li><li><a href="sermons.html">Sermones y la pantalla del predicador</a></li><li><a href="timers-and-prompts.html">Mensajes para la banda y el predicador: temporizadores y mensajes</a></li><li><a href="parent-alerts.html">Avisos para la congregación: padres y anuncios</a></li><li><a href="controllers.html">MIDI y Stream Deck</a></li></ul></div><div class="nav-section"><h3>Medios y diapositivas</h3><ul><li><a href="media.html">Medios: vídeos, imágenes y fondos</a></li><li><a href="web-pages.html">Páginas web y vídeos de YouTube</a></li><li><a href="music-and-audio.html">Música y audio</a></li><li><a href="powerpoint-and-pdf.html">PowerPoint y PDF</a></li><li><a href="slide-designer.html">Diseñador de diapositivas</a></li><li><a href="announcement-loops.html">Bucles de anuncios</a></li><li><a href="themes.html">Temas: cómo se ve la letra</a></li></ul></div><div class="nav-section"><h3>Pantallas y transmisión</h3><ul><li><a href="screens.html">Pantallas</a></li><li><a href="projectors.html">Proyectores y cartas de ajuste</a></li><li><a href="live-video.html">Vídeo en directo en la pantalla</a></li><li><a href="live-captions.html">Subtítulos en directo</a></li><li><a href="go-live.html">Transmitir en YouTube</a></li><li><a href="recording.html">Grabar el culto</a></li><li><a href="livestream-and-atem.html">Transmisión y ATEM</a></li><li><a href="screens-on-the-network.html">Pantallas en la red</a></li><li><a href="words-on-phones.html">Letra en el teléfono</a></li><li><a href="phone-remote.html">Mando en el teléfono o la tableta</a></li></ul></div><div class="nav-section"><h3>Configuraciones y equipos</h3><ul><li><a href="example-setups.html">Configuraciones de ejemplo</a></li><li><a href="hardware.html">Equipos: qué comprar</a></li></ul></div><div class="nav-section"><h3>Cuidar de PraiseAV</h3><ul><li><a href="church-setup.html">Configuración de la iglesia</a></li><li><a href="backups.html">Copias de seguridad y traslado a otro ordenador</a></li><li><a href="troubleshooting.html" class="current" aria-current="page">Solución de problemas</a></li></ul></div></nav>
+  <main>
+    <p class="crumb">Cuidar de PraiseAV</p>
+    <h1>Solución de problemas</h1>
+<aside class="callout important"><p><strong>Importante:</strong> En mitad de un culto, pulsa <strong>Negro</strong> (<kbd>B</kbd>). Siempre funciona, y te da un momento para arreglar las cosas.</p>
+</aside>
+<h2 id="the-projector-shows-nothing">El proyector no muestra nada</h2>
+<ol>
+<li>¿Está activado <strong>Negro</strong> o <strong>Logo</strong> arriba? Vuelve a pulsarlo.</li>
+<li>¿Está el proyector encendido y en la entrada correcta (HDMI 1, HDMI 2…)? Usa su mando.</li>
+<li>Pulsa <kbd>Windows</kbd>+<kbd>P</kbd> y elige <strong>Extender</strong>.</li>
+<li>En PraiseAV, haz clic en <strong>Ocultar</strong> y luego en <strong>Mostrar</strong>, arriba a la derecha.</li>
+<li>Abre <strong>Pantallas…</strong>. ¿Aparece el proyector, con la función <strong>Congregación</strong>?</li>
+<li>Desconecta el cable HDMI por los dos extremos y vuelve a conectarlo.</li>
+</ol>
+<h2 id="the-projector-shows-my-desktop-or-a-copy-of-my-screen">El proyector muestra mi escritorio, o una copia de mi pantalla</h2>
+<p>Windows está copiando (duplicando) tu pantalla en el proyector. PraiseAV se da cuenta y muestra un mensaje amarillo arriba: haz clic en <strong>Usarlo como pantalla aparte</strong>. O pulsa <kbd>Windows</kbd>+<kbd>P</kbd> y elige <strong>Extender</strong>. PraiseAV encuentra entonces el proyector y pone la letra en él.</p>
+<h2 id="the-words-are-on-the-wrong-screen">La letra sale en la pantalla equivocada</h2>
+<p>Abre <strong>Pantallas…</strong>. En el <a href="screens.html#the-screen-map">mapa de pantallas</a>, toca las dos pantallas para intercambiarlas. PraiseAV lo recuerda para la próxima vez.</p>
+<h2 id="a-video-won-t-play">Un vídeo no se reproduce</h2>
+<p>PraiseAV avisa si un archivo no se reproduce. Algunos formatos (WMV, AVI, ProRes) no se pueden leer. Convierte el vídeo a <strong>MP4</strong> con la aplicación gratuita <strong>HandBrake</strong> (elige el ajuste «Fast 1080p30») y vuelve a añadirlo.</p>
+<p>Si un vídeo va a saltos, puede que sea 4K o muy grande. Un MP4 a 1080p se reproduce con suavidad en casi cualquier ordenador.</p>
+<h2 id="no-sound">No hay sonido</h2>
+<ul>
+<li>Haz clic en el icono del altavoz junto al reloj (abajo a la derecha de Windows) y comprueba que está elegida la salida correcta y que no está silenciada.</li>
+<li>Comprueba el <strong>Volumen</strong> en Música y audio.</li>
+<li>Comprueba que el canal de la mesa de sonido está subido.</li>
+<li>Los vídeos suenan desde la ventana de la pantalla de la congregación; la música, desde Música y audio. Los dos usan la salida de Windows.</li>
+</ul>
+<h2 id="the-words-are-too-small-or-too-big">La letra es demasiado pequeña o demasiado grande</h2>
+<p>Ve a la pestaña <strong>Temas</strong>, haz clic en el tema y cambia el <strong>Tamaño máximo del texto</strong>. Mira <a href="themes.html">Temas</a>. Las estrofas largas se hacen más pequeñas solas para caber.</p>
+<h2 id="a-powerpoint-won-t-come-in">Un PowerPoint no entra</h2>
+<p>PraiseAV necesita <strong>Microsoft PowerPoint</strong> o el gratuito <strong>LibreOffice</strong> para abrir archivos de PowerPoint. Instala LibreOffice, o pide un PDF. Mira <a href="powerpoint-and-pdf.html">PowerPoint y PDF</a>.</p>
+<h2 id="a-powerpoint-s-points-all-show-at-once-or-its-video-doesn-t-play">Los puntos de un PowerPoint salen todos a la vez, o su vídeo no se reproduce</h2>
+<p>Las animaciones y los vídeos necesitan <strong>Microsoft PowerPoint</strong> en el ordenador que lleva el culto. Sin él, PraiseAV muestra cada diapositiva como una imagen (pone <strong>Se muestran como imágenes</strong> encima de las diapositivas). Si PowerPoint está instalado y aun así lo pone, PraiseAV no consiguió que PowerPoint reprodujera el archivo: abre el archivo una vez en PowerPoint para comprobar que se abre sin preguntar nada (una contraseña, o <strong>Habilitar edición</strong>), y vuelve a añadirlo al culto. Mira <a href="powerpoint-and-pdf.html#animations-and-videos-with-microsoft-powerpoint">PowerPoint y PDF</a>.</p>
+<h2 id="the-camera-isn-t-in-the-list">La cámara no aparece en la lista</h2>
+<ul>
+<li>Haz clic en <strong>Actualizar</strong> en Vídeo en directo.</li>
+<li>Cierra cualquier otro programa que esté usando la cámara (Zoom, Teams, OBS, la aplicación Cámara).</li>
+<li>Conecta la capturadora a un puerto <strong>USB 3 azul</strong>, directamente, no a través de un hub.</li>
+<li>Mira <a href="live-video.html">Vídeo en directo</a>.</li>
+</ul>
+<h2 id="a-phone-can-t-connect-to-the-remote">Un teléfono no se conecta al mando</h2>
+<p>Tiene que estar en el mismo wifi que el ordenador de PraiseAV (no el wifi de invitados), y Windows tiene que permitir PraiseAV en redes privadas. Mira <a href="phone-remote.html#phones-can-t-connect">Mando en el teléfono</a>.</p>
+<h2 id="obs-or-the-other-room-can-t-show-the-words">OBS o la otra sala no muestran la letra</h2>
+<p>El otro ordenador o la televisión tiene que estar en el mismo wifi que el ordenador de PraiseAV, y Windows tiene que permitir PraiseAV en redes privadas. OBS en el propio ordenador de PraiseAV puede usar la dirección <strong>en este ordenador</strong>. Mira <a href="screens-on-the-network.html#if-it-doesn-t-work">Pantallas en la red</a>.</p>
+<h2 id="a-phone-camera-won-t-connect">Un teléfono como cámara no se conecta</h2>
+<ul>
+<li>El teléfono tiene que estar en el <strong>mismo wifi</strong> que el ordenador de PraiseAV (no el wifi de invitados).</li>
+<li>Si el teléfono dice que la conexión no es privada, toca <strong>Configuración avanzada</strong> (o <strong>Mostrar detalles</strong>) y <strong>Continuar</strong>. Es lo esperado.</li>
+<li>Si dice que no se permitió la cámara, permite la cámara para la página en los ajustes del navegador.</li>
+<li>Si cambió la dirección wifi del ordenador, escanea el código nuevo en <strong>Vídeo en directo › Teléfono como cámara › + Añadir un teléfono como cámara</strong>.</li>
+<li>Mira <a href="live-video.html#phone-cameras">Vídeo en directo</a>.</li>
+</ul>
+<h2 id="a-recording-has-no-sound">Una grabación no tiene sonido</h2>
+<p>En <strong>● Grabar</strong>, comprueba que <strong>Sonido de</strong> es la entrada de la mesa de sonido, y que la mesa le está enviando sonido. <strong>El sonido de este ordenador</strong> solo graba los vídeos y la música del propio PraiseAV. Mira <a href="recording.html">Grabar el culto</a>.</p>
+<h2 id="praiseav-says-live-but-youtube-says-quot-no-data-quot">PraiseAV dice EN DIRECTO, pero YouTube dice «Sin datos»</h2>
+<p>PraiseAV está enviando, pero YouTube no consigue relacionarlo con la emisión que estás viendo. En YouTube Studio, abre el <strong>estado de la emisión</strong> (debajo de la vista previa): dice qué parte está recibiendo la transmisión.</p>
+<ul>
+<li><strong>«Vista vertical: la emisión está bien» pero «Vista horizontal: Sin datos»</strong>: PraiseAV tiene la clave de emisión <strong>vertical</strong>. La <strong>emisión doble</strong> de YouTube muestra dos claves: la principal en el panel de la <strong>izquierda</strong> (por ejemplo <strong>Clave: Test</strong>, o la <strong>clave de emisión predeterminada</strong>) y una <strong>vertical</strong> a la derecha para Shorts. En YouTube Studio, haz clic en el botón de <strong>copiar</strong> junto a la clave del panel de la <strong>izquierda</strong>. Luego en PraiseAV: <strong>◉ Transmitir › Cambiar</strong>, pega, <strong>Guardar</strong>, y vuelve a transmitir. (Puedes dejar activada la <strong>emisión doble</strong>: PraiseAV funciona con ella).</li>
+<li><strong>«Sin datos» en todas partes</strong>: comprueba que la clave en PraiseAV termina en los mismos cuatro caracteres que la de YouTube Studio (<strong>◉ Transmitir</strong> los muestra), que estás mirando la emisión correcta (<strong>Gestionar</strong> las enumera), y que las emisiones en directo están activadas en el canal (la primera vez puede tardar un día).</li>
+<li><strong>«Preparando emisión» durante más de un minuto</strong> (mientras el estado de la emisión dice Excelente): actualiza PraiseAV. Las versiones antiguas enviaban una imagen de forma rara, que la <strong>emisión doble</strong> de YouTube no podía usar. Si todavía no puedes actualizar, desactiva la <strong>emisión doble</strong> en los ajustes de la emisión, y luego en PraiseAV para la transmisión y vuelve a pulsar <strong>● Transmitir ahora</strong>.</li>
+<li><strong>La vista previa se queda en negro o congelada</strong>: actualiza la página de YouTube Studio (F5). La vista previa de YouTube puede ir con retraso; el <strong>estado de la emisión</strong> es en el que hay que confiar.</li>
+</ul>
+<h2 id="the-atem-won-t-connect">El ATEM no se conecta</h2>
+<ul>
+<li>El ATEM tiene que estar conectado a la red con un <strong>cable Ethernet</strong>, en la misma red que el ordenador.</li>
+<li>Comprueba su dirección en la aplicación <strong>ATEM Setup</strong> de Blackmagic (con el ATEM conectado por USB).</li>
+<li>Un ATEM Mini nuevo usa <code>192.168.10.240</code>. Si tu router da direcciones como <code>192.168.1.x</code>, cambia la dirección del ATEM en ATEM Setup por una de ese rango (por ejemplo <code>192.168.1.240</code>).</li>
+<li>Mira <a href="livestream-and-atem.html">Transmisión y ATEM</a>.</li>
+</ul>
+<h2 id="the-laptop-went-to-sleep-or-the-projector-went-blank">El portátil entró en reposo, o el proyector se quedó en blanco</h2>
+<p>Mientras PraiseAV muestra las pantallas, o el mando en el teléfono está activado, mantiene despierto el portátil. Si aun así entra en reposo:</p>
+<ul>
+<li>¿Está activado <strong>Ocultar</strong> en PraiseAV (arriba a la derecha)? Haz clic en <strong>Mostrar</strong>.</li>
+<li>Comprueba que el portátil está enchufado: con muy poca batería, Windows puede ponerlo en reposo igualmente. PraiseAV muestra la batería arriba cuando está desenchufado.</li>
+<li>Cerrar la tapa del portátil suele ponerlo en reposo. Déjala abierta, o en Windows, <strong>Panel de control › Opciones de energía › Elegir el comportamiento del cierre de la tapa</strong>, elige <strong>No hacer nada</strong> con el portátil enchufado.</li>
+<li><strong>✓ ¿Listo para el domingo?</strong> te avisa de lo de la tapa, y del temporizador de reposo de Windows mientras las pantallas están ocultas.</li>
+</ul>
+<h2 id="the-power-went-off-or-praiseav-closed">Se fue la luz, o PraiseAV se cerró</h2>
+<p>Vuelve a abrir PraiseAV. Tu culto actual sigue ahí: se va guardando mientras trabajas, todo el tiempo.</p>
+<p>Si se cerró en mitad de un culto, PraiseAV dice <strong>PraiseAV se cerró de forma inesperada</strong>: haz clic en <strong>Seguir donde lo dejé</strong> y la misma diapositiva vuelve a las pantallas, como estaba. Mira <a href="running-a-service.html#if-praiseav-closes-in-the-middle-of-a-service">Llevar un culto</a>.</p>
+<h2 id="before-the-service-is-everything-ready">Antes del culto: ¿está todo listo?</h2>
+<p>Haz clic en <strong>✓ ¿Listo para el domingo?</strong> arriba en la columna Culto. Encuentra la mayoría de los problemas de esta página antes de que pasen: un proyector que no está conectado o que muestra una copia del portátil, un vídeo o una imagen que falta, que no hay salida de sonido, que no hay internet para el vídeo en directo, un portátil con batería, y Windows esperando para reiniciarse por una actualización. Mira <a href="running-a-service.html#ready-for-sunday">Llevar un culto</a>.</p>
+<h2 id="windows-restarted-for-an-update-during-the-service">Windows se reinició por una actualización durante el culto</h2>
+<p>Windows se reinicia por actualizaciones fuera de sus <strong>horas activas</strong>. Vuelve a abrir PraiseAV y haz clic en <strong>Seguir donde lo dejé</strong>. Para que no vuelva a pasar, en Windows <strong>Configuración › Windows Update › Opciones avanzadas › Horas activas</strong>, pon unas horas que cubran tus cultos, o haz clic en <strong>Pausar actualizaciones</strong> antes de un culto. <strong>✓ ¿Listo para el domingo?</strong> te avisa si hay una actualización esperando para reiniciar.</p>
+<h2 id="a-song-or-service-is-missing">Falta una canción o un culto</h2>
+<ul>
+<li>Cultos guardados: haz clic en <strong>Abrir</strong>. Revisa <strong>Dónde se guardan los cultos</strong>: ¿están en OneDrive en el otro ordenador?</li>
+<li>Canciones: busca en la pestaña Canciones por una línea de la letra, no solo por el título.</li>
+<li>Recupéralos de una copia de seguridad: <strong>Abrir › Copia y traslado… › Elegir una copia…</strong>. No se borra nada de lo que tienes. Mira <a href="backups.html">Copias de seguridad</a>.</li>
+</ul>
+<h2 id="still-stuck">¿Sigues atascado?</h2>
+<p>Pregunta a través de <a href="https://praiseav.com">praiseav.com</a>. Di qué estabas haciendo, qué esperabas y qué pasó. Una foto de la pantalla ayuda.</p>
+
+    <nav class="pager">
+      <a class="prev" href="backups.html">← Copias de seguridad y traslado a otro ordenador</a>
+      <span></span>
+    </nav>
+  </main>
+</div>
+<script src="search-index.js"></script>
+<script src="../help.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pantallas · Ayuda de PraiseAV</title>
+<meta name="description" content="Proyectores y televisiones: qué muestra cada pantalla, el mapa de pantallas para intercambiarlas con un toque, pantallas de práctica para preparar en casa, y abrir una vista en una ventana.">
+<link rel="stylesheet" href="../help.css">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="../images/logo.svg" alt="PraiseAV"> <span>Ayuda</span></a>
+  <div class="search">
+    <input id="search" type="search" placeholder="Buscar en la ayuda" aria-label="Buscar en la ayuda" autocomplete="off">
+    <ol id="results" hidden></ol>
+  </div>
+  <button class="menu" id="menu" aria-label="Mostrar el índice">☰</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"><div class="nav-section"><h3>Para empezar</h3><ul><li><a href="index.html">Ayuda de PraiseAV</a></li><li><a href="first-sunday.html">Tu primer domingo</a></li><li><a href="coming-from-easyworship.html">Si vienes de EasyWorship</a></li><li><a href="keyboard-shortcuts.html">Atajos de teclado</a></li></ul></div><div class="nav-section"><h3>Preparar un culto</h3><ul><li><a href="songs.html">Canciones</a></li><li><a href="bible.html">La Biblia</a></li><li><a href="services.html">Cultos</a></li><li><a href="printing.html">Imprimir</a></li><li><a href="ccli-report.html">Informe de CCLI</a></li></ul></div><div class="nav-section"><h3>Llevar un culto</h3><ul><li><a href="running-a-service.html">Llevar un culto</a></li><li><a href="without-a-volunteer.html">Llevar un culto sin voluntario de AV</a></li><li><a href="sermons.html">Sermones y la pantalla del predicador</a></li><li><a href="timers-and-prompts.html">Mensajes para la banda y el predicador: temporizadores y mensajes</a></li><li><a href="parent-alerts.html">Avisos para la congregación: padres y anuncios</a></li><li><a href="controllers.html">MIDI y Stream Deck</a></li></ul></div><div class="nav-section"><h3>Medios y diapositivas</h3><ul><li><a href="media.html">Medios: vídeos, imágenes y fondos</a></li><li><a href="web-pages.html">Páginas web y vídeos de YouTube</a></li><li><a href="music-and-audio.html">Música y audio</a></li><li><a href="powerpoint-and-pdf.html">PowerPoint y PDF</a></li><li><a href="slide-designer.html">Diseñador de diapositivas</a></li><li><a href="announcement-loops.html">Bucles de anuncios</a></li><li><a href="themes.html">Temas: cómo se ve la letra</a></li></ul></div><div class="nav-section"><h3>Pantallas y transmisión</h3><ul><li><a href="screens.html" class="current" aria-current="page">Pantallas</a></li><li><a href="projectors.html">Proyectores y cartas de ajuste</a></li><li><a href="live-video.html">Vídeo en directo en la pantalla</a></li><li><a href="live-captions.html">Subtítulos en directo</a></li><li><a href="go-live.html">Transmitir en YouTube</a></li><li><a href="recording.html">Grabar el culto</a></li><li><a href="livestream-and-atem.html">Transmisión y ATEM</a></li><li><a href="screens-on-the-network.html">Pantallas en la red</a></li><li><a href="words-on-phones.html">Letra en el teléfono</a></li><li><a href="phone-remote.html">Mando en el teléfono o la tableta</a></li></ul></div><div class="nav-section"><h3>Configuraciones y equipos</h3><ul><li><a href="example-setups.html">Configuraciones de ejemplo</a></li><li><a href="hardware.html">Equipos: qué comprar</a></li></ul></div><div class="nav-section"><h3>Cuidar de PraiseAV</h3><ul><li><a href="church-setup.html">Configuración de la iglesia</a></li><li><a href="backups.html">Copias de seguridad y traslado a otro ordenador</a></li><li><a href="troubleshooting.html">Solución de problemas</a></li></ul></div></nav>
+  <main>
+    <p class="crumb">Pantallas y transmisión</p>
+    <h1>Pantallas</h1>
+<p>PraiseAV puede manejar varias pantallas a la vez, cada una con su función.</p>
+<h2 id="the-four-views">Las cuatro vistas</h2>
+<table>
+<thead>
+<tr>
+<th>Vista</th>
+<th>Qué muestra</th>
+<th>Normalmente en</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Congregación</strong></td>
+<td>Letra, versículos, vídeos, imágenes</td>
+<td>El proyector o las televisiones grandes de delante</td>
+</tr>
+<tr>
+<td><strong>Predicador</strong></td>
+<td>Notas, la letra para la banda en las canciones, reloj, temporizador, mensajes</td>
+<td>Una televisión al fondo, mirando a la plataforma</td>
+</tr>
+<tr>
+<td><strong>Temporizador</strong></td>
+<td>Un temporizador grande y mensajes</td>
+<td>Una pantalla pequeña en la plataforma</td>
+</tr>
+<tr>
+<td><strong>Transmisión</strong></td>
+<td>La letra en una franja, para que un mezclador de vídeo la ponga sobre la cámara</td>
+<td>Un cable a un ATEM o a una capturadora</td>
+</tr>
+</tbody></table>
+<p>La propia pantalla del ordenador siempre es <strong>Controles de PraiseAV</strong>: la ventana en la que trabajas.</p>
+<h2 id="plugging-in-screens">Conectar pantallas</h2>
+<ol>
+<li>Conecta el proyector o la televisión al ordenador (normalmente por HDMI).</li>
+<li>Windows tiene que <strong>extender</strong> la imagen a ella, no copiarla. Si Windows está copiando la pantalla del portátil en el proyector, PraiseAV muestra un mensaje amarillo arriba: haz clic en <strong>Usarlo como pantalla aparte</strong>. (Es lo mismo que pulsar <kbd>Windows</kbd>+<kbd>P</kbd> y elegir <strong>Extender</strong>).</li>
+<li>PraiseAV la encuentra. La primera pantalla recibe <strong>Congregación</strong>, la siguiente <strong>Predicador</strong>, y luego <strong>Temporizador</strong>.</li>
+</ol>
+<p>PraiseAV recuerda la función de cada pantalla. El domingo siguiente, todo aparece solo en el mismo sitio.</p>
+<p>Sin pantallas conectadas, la vista de la congregación se abre en una ventana, así que puedes probarlo todo igualmente.</p>
+<h2 id="choosing-each-screen-s-job">Elegir la función de cada pantalla</h2>
+<p>Haz clic en <strong>Pantallas…</strong> arriba a la derecha.</p>
+<p><figure><img src="../images/screens-dialog.png" alt="La ventana Pantallas" loading="lazy"></figure></p>
+<p>En <strong>La función de cada pantalla</strong>, cada pantalla conectada tiene una lista: <strong>Congregación</strong>, <strong>Predicador</strong>, <strong>Temporizador</strong>, <strong>Transmisión</strong> o <strong>Sin usar</strong>.</p>
+<h2 id="the-screen-map">El mapa de pantallas</h2>
+<p>Arriba en la ventana Pantallas, un mapa muestra todas las pantallas, en directo, con lo que tienen ahora.</p>
+<p><figure><img src="../images/screen-map.png" alt="El mapa de pantallas" loading="lazy"></figure></p>
+<ul>
+<li>Los <strong>recuadros continuos</strong> con <strong>● Conectada</strong> son pantallas de verdad conectadas.</li>
+<li>Los <strong>recuadros discontinuos</strong> todavía no están en ninguna pantalla: <strong>Solo práctica</strong>, o <strong>Prevista: conecta una pantalla</strong> (de tu <a href="church-setup.html">configuración de la iglesia</a>).</li>
+</ul>
+<h3 id="swapping-two-screens">Intercambiar dos pantallas</h3>
+<p>¿Las notas del predicador están en el proyector de delante, y la letra en la televisión del fondo? <strong>Toca una y luego la otra.</strong> Se intercambian.</p>
+<p>Toca una vista discontinua y luego una pantalla continua para poner esa vista en ella.</p>
+<h2 id="the-preacher-screen">La pantalla del predicador</h2>
+<p>Lo que muestra la pantalla del predicador, y a qué tamaño, lo decides tú: mira <a href="sermons.html#choosing-what-it-shows">Sermones y la pantalla del predicador</a>. Durante las canciones también sirve de letra para la banda.</p>
+<h2 id="practice-screens">Pantallas de práctica</h2>
+<p>Prepáralo todo en casa en un portátil, o enseña a una iglesia lo que hacen las pantallas del predicador y del temporizador antes de que compre ninguna.</p>
+<p>En <strong>Pantallas…</strong>, haz clic en <strong>Abrirlas en pantalla</strong> (en <strong>Pantallas de práctica</strong>). Una ventana muestra todas las vistas una al lado de otra, en directo, mientras avanzas por el culto. Prepara el culto y <strong>guárdalo</strong> como siempre: todo es real, solo que se muestra junto.</p>
+<h3 id="a-monitor-for-watching-every-screen">Un monitor para ver todas las pantallas</h3>
+<p>Con un monitor conectado (por ejemplo el que usas como pantalla del predicador), haz clic en <strong>Abrirlas en pantalla 2</strong> (o el número que tenga) en <strong>Pantallas…</strong>. Las pantallas de práctica llenan ese monitor, para que veas la de delante, la del fondo, el temporizador y la transmisión mientras trabajas. La función propia de esa pantalla se pausa mientras están abiertas, y vuelve al hacer clic en <strong>Cerrar pantallas de práctica</strong>.</p>
+<p>También viene bien para demostraciones: el proyector muestra la pantalla de la congregación de verdad, y todos pueden ver en el monitor lo que mostrarían las demás pantallas.</p>
+<p><figure><img src="../images/practice-screens.png" alt="Pantallas de práctica" loading="lazy"></figure></p>
+<p>Cada vista tiene una lista <strong>Mostrar en…</strong>, para ponerla en una pantalla de verdad cuando haya una conectada. Las vistas sin pantalla dicen <strong>Solo práctica</strong>.</p>
+<aside class="callout tip"><p><strong>Consejo:</strong> En casa, conecta una televisión o un monitor que te sobre como proyector de prueba. Prepara las pantallas, guarda una <a href="church-setup.html">configuración de la iglesia</a> y llévala a la iglesia en un USB o en OneDrive.</p>
+</aside>
+<h2 id="open-a-view-in-a-window">Abrir una vista en una ventana</h2>
+<p>En <strong>Pantallas…</strong>, en <strong>Abrir una vista en una ventana</strong>, haz clic en <strong>Congregación</strong>, <strong>Predicador</strong>, <strong>Temporizador</strong> o <strong>Transmisión</strong>. Se abre en una ventana normal.</p>
+<p>Viene bien para una pantalla que PraiseAV no ve solo (algunas pantallas inalámbricas y adaptadores USB): arrastra la ventana a ella y maximízala.</p>
+<h2 id="screens-on-the-network">Pantallas en la red</h2>
+<p>PraiseAV también puede enviar la letra a OBS o vMix, o la pantalla de la congregación a una televisión de otra sala, por la red de la iglesia en lugar de un cable. En <strong>Pantallas…</strong>, baja hasta <strong>Mostrar en la red</strong>. Mira <a href="screens-on-the-network.html">Pantallas en la red</a>.</p>
+<h2 id="projectors-and-test-patterns">Proyectores y cartas de ajuste</h2>
+<p>Enciende y apaga los proyectores desde PraiseAV, cierra el obturador y muestra cartas de ajuste para alinear y enfocar: mira <a href="projectors.html">Proyectores y cartas de ajuste</a>.</p>
+<h2 id="hide-and-show">Ocultar y Mostrar</h2>
+<p><strong>Ocultar</strong>, arriba a la derecha, quita todas las pantallas (para usar el proyector para otra cosa). <strong>Mostrar</strong> las vuelve a poner.</p>
+<h2 id="if-a-screen-isn-t-found">Si no se encuentra una pantalla</h2>
+<ul>
+<li>Pulsa <kbd>Windows</kbd>+<kbd>P</kbd> y elige <strong>Extender</strong>, no Duplicar.</li>
+<li>Comprueba que el proyector está encendido y en la entrada correcta (HDMI 1, HDMI 2…).</li>
+<li>Desconecta el cable y vuelve a conectarlo.</li>
+<li>Mira <a href="troubleshooting.html#the-projector-shows-nothing">Solución de problemas</a>.</li>
+</ul>
+
+    <nav class="pager">
+      <a class="prev" href="themes.html">← Temas: cómo se ve la letra</a>
+      <a class="next" href="projectors.html">Proyectores y cartas de ajuste →</a>
+    </nav>
+  </main>
+</div>
+<script src="search-index.js"></script>
+<script src="../help.js"></script>
+</body>
+</html>

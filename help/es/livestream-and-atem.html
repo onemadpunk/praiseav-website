@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transmisión y ATEM · Ayuda de PraiseAV</title>
+<meta name="description" content="Pon la letra de las canciones sobre tu cámara en una transmisión, con un Blackmagic ATEM Mini u OBS. Empieza y para la transmisión y la grabación desde PraiseAV.">
+<link rel="stylesheet" href="../help.css">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="../images/logo.svg" alt="PraiseAV"> <span>Ayuda</span></a>
+  <div class="search">
+    <input id="search" type="search" placeholder="Buscar en la ayuda" aria-label="Buscar en la ayuda" autocomplete="off">
+    <ol id="results" hidden></ol>
+  </div>
+  <button class="menu" id="menu" aria-label="Mostrar el índice">☰</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"><div class="nav-section"><h3>Para empezar</h3><ul><li><a href="index.html">Ayuda de PraiseAV</a></li><li><a href="first-sunday.html">Tu primer domingo</a></li><li><a href="coming-from-easyworship.html">Si vienes de EasyWorship</a></li><li><a href="keyboard-shortcuts.html">Atajos de teclado</a></li></ul></div><div class="nav-section"><h3>Preparar un culto</h3><ul><li><a href="songs.html">Canciones</a></li><li><a href="bible.html">La Biblia</a></li><li><a href="services.html">Cultos</a></li><li><a href="printing.html">Imprimir</a></li><li><a href="ccli-report.html">Informe de CCLI</a></li></ul></div><div class="nav-section"><h3>Llevar un culto</h3><ul><li><a href="running-a-service.html">Llevar un culto</a></li><li><a href="without-a-volunteer.html">Llevar un culto sin voluntario de AV</a></li><li><a href="sermons.html">Sermones y la pantalla del predicador</a></li><li><a href="timers-and-prompts.html">Mensajes para la banda y el predicador: temporizadores y mensajes</a></li><li><a href="parent-alerts.html">Avisos para la congregación: padres y anuncios</a></li><li><a href="controllers.html">MIDI y Stream Deck</a></li></ul></div><div class="nav-section"><h3>Medios y diapositivas</h3><ul><li><a href="media.html">Medios: vídeos, imágenes y fondos</a></li><li><a href="web-pages.html">Páginas web y vídeos de YouTube</a></li><li><a href="music-and-audio.html">Música y audio</a></li><li><a href="powerpoint-and-pdf.html">PowerPoint y PDF</a></li><li><a href="slide-designer.html">Diseñador de diapositivas</a></li><li><a href="announcement-loops.html">Bucles de anuncios</a></li><li><a href="themes.html">Temas: cómo se ve la letra</a></li></ul></div><div class="nav-section"><h3>Pantallas y transmisión</h3><ul><li><a href="screens.html">Pantallas</a></li><li><a href="projectors.html">Proyectores y cartas de ajuste</a></li><li><a href="live-video.html">Vídeo en directo en la pantalla</a></li><li><a href="live-captions.html">Subtítulos en directo</a></li><li><a href="go-live.html">Transmitir en YouTube</a></li><li><a href="recording.html">Grabar el culto</a></li><li><a href="livestream-and-atem.html" class="current" aria-current="page">Transmisión y ATEM</a></li><li><a href="screens-on-the-network.html">Pantallas en la red</a></li><li><a href="words-on-phones.html">Letra en el teléfono</a></li><li><a href="phone-remote.html">Mando en el teléfono o la tableta</a></li></ul></div><div class="nav-section"><h3>Configuraciones y equipos</h3><ul><li><a href="example-setups.html">Configuraciones de ejemplo</a></li><li><a href="hardware.html">Equipos: qué comprar</a></li></ul></div><div class="nav-section"><h3>Cuidar de PraiseAV</h3><ul><li><a href="church-setup.html">Configuración de la iglesia</a></li><li><a href="backups.html">Copias de seguridad y traslado a otro ordenador</a></li><li><a href="troubleshooting.html">Solución de problemas</a></li></ul></div></nav>
+  <main>
+    <p class="crumb">Pantallas y transmisión</p>
+    <h1>Transmisión y ATEM</h1>
+<aside class="callout note"><p><strong>¿Todavía no tienes ATEM?</strong> PraiseAV puede transmitir a YouTube él solo, con la cámara y la letra juntas, así que puedes empezar antes de que tu iglesia esté lista para invertir en uno: mira <a href="go-live.html">Transmitir en YouTube</a>. Esta página es para cuando tengas un ATEM o uses OBS.</p>
+</aside>
+<p>Cuando transmites un culto, quienes lo ven desde casa quieren ver la sala <strong>y</strong> leer la letra. La pantalla de <strong>Transmisión</strong> le da a un mezclador de vídeo solo la letra, en una franja, lista para ponerla sobre la cámara.</p>
+<p><figure><img src="../images/livestream-screen.png" alt="La pantalla de transmisión" loading="lazy"></figure></p>
+<h2 id="how-it-fits-together">Cómo encaja todo</h2>
+<div class="diagram" role="img" aria-label="Cámara → HDMI → ATEM Mini Pro · entrada 1; Ordenador de PraiseAV · pantalla de transmisión → HDMI → ATEM Mini Pro · entrada 2; Mesa de sonido · una mezcla aparte para la transmisión → audio 3,5 mm → ATEM Mini Pro · entrada de micro; ATEM Mini Pro → Ethernet al router → YouTube o Facebook · y PraiseAV lo controla"><div class="dg-group"><div class="dg-box"><strong>Cámara</strong></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">HDMI</span><div class="dg-box"><strong>ATEM Mini Pro</strong><small>entrada 1</small></div></div></div></div><div class="dg-group"><div class="dg-box"><strong>Ordenador de PraiseAV</strong><small>pantalla de transmisión</small></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">HDMI</span><div class="dg-box"><strong>ATEM Mini Pro</strong><small>entrada 2</small></div></div></div></div><div class="dg-group"><div class="dg-box"><strong>Mesa de sonido</strong><small>una mezcla aparte para la transmisión</small></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">audio 3,5 mm</span><div class="dg-box"><strong>ATEM Mini Pro</strong><small>entrada de micro</small></div></div></div></div><div class="dg-group"><div class="dg-box"><strong>ATEM Mini Pro</strong></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">Ethernet al router</span><div class="dg-box"><strong>YouTube o Facebook</strong><small>y PraiseAV lo controla</small></div></div></div></div></div>
+<p>El ATEM <strong>incrusta</strong> la letra sobre la cámara: quita el negro (o el verde) y deja la letra.</p>
+<p>Mira <a href="example-setups.html#4-livestreaming-with-an-atem-mini">Configuraciones de ejemplo</a> para ver el conjunto entero.</p>
+<h2 id="setting-up-the-livestream-screen">Preparar la pantalla de transmisión</h2>
+<ol>
+<li>Conecta una segunda salida HDMI del ordenador a una entrada del ATEM.</li>
+<li>En <strong>Pantallas…</strong>, dale a esa pantalla la función <strong>Transmisión</strong>.</li>
+<li>En <strong>Transmisión</strong>, en la misma ventana, elige el <strong>fondo</strong>:<ul>
+<li><strong>Negro: para un luma key</strong>: lo habitual con un ATEM.</li>
+<li><strong>Verde: para un chroma key</strong> (la letra va sobre una franja oscura): para OBS, vMix o mezcladores que eliminan el verde.</li>
+</ul>
+</li>
+<li>Opcional: tu <strong>número de licencia de streaming de CCLI</strong>. Sale en pequeño debajo de los datos de la canción.</li>
+</ol>
+<p>En la pantalla de transmisión solo salen canciones y versículos. <strong>Los avisos para la congregación nunca salen en ella</strong>, así que los números de los niños quedan en privado.</p>
+<h2 id="controlling-an-atem-from-praiseav">Controlar un ATEM desde PraiseAV</h2>
+<p>PraiseAV puede hablar con un Blackmagic <strong>ATEM Mini</strong> (cualquier modelo) por la red.</p>
+<ol>
+<li>Conecta el ATEM a la misma red que el ordenador <strong>con un cable Ethernet</strong> (el USB solo no basta).</li>
+<li>Haz clic en <strong>ATEM…</strong> arriba en PraiseAV y marca <strong>Controla un mezclador Blackmagic ATEM desde PraiseAV</strong>.</li>
+<li>Escribe la dirección del ATEM y haz clic en <strong>Conectar</strong>. Un ATEM Mini nuevo usa <code>192.168.10.240</code>. La aplicación <strong>ATEM Setup</strong> de Blackmagic la muestra.</li>
+<li>Cuando diga <strong>Conectado</strong>, elige:<ul>
+<li><strong>¿Qué entrada es este ordenador (las diapositivas)?</strong></li>
+<li><strong>Incrustador que pone las letras de la transmisión sobre la cámara</strong>: normalmente <strong>Downstream key 1</strong>. O <strong>Ninguno</strong> si prefieres hacerlo con los botones del ATEM.</li>
+<li>Marca <strong>Mostrar y ocultar las letras solas</strong> para que la letra salga cuando hay una canción o un versículo en pantalla y se quite durante el sermón.</li>
+</ul>
+</li>
+<li>En <strong>Probar</strong>: <strong>Mostrar diapositivas</strong>, <strong>Volver a la cámara</strong>, <strong>Letras visibles</strong>, <strong>Letras ocultas</strong>. Comprueba que funciona cada uno.</li>
+</ol>
+<p>La ventana también muestra el modelo y el firmware del ATEM. Si el firmware es anterior a la 8.0, actualízalo con ATEM Setup.</p>
+<h3 id="during-the-service">Durante el culto</h3>
+<ul>
+<li>Arriba en PraiseAV: <strong>Transmitir</strong> empieza la transmisión y <strong>Grabar</strong> empieza la grabación (en los modelos que pueden). Muestran <strong>EN DIRECTO</strong> y <strong>GRAB</strong> con el tiempo. PraiseAV pregunta antes de empezar o parar la transmisión.</li>
+<li>En la columna de la derecha, <strong>Transmisión</strong> muestra lo que hay en la transmisión, con <strong>Mostrar diapositivas</strong> y <strong>Volver a la cámara</strong> para diapositivas a pantalla completa (un vídeo, los anuncios).</li>
+</ul>
+<p>La clave de transmisión y la programación de YouTube se quedan en <strong>ATEM Software Control</strong> y <strong>YouTube Studio</strong>: prepáralas allí una vez.</p>
+<p>Si algo no funciona, <strong>Abrir el registro del ATEM</strong> (abajo en la ventana del ATEM) guarda un registro para enviarlo a quien te ayude.</p>
+<h2 id="with-obs-or-vmix-instead">Con OBS o vMix</h2>
+<p>OBS Studio es un programa de transmisión gratuito para ordenador; vMix es de pago.</p>
+<p>Lo más fácil no necesita cables: activa <strong>Pantallas… › Mostrar en la red</strong> y añade la página de la letra a OBS como fuente de <strong>Navegador</strong> (o a vMix como entrada <strong>Web Browser</strong>). Mira <a href="screens-on-the-network.html#words-in-obs">Pantallas en la red</a>.</p>
+<p>O, con un cable:</p>
+<ol>
+<li>Usa una capturadora para llevar la pantalla de transmisión al ordenador de OBS (o ejecuta OBS en el ordenador de PraiseAV y usa una <strong>Captura de ventana</strong> de una ventana de transmisión: <strong>Pantallas… › Abrir una vista en una ventana › Transmisión</strong>).</li>
+<li>Elige el fondo <strong>Verde</strong>.</li>
+<li>En OBS, añade un filtro <strong>Chroma Key</strong> a esa fuente y ponla encima de la cámara.</li>
+</ol>
+
+    <nav class="pager">
+      <a class="prev" href="recording.html">← Grabar el culto</a>
+      <a class="next" href="screens-on-the-network.html">Pantallas en la red →</a>
+    </nav>
+  </main>
+</div>
+<script src="search-index.js"></script>
+<script src="../help.js"></script>
+</body>
+</html>

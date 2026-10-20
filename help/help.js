@@ -2,6 +2,7 @@
 (() => {
   const input = document.getElementById('search');
   const list = document.getElementById('results');
+  const spanish = document.documentElement.lang === 'es';
   const index = window.HELP_INDEX || [];
   let active = -1;
 
@@ -50,11 +51,11 @@
           .map(
             ({ e, snippet, ws }) =>
               `<li><a href="${e.url}"><span class="r-title">${mark(e.heading || e.page, ws)}</span>${
-                e.heading ? ` <span class="r-where">in ${escape(e.page)}</span>` : ''
+                e.heading ? ` <span class="r-where">${spanish ? 'en' : 'in'} ${escape(e.page)}</span>` : ''
               }<span class="r-snip">${mark(snippet, ws)}</span></a></li>`
           )
           .join('')
-      : '<li class="r-none">Nothing found. Try fewer or different words.</li>';
+      : `<li class="r-none">${spanish ? 'No se encontró nada. Prueba con menos palabras o con otras.' : 'Nothing found. Try fewer or different words.'}</li>`;
     list.hidden = false;
   }
 

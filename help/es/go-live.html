@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transmitir en YouTube · Ayuda de PraiseAV</title>
+<meta name="description" content="Transmite el culto directamente a YouTube (o Facebook) desde PraiseAV con tu clave de transmisión: empieza a transmitir sin ATEM ni OBS, y añádelos a medida que crezca tu iglesia.">
+<link rel="stylesheet" href="../help.css">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="../images/logo.svg" alt="PraiseAV"> <span>Ayuda</span></a>
+  <div class="search">
+    <input id="search" type="search" placeholder="Buscar en la ayuda" aria-label="Buscar en la ayuda" autocomplete="off">
+    <ol id="results" hidden></ol>
+  </div>
+  <button class="menu" id="menu" aria-label="Mostrar el índice">☰</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"><div class="nav-section"><h3>Para empezar</h3><ul><li><a href="index.html">Ayuda de PraiseAV</a></li><li><a href="first-sunday.html">Tu primer domingo</a></li><li><a href="coming-from-easyworship.html">Si vienes de EasyWorship</a></li><li><a href="keyboard-shortcuts.html">Atajos de teclado</a></li></ul></div><div class="nav-section"><h3>Preparar un culto</h3><ul><li><a href="songs.html">Canciones</a></li><li><a href="bible.html">La Biblia</a></li><li><a href="services.html">Cultos</a></li><li><a href="printing.html">Imprimir</a></li><li><a href="ccli-report.html">Informe de CCLI</a></li></ul></div><div class="nav-section"><h3>Llevar un culto</h3><ul><li><a href="running-a-service.html">Llevar un culto</a></li><li><a href="without-a-volunteer.html">Llevar un culto sin voluntario de AV</a></li><li><a href="sermons.html">Sermones y la pantalla del predicador</a></li><li><a href="timers-and-prompts.html">Mensajes para la banda y el predicador: temporizadores y mensajes</a></li><li><a href="parent-alerts.html">Avisos para la congregación: padres y anuncios</a></li><li><a href="controllers.html">MIDI y Stream Deck</a></li></ul></div><div class="nav-section"><h3>Medios y diapositivas</h3><ul><li><a href="media.html">Medios: vídeos, imágenes y fondos</a></li><li><a href="web-pages.html">Páginas web y vídeos de YouTube</a></li><li><a href="music-and-audio.html">Música y audio</a></li><li><a href="powerpoint-and-pdf.html">PowerPoint y PDF</a></li><li><a href="slide-designer.html">Diseñador de diapositivas</a></li><li><a href="announcement-loops.html">Bucles de anuncios</a></li><li><a href="themes.html">Temas: cómo se ve la letra</a></li></ul></div><div class="nav-section"><h3>Pantallas y transmisión</h3><ul><li><a href="screens.html">Pantallas</a></li><li><a href="projectors.html">Proyectores y cartas de ajuste</a></li><li><a href="live-video.html">Vídeo en directo en la pantalla</a></li><li><a href="live-captions.html">Subtítulos en directo</a></li><li><a href="go-live.html" class="current" aria-current="page">Transmitir en YouTube</a></li><li><a href="recording.html">Grabar el culto</a></li><li><a href="livestream-and-atem.html">Transmisión y ATEM</a></li><li><a href="screens-on-the-network.html">Pantallas en la red</a></li><li><a href="words-on-phones.html">Letra en el teléfono</a></li><li><a href="phone-remote.html">Mando en el teléfono o la tableta</a></li></ul></div><div class="nav-section"><h3>Configuraciones y equipos</h3><ul><li><a href="example-setups.html">Configuraciones de ejemplo</a></li><li><a href="hardware.html">Equipos: qué comprar</a></li></ul></div><div class="nav-section"><h3>Cuidar de PraiseAV</h3><ul><li><a href="church-setup.html">Configuración de la iglesia</a></li><li><a href="backups.html">Copias de seguridad y traslado a otro ordenador</a></li><li><a href="troubleshooting.html">Solución de problemas</a></li></ul></div></nav>
+  <main>
+    <p class="crumb">Pantallas y transmisión</p>
+    <h1>Transmitir en YouTube</h1>
+<p>PraiseAV puede transmitir el culto él mismo: la pantalla de la congregación (la cámara con la letra, o las diapositivas) y el sonido de la mesa, directamente a YouTube, sin otro programa que aprender. Así una iglesia puede empezar a transmitir antes de estar lista para invertir en un mezclador de vídeo; cuando lo esté, PraiseAV también funciona con un ATEM Mini.</p>
+<h2 id="once-the-stream-key">Una vez: la clave de transmisión</h2>
+<ol>
+<li>En <strong>YouTube Studio</strong>, haz clic en <strong>Crear › Emitir en directo</strong> y luego en <strong>Emisión</strong>.<ul>
+<li>La primera vez, YouTube puede pedirte que verifiques tu canal, y puede tardar hasta un día en activar las emisiones en directo.</li>
+</ul>
+</li>
+<li>Copia la <strong>clave de emisión</strong> con el botón de copiar que tiene al lado, en el <strong>panel principal (el de la izquierda)</strong>. Si YouTube muestra a la derecha una segunda clave <strong>vertical</strong> (su <strong>emisión doble</strong> para Shorts), no uses esa: la transmisión iría a la versión vertical y la principal diría <strong>Sin datos</strong>.</li>
+<li>En PraiseAV, haz clic en <strong>◉ Transmitir</strong> arriba, pega la clave en <strong>Clave de transmisión</strong> y haz clic en <strong>Guardar</strong>.</li>
+</ol>
+<p>La clave se guarda en este ordenador, protegida por Windows, y solo se envía a YouTube. Mantenla en privado: cualquiera que la tenga puede emitir en tu canal. Si alguna vez se filtra, haz clic en <strong>Restablecer</strong> junto a ella en YouTube Studio y pega la nueva en PraiseAV.</p>
+<h3 id="finding-your-way-round-youtube-studio">Moverse por YouTube Studio</h3>
+<p>YouTube usa algunas palabras propias, y cambia las cosas de sitio de vez en cuando:</p>
+<ul>
+<li><strong>Codificador</strong> (o <strong>software de emisión</strong>) es el programa que envía el vídeo: ese es <strong>PraiseAV</strong>. No hay que instalar nada. Si YouTube te pide elegir uno, elige <strong>Otro</strong>, o déjalo como está.</li>
+<li><strong>Clave de emisión</strong>: debajo de la vista previa, junto a <strong>Clave:</strong>. Usa el botón de <strong>copiar</strong> (dos cuadrados) de al lado. Lo mejor es una clave que uses cada semana (la predeterminada, o una a la que hayas puesto nombre).</li>
+<li><strong>Quién la ve (Visibilidad)</strong>: haz clic en <strong>Editar</strong> junto al título de la emisión arriba en la página (a veces un lápiz, o en el menú <strong>⋮</strong>) y elige <strong>Privado</strong> (solo tú), <strong>Oculto</strong> (solo quien tenga el enlace) o <strong>Público</strong>. Para una primera prueba, elige <strong>Privado</strong>.</li>
+<li>¿No encuentras <strong>Editar</strong>? En <strong>Crear › Emitir en directo</strong>, elige <strong>Programar emisión</strong>: sus pasos te piden la visibilidad sobre la marcha, y la emisión espera a PraiseAV el domingo.</li>
+<li><strong>Sin datos</strong> junto a la vista previa solo quiere decir que PraiseAV todavía no está enviando. Cambia unos segundos después de hacer clic en <strong>● Transmitir ahora</strong>, luego pone <strong>Preparando emisión</strong> hasta medio minuto, y luego sale la imagen.</li>
+<li>La <strong>emisión doble</strong> (en los ajustes de la emisión: una versión vertical para Shorts) puede quedarse activada. PraiseAV envía a YouTube exactamente la forma de imagen que espera, así que funcionan las dos versiones. (Las versiones antiguas de PraiseAV podían quedarse en <strong>Preparando emisión</strong> con ella activada).</li>
+<li><strong>Cada vez puede ser una emisión nueva.</strong> Cuando termina la última, YouTube empieza una nueva para la siguiente transmisión, con sus propios ajustes: revisa la <strong>Visibilidad</strong> cada vez, o prepárala una vez con <strong>Programar emisión</strong> para el domingo.</li>
+<li><strong>Qué clave se usa</strong>: el cuadro <strong>Clave:</strong> encima de la vista previa elige qué clave escucha esta emisión. Tiene que ser la misma clave que está en PraiseAV: si YouTube dice <strong>Sin datos</strong> mientras PraiseAV dice <strong>● EN DIRECTO</strong>, elige allí tu otra clave (por ejemplo la <strong>clave de emisión predeterminada</strong>).</li>
+<li>La <strong>Visibilidad</strong> también aparece en <strong>Contenido › En directo</strong>. Compruébala también ahí: es la que YouTube usa de verdad.</li>
+</ul>
+<aside class="callout tip"><p><strong>Consejo:</strong> En los ajustes de la emisión de YouTube Studio, activa el <strong>inicio automático</strong> y la <strong>finalización automática</strong>. Así la emisión empieza sola cuando PraiseAV empieza a transmitir, y termina cuando para, sin tener que tocar YouTube el domingo.</p>
+</aside>
+<h2 id="on-sunday">El domingo</h2>
+<ol>
+<li>Haz clic en <strong>◉ Transmitir</strong>.</li>
+<li>Comprueba que <strong>Sonido de</strong> es la <strong>entrada de la mesa de sonido</strong>, y que el medidor se mueve cuando alguien habla o canta.</li>
+<li>Elige la <strong>calidad de imagen</strong> según el internet de la iglesia:<ul>
+<li><strong>Mejor: 1080p</strong>, lo habitual, y lo mejor para quien lo vea después (unos 8 Mbps de subida: casi toda la fibra los tiene).</li>
+<li><strong>Buena: 720p</strong> si el botón dice a menudo <strong>· internet lento</strong> a 1080p (unos 4 Mbps de subida).</li>
+<li><strong>Internet lento: 480p</strong> si aún le cuesta (unos 2 Mbps de subida).
+¿No estás seguro? Empieza en 1080p. Si internet no pudo seguir el ritmo, PraiseAV lo dice al terminar la transmisión, y propone la calidad siguiente.</li>
+</ul>
+</li>
+<li>Deja marcado <strong>Guardar también una grabación en este ordenador</strong>, para tener una copia (y volver a subirla si la transmisión tuvo problemas). Esa copia siempre es a <strong>1080p completo</strong>, aunque la transmisión sea más pequeña. Se guarda en la carpeta de grabaciones que aparece debajo de la casilla (mira <a href="recording.html#where-recordings-go">Dónde van las grabaciones</a>).</li>
+<li>Haz clic en <strong>● Transmitir ahora</strong>.</li>
+</ol>
+<p>El botón de arriba se pone rojo: <strong>● EN DIRECTO</strong> y cuánto tiempo llevas. Lo que sale va unos 2 segundos por detrás de la pantalla (PraiseAV lo envía a un ritmo constante, como le gusta a YouTube), y YouTube añade unos segundos más antes de que lo vean. Lleva el culto como siempre: sale lo que haya en la pantalla de la congregación, con la cámara y la letra si Vídeo en directo está activado, o las diapositivas si no.</p>
+<p><strong>Los avisos para la congregación nunca salen.</strong> Un aviso a unos padres desde la guardería, o un anuncio en movimiento, se ve en la sala pero no en la transmisión (ni en su grabación), así que los números de los niños quedan en privado. Mira <a href="parent-alerts.html">Avisos para la congregación</a>.</p>
+<p>Para terminar, haz clic en <strong>● EN DIRECTO</strong> y luego en <strong>■ Parar la transmisión</strong> en la pregunta de debajo (<strong>Seguir</strong> si hiciste clic sin querer; la transmisión sigue mientras pregunta). Si estaba marcado <strong>Guardar también una grabación</strong>, el mensaje de la grabación tiene <strong>Copiar al USB</strong>.</p>
+<h2 id="if-the-internet-struggles">Si internet va mal</h2>
+<ul>
+<li><strong>· internet lento</strong> en el botón: internet no puede seguir el ritmo, así que se saltan algunas imágenes para ir al día. Si pasa mucho, usa una calidad de imagen más baja la próxima vez, o conecta el ordenador al router con un cable de red (mucho mejor que el wifi).</li>
+<li><strong>· volviendo a conectar…</strong>: se cortó la conexión. PraiseAV sigue intentándolo solo y continúa la misma emisión cuando vuelve. No tienes que hacer nada.</li>
+</ul>
+<h2 id="sound-and-picture-in-step">Sonido e imagen sincronizados</h2>
+<p>El sonido se retrasa para que coincida con la cámara que esté en pantalla, igual que en las grabaciones. Mide cada cámara una vez: mira <a href="recording.html#sound-and-picture-in-step">Sonido e imagen sincronizados</a>.</p>
+<h2 id="facebook-and-others">Facebook y otros</h2>
+<p>En <strong>Transmitir a</strong>, elige <strong>Facebook</strong> y pega la clave de transmisión del <strong>Live Producer</strong> de Facebook. Para otro servicio, elige <strong>Otro servicio</strong> y pega su <strong>dirección RTMP</strong> (empieza por rtmp:// o rtmps://) y su clave de transmisión.</p>
+<aside class="callout note"><p><strong>Licencias:</strong> transmitir canciones necesita una <strong>licencia CCLI Streaming</strong> (o la equivalente de tu país), y permiso para los vídeos que muestres.</p>
+</aside>
+<h2 id="with-an-atem-or-obs">Con un ATEM, u OBS</h2>
+<p>No los necesitas para empezar. Cuando tu iglesia esté lista para un ATEM Mini, o si ya usa OBS, PraiseAV funciona con los dos: mira <a href="livestream-and-atem.html">Transmisión y ATEM</a>.</p>
+
+    <nav class="pager">
+      <a class="prev" href="live-captions.html">← Subtítulos en directo</a>
+      <a class="next" href="recording.html">Grabar el culto →</a>
+    </nav>
+  </main>
+</div>
+<script src="search-index.js"></script>
+<script src="../help.js"></script>
+</body>
+</html>
