@@ -2,7 +2,12 @@
 (() => {
   const input = document.getElementById('search');
   const list = document.getElementById('results');
-  const spanish = document.documentElement.lang === 'es';
+  const WORDS = {
+    en: { in: 'in', none: 'Nothing found. Try fewer or different words.' },
+    es: { in: 'en', none: 'No se encontró nada. Prueba con menos palabras o con otras.' },
+    ro: { in: 'în', none: 'Nu s-a găsit nimic. Încearcă mai puține cuvinte sau altele.' },
+  };
+  const said = WORDS[document.documentElement.lang] || WORDS.en;
   const index = window.HELP_INDEX || [];
   let active = -1;
 
@@ -51,11 +56,11 @@
           .map(
             ({ e, snippet, ws }) =>
               `<li><a href="${e.url}"><span class="r-title">${mark(e.heading || e.page, ws)}</span>${
-                e.heading ? ` <span class="r-where">${spanish ? 'en' : 'in'} ${escape(e.page)}</span>` : ''
+                e.heading ? ` <span class="r-where">${said.in} ${escape(e.page)}</span>` : ''
               }<span class="r-snip">${mark(snippet, ws)}</span></a></li>`
           )
           .join('')
-      : `<li class="r-none">${spanish ? 'No se encontró nada. Prueba con menos palabras o con otras.' : 'Nothing found. Try fewer or different words.'}</li>`;
+      : `<li class="r-none">${said.none}</li>`;
     list.hidden = false;
   }
 

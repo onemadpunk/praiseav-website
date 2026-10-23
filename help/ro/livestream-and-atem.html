@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transmisie și ATEM · Ajutor PraiseAV</title>
+<meta name="description" content="Pune versurile cântărilor peste cameră într-o transmisie, cu un Blackmagic ATEM Mini sau OBS. Pornește și oprește transmisia și înregistrarea din PraiseAV.">
+<link rel="stylesheet" href="../help.css">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="../images/logo.svg" alt="PraiseAV"> <span>Ajutor</span></a>
+  <div class="search">
+    <input id="search" type="search" placeholder="Caută în ajutor" aria-label="Caută în ajutor" autocomplete="off">
+    <ol id="results" hidden></ol>
+  </div>
+  <button class="menu" id="menu" aria-label="Arată cuprinsul">☰</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"><div class="nav-section"><h3>Începe aici</h3><ul><li><a href="index.html">Ajutor PraiseAV</a></li><li><a href="first-sunday.html">Prima ta duminică</a></li><li><a href="coming-from-easyworship.html">Venind de la EasyWorship</a></li><li><a href="keyboard-shortcuts.html">Scurtături de tastatură</a></li></ul></div><div class="nav-section"><h3>Pregătirea unui serviciu</h3><ul><li><a href="songs.html">Cântări</a></li><li><a href="bible.html">Biblia</a></li><li><a href="services.html">Servicii</a></li><li><a href="printing.html">Tipărire</a></li><li><a href="ccli-report.html">Raportul CCLI</a></li></ul></div><div class="nav-section"><h3>Conducerea unui serviciu</h3><ul><li><a href="running-a-service.html">Conducerea unui serviciu</a></li><li><a href="without-a-volunteer.html">Conducerea unui serviciu fără un voluntar AV</a></li><li><a href="sermons.html">Predici și ecranul predicatorului</a></li><li><a href="timers-and-prompts.html">Mesaje pentru formație și predicator: cronometre și mesaje</a></li><li><a href="parent-alerts.html">Anunțuri pentru adunare: părinți și anunțuri</a></li><li><a href="controllers.html">MIDI și Stream Deck</a></li></ul></div><div class="nav-section"><h3>Media și diapozitive</h3><ul><li><a href="media.html">Media: videoclipuri, imagini și fundaluri</a></li><li><a href="web-pages.html">Pagini web și videoclipuri YouTube</a></li><li><a href="music-and-audio.html">Muzică și sunet</a></li><li><a href="powerpoint-and-pdf.html">PowerPoint și PDF</a></li><li><a href="slide-designer.html">Designerul de diapozitive</a></li><li><a href="announcement-loops.html">Anunțuri în buclă</a></li><li><a href="themes.html">Teme: cum arată textul</a></li></ul></div><div class="nav-section"><h3>Ecrane și transmisie</h3><ul><li><a href="screens.html">Ecrane</a></li><li><a href="projectors.html">Proiectoare și imagini de test</a></li><li><a href="live-video.html">Video în direct pe ecran</a></li><li><a href="live-captions.html">Subtitrări în direct</a></li><li><a href="go-live.html">Transmisia pe YouTube</a></li><li><a href="recording.html">Înregistrarea serviciului</a></li><li><a href="livestream-and-atem.html" class="current" aria-current="page">Transmisie și ATEM</a></li><li><a href="screens-on-the-network.html">Ecranele din rețea</a></li><li><a href="words-on-phones.html">Versurile pe telefoane</a></li><li><a href="phone-remote.html">Telecomanda pe telefon și tabletă</a></li></ul></div><div class="nav-section"><h3>Configurări și echipamente</h3><ul><li><a href="example-setups.html">Exemple de configurări</a></li><li><a href="hardware.html">Echipamente: ce să cumperi</a></li></ul></div><div class="nav-section"><h3>Îngrijirea PraiseAV</h3><ul><li><a href="church-setup.html">Configurarea bisericii</a></li><li><a href="backups.html">Copii de siguranță și mutarea pe un calculator nou</a></li><li><a href="troubleshooting.html">Rezolvarea problemelor</a></li></ul></div></nav>
+  <main>
+    <p class="crumb">Ecrane și transmisie</p>
+    <h1>Transmisie și ATEM</h1>
+<aside class="callout note"><p><strong>Încă nu ai ATEM?</strong> PraiseAV poate transmite singur pe YouTube, cu camera și versurile împreună, așa că poți începe înainte ca biserica să fie gata să investească într-unul: vezi <a href="go-live.html">Transmisia pe YouTube</a>. Această pagină e pentru când ai un ATEM sau folosești OBS.</p>
+</aside>
+<p>Când transmiți un serviciu, cei de acasă vor să vadă sala <strong>și</strong> să citească versurile. Ecranul de <strong>Transmisie</strong> îi dă unui mixer video doar versurile, într-o bandă, gata să fie puse peste cameră.</p>
+<p><figure><img src="../images/livestream-screen.png" alt="Ecranul de transmisie" loading="lazy"></figure></p>
+<h2 id="how-it-fits-together">Cum se leagă totul</h2>
+<div class="diagram" role="img" aria-label="Cameră → HDMI → ATEM Mini Pro · intrarea 1; Calculatorul PraiseAV · ecranul de transmisie → HDMI → ATEM Mini Pro · intrarea 2; Mixerul de sunet · un mix separat pentru transmisie → audio 3,5 mm → ATEM Mini Pro · intrarea de microfon; ATEM Mini Pro → Ethernet spre router → YouTube sau Facebook · iar PraiseAV îl controlează"><div class="dg-group"><div class="dg-box"><strong>Cameră</strong></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">HDMI</span><div class="dg-box"><strong>ATEM Mini Pro</strong><small>intrarea 1</small></div></div></div></div><div class="dg-group"><div class="dg-box"><strong>Calculatorul PraiseAV</strong><small>ecranul de transmisie</small></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">HDMI</span><div class="dg-box"><strong>ATEM Mini Pro</strong><small>intrarea 2</small></div></div></div></div><div class="dg-group"><div class="dg-box"><strong>Mixerul de sunet</strong><small>un mix separat pentru transmisie</small></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">audio 3,5 mm</span><div class="dg-box"><strong>ATEM Mini Pro</strong><small>intrarea de microfon</small></div></div></div></div><div class="dg-group"><div class="dg-box"><strong>ATEM Mini Pro</strong></div><div class="dg-links"><div class="dg-link"><span class="dg-cable">Ethernet spre router</span><div class="dg-box"><strong>YouTube sau Facebook</strong><small>iar PraiseAV îl controlează</small></div></div></div></div></div>
+<p>ATEM-ul <strong>decupează</strong> versurile peste cameră (un <em>key</em>): taie negrul (sau verdele) și păstrează versurile.</p>
+<p>Vezi <a href="example-setups.html#4-livestreaming-with-an-atem-mini">Exemple de configurări</a> pentru imaginea completă.</p>
+<h2 id="setting-up-the-livestream-screen">Configurarea ecranului de transmisie</h2>
+<ol>
+<li>Conectează a doua ieșire HDMI a calculatorului la o intrare ATEM.</li>
+<li>În <strong>Ecrane…</strong>, dă acelui ecran sarcina <strong>Transmisie</strong>.</li>
+<li>La <strong>Transmisie</strong>, în aceeași fereastră, alege <strong>Fundalul</strong>:<ul>
+<li><strong>Negru: pentru un luma key</strong>: obișnuit pentru un ATEM.</li>
+<li><strong>Verde: pentru un chroma key</strong> (versurile stau pe o bandă întunecată): pentru OBS, vMix sau mixere care decupează verdele.</li>
+</ul>
+</li>
+<li>Opțional: <strong>Numărul licenței CCLI de transmisie</strong>. Apare mic sub detaliile cântării.</li>
+</ol>
+<p>Pe ecranul de transmisie apar doar cântările și versetele. <strong>Anunțurile pentru adunare nu ajung niciodată pe el</strong>, așa că numerele copiilor rămân private.</p>
+<h2 id="controlling-an-atem-from-praiseav">Controlul unui ATEM din PraiseAV</h2>
+<p>PraiseAV poate comunica prin rețea cu un Blackmagic <strong>ATEM Mini</strong> (orice model).</p>
+<ol>
+<li>Conectează ATEM-ul la aceeași rețea cu calculatorul <strong>cu un cablu Ethernet</strong> (doar USB nu e destul).</li>
+<li>Apasă <strong>ATEM…</strong> sus în PraiseAV și bifează <strong>Controlează un mixer Blackmagic ATEM din PraiseAV</strong>.</li>
+<li>Scrie adresa ATEM-ului și apasă <strong>Conectează</strong>. Un ATEM Mini nou folosește <code>192.168.10.240</code>. Aplicația <strong>ATEM Setup</strong> de la Blackmagic o arată.</li>
+<li>Când scrie <strong>Conectat</strong>, alege:<ul>
+<li><strong>Ce intrare este acest calculator (diapozitivele)?</strong></li>
+<li><strong>Keyer-ul care pune versurile transmisiei peste cameră</strong>: de obicei <strong>Downstream key 1</strong>. Sau <strong>Niciunul</strong> dacă preferi s-o faci de pe butoanele ATEM-ului.</li>
+<li>Bifează ca versurile să <strong>se pornească și să se oprească singure</strong>, ca versurile să apară când o cântare sau un verset e pe ecran și să dispară la predică.</li>
+</ul>
+</li>
+<li>La <strong>Încearcă</strong>: <strong>Arată diapozitivele</strong>, <strong>Înapoi la cameră</strong>, <strong>Versuri pornite</strong>, <strong>Versuri oprite</strong>. Verifică dacă fiecare merge.</li>
+</ol>
+<p>Fereastra arată și modelul și firmware-ul ATEM-ului. Dacă firmware-ul e mai vechi decât 8.0, actualizează-l cu ATEM Setup.</p>
+<h3 id="during-the-service">În timpul serviciului</h3>
+<ul>
+<li>Sus în PraiseAV: <strong>● Transmite</strong> pornește transmisia, <strong>● Înregistrează</strong> pornește înregistrarea (la modelele care pot). Arată <strong>ÎN DIRECT</strong> și <strong>ÎNREG</strong> cu timpul. PraiseAV întreabă înainte să pornească sau să oprească transmisia.</li>
+<li>În coloana din dreapta, <strong>Transmisie</strong> arată ce e în transmisie, cu <strong>Arată diapozitivele</strong> și <strong>Înapoi la cameră</strong> pentru diapozitive pe tot ecranul (un videoclip, anunțuri).</li>
+</ul>
+<p>Cheia de transmisie și programarea pe YouTube rămân în <strong>ATEM Software Control</strong> și <strong>YouTube Studio</strong>: configurează-le o dată acolo.</p>
+<p>Dacă ceva nu merge, <strong>Deschide jurnalul ATEM</strong> (jos în fereastra ATEM) păstrează o evidență de trimis celui care te ajută.</p>
+<h2 id="with-obs-or-vmix-instead">Cu OBS sau vMix în schimb</h2>
+<p>OBS Studio e un program gratuit de transmisie pentru calculator; vMix e unul plătit.</p>
+<p>Cea mai simplă cale nu are nevoie de cabluri: pornește <strong>Ecrane… › Arată în rețea</strong> și adaugă pagina cu versuri în OBS ca sursă <strong>Browser</strong> (sau în vMix ca intrare <strong>Web Browser</strong>). Vezi <a href="screens-on-the-network.html#words-in-obs">Ecranele din rețea</a>.</p>
+<p>Sau, cu un cablu:</p>
+<ol>
+<li>Folosește o placă de captură ca să aduci ecranul de transmisie în calculatorul cu OBS (sau rulează OBS pe calculatorul PraiseAV și folosește un <strong>Window capture</strong> al unei ferestre de transmisie: <strong>Ecrane… › Deschide o vedere într-o fereastră › Transmisie</strong>).</li>
+<li>Alege fundalul <strong>Verde</strong>.</li>
+<li>În OBS, adaugă un filtru <strong>Chroma Key</strong> pe acea sursă și pune-o deasupra camerei.</li>
+</ol>
+
+    <nav class="pager">
+      <a class="prev" href="recording.html">← Înregistrarea serviciului</a>
+      <a class="next" href="screens-on-the-network.html">Ecranele din rețea →</a>
+    </nav>
+  </main>
+</div>
+<script src="search-index.js"></script>
+<script src="../help.js"></script>
+</body>
+</html>
