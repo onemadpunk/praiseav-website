@@ -22,18 +22,19 @@
   <main>
     <p class="crumb">Pantallas y transmisión</p>
     <h1>Subtítulos en directo</h1>
-<p>Los subtítulos en directo convierten lo que se dice por el micrófono en palabras en la parte de abajo de la pantalla de la congregación: el sermón, los anuncios, las oraciones. Ayudan a las personas con dificultades auditivas, y a cualquiera que esté sentado donde se oye mal.</p>
+<p>Los subtítulos en directo convierten la voz del micrófono o de un vídeo reproducido en la pantalla de la congregación en palabras en la parte de abajo de esa pantalla: el sermón, los anuncios, las oraciones. Ayudan a las personas con dificultades auditivas, y a cualquiera que esté sentado donde se oye mal.</p>
 <aside class="callout important"><p><strong>Importante:</strong> De momento, el reconocimiento de voz solo entiende <strong>inglés</strong>. Con un predicador que habla en español, los subtítulos no saldrán bien.</p>
 </aside>
 <p>La voz se reconoce <strong>en este ordenador</strong>. Nada de lo que se dice se envía a ningún sitio ni se guarda.</p>
 <h2 id="turning-them-on">Activarlos</h2>
 <ol>
 <li>En la columna de la derecha, abre <strong>Subtítulos en directo</strong>. (La primera vez, márcalo en <strong>+ Más herramientas</strong>, abajo de la columna.)</li>
-<li>Elige el <strong>Micrófono</strong> (mira abajo).</li>
+<li>En <strong>Precisión de los subtítulos</strong>, elige <strong>Rápido</strong> para ver las palabras mientras se habla o <strong>Más preciso</strong> para verlas varios segundos después con menos errores.</li>
+<li>En <strong>Sonido de</strong>, elige <strong>Micrófono o mesa de sonido</strong> (mira abajo) o <strong>Vídeo en la pantalla de la congregación</strong>.</li>
 <li>Marca <strong>Activado</strong>.</li>
 </ol>
-<p>La primera vez, PraiseAV descarga su reconocimiento de voz desde GitHub: unos 100 MB, una sola vez, así que necesita internet esa vez. (Si el filtro web de la iglesia lo bloquea, PraiseAV lo dice: pide que permitan github.com, o activa los subtítulos antes en casa). Una barra muestra cuánto lleva. Después, los subtítulos funcionan sin internet.</p>
-<p>Cuando dice <strong>Escuchando</strong>, habla y aparecen las palabras, en la pantalla y en el panel. Salen mientras alguien sigue hablando y se arreglan cuando hace una pausa. Se borran tras unos segundos de silencio.</p>
+<p>Cada modo descarga su modelo una sola vez: unos 100 MB desde GitHub para Rápido, o unos 375 MB desde Hugging Face para Más preciso. Una barra muestra el progreso. Si el filtro de la iglesia bloquea la descarga, permite el sitio correspondiente o actívalo antes en casa. Después, el reconocimiento de un predicador local funciona sin internet; una emisión web sigue necesitando conexión.</p>
+<p>Cuando dice <strong>Escuchando</strong>, habla y aparecen las palabras en la pantalla y en el panel. Rápido muestra palabras que pueden cambiar mientras se habla. Más preciso espera un fragmento breve y puede llevar varios segundos de retraso. Para cambiar de modo, desactiva primero los subtítulos. Se borran tras unos segundos de silencio.</p>
 <h2 id="the-best-sound">El mejor sonido</h2>
 <p>Los subtítulos solo son tan buenos como el sonido que oyen.</p>
 <ul>
@@ -41,15 +42,18 @@
 <li><strong>Aceptable:</strong> un micrófono USB cerca del predicador, o en el atril.</li>
 <li><strong>No va bien:</strong> el propio micrófono del portátil al fondo de la sala. Oye toda la sala.</li>
 </ul>
+<h2 id="another-church-s-stream">Emisión de otra iglesia</h2>
+<p>Añade el enlace de YouTube o Vimeo de la otra iglesia al culto y muestra el vídeo en la pantalla de la congregación. En <strong>Sonido de</strong>, elige <strong>Vídeo en la pantalla de la congregación</strong> y activa los subtítulos. PraiseAV escucha directamente el sonido de esa pantalla, sin cable ni micrófono en la sala. El vídeo sigue oyéndose. Los subtítulos aparecen en una franja separada debajo del reproductor y no lo tapan.</p>
+<p>Prueba la emisión real antes del culto. El vídeo necesita internet aunque el modelo de subtítulos ya esté descargado. Los anuncios y otros sonidos del vídeo también pueden subtitularse. Para un predicador presente en la iglesia, vuelve a <strong>Micrófono o mesa de sonido</strong>.</p>
 <h2 id="songs">Canciones</h2>
 <p>Mientras hay una canción en pantalla, los subtítulos se pausan: la letra de la canción ya está ahí, y el canto no se subtitula bien. Para subtitular también durante las canciones (por ejemplo, un solo cuya letra no está en pantalla), marca <strong>Mostrar también durante las canciones</strong>.</p>
 <h2 id="size-and-place">Tamaño y sitio</h2>
 <p>Elige <strong>Pequeño</strong>, <strong>Normal</strong> o <strong>Grande</strong>. Los subtítulos van en una franja oscura en la parte de abajo de la pantalla de la congregación, encima de los avisos a los padres, y la letra de la diapositiva sube para hacer sitio.</p>
 <h2 id="what-to-expect">Qué esperar</h2>
-<p>Como todo reconocimiento de voz, a veces entiende mal: sobre todo nombres, lugares bíblicos y palabras poco comunes, y cuando hablan dos personas a la vez. Sirve para seguir lo que se dice, pero no es una transcripción.</p>
-<p>Funciona mejor en un ordenador comprado en los últimos cinco años más o menos. En uno más antiguo las palabras pueden llegar uno o dos segundos tarde.</p>
+<p>Ambos modos pueden entender mal nombres, lugares bíblicos, palabras poco comunes y voces superpuestas. Más preciso redujo los errores en nuestras pruebas con grabaciones, pero no garantiza una transcripción literal. Pruébalo con la mesa de sonido y el predicador reales antes del culto.</p>
+<p>Más preciso usa más capacidad de procesamiento. Si el texto se retrasa cada vez más en el ordenador de la iglesia, usa Rápido o un ordenador más potente.</p>
 <h2 id="credits">Créditos</h2>
-<p>El reconocimiento de voz es el modelo inglés NeMo streaming FastConformer de NVIDIA (con licencia CC BY 4.0), ejecutado con el kit libre sherpa-onnx del proyecto k2-fsa (Apache 2.0).</p>
+<p>Rápido usa el modelo inglés NeMo streaming FastConformer de NVIDIA (CC BY 4.0). Más preciso usa Whisper small English de OpenAI (MIT), convertido a ONNX por sherpa-onnx. Ambos se ejecutan con sherpa-onnx (Apache 2.0).</p>
 
     <nav class="pager">
       <a class="prev" href="live-video.html">← Vídeo en directo en la pantalla</a>

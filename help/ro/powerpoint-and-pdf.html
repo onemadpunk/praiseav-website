@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PowerPoint și PDF · Ajutor PraiseAV</title>
-<meta name="description" content="Adu PowerPoint-ul unui vorbitor invitat sau un PDF. Cu Microsoft PowerPoint pe calculator, animațiile și videoclipurile se redau cum trebuie; fără el, fiecare diapozitiv e o imagine.">
+<meta name="description" content="Adu PowerPoint-ul sau PDF-ul unui invitat. LibreOffice gratuit poate importa diapozitive statice; Microsoft PowerPoint este necesar pentru animații și videoclipuri încorporate.">
 <link rel="stylesheet" href="../help.css">
 <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
 </head>
@@ -26,6 +26,7 @@
 <h2 id="adding-slides">Adăugarea diapozitivelor</h2>
 <p>În fila <strong>Media</strong>, apasă <strong>+ Adaugă PowerPoint sau PDF</strong> și alege fișierul. Sau trage fișierul pe serviciu.</p>
 <p>PraiseAV face o imagine din fiecare diapozitiv. Spune cât a ajuns („Se fac diapozitive… 4 din 12”), apoi adaugă diapozitivele la serviciu.</p>
+<p>Așteaptă să se termine importul înainte să scoți stickul USB al vorbitorului. PraiseAV păstrează o copie a PowerPoint-ului lângă imaginile diapozitivelor. Imaginile și videoclipurile <strong>încorporate în PowerPoint</strong> călătoresc cu acea copie. Un videoclip <strong>legat de alt fișier sau de un site</strong> are în continuare nevoie de fișierul respectiv sau de internet la biserică.</p>
 <p><figure><img src="../images/presentation-added.png" alt="Diapozitivele adăugate la serviciu" loading="lazy"></figure></p>
 <p><figure><img src="../images/presentation-slides.png" alt="Diapozitivele unei prezentări" loading="lazy"></figure></p>
 <p>Apasă un diapozitiv ca să-l pui pe ecran și folosește <strong>Următorul</strong> ca de obicei. Diapozitivele se păstrează în fila Media, la <strong>Prezentări</strong>, ca să le poți adăuga la alt serviciu.</p>
@@ -35,15 +36,18 @@
 <li><strong>PowerPoint</strong> (PPTX, PPT, PPS, PPSX), <strong>LibreOffice</strong> (ODP) și <strong>Keynote</strong> (KEY): au nevoie de <strong>Microsoft PowerPoint</strong> sau de <strong>LibreOffice</strong> gratuit pe acest calculator. PraiseAV folosește PowerPoint dacă e acolo (cel mai aproape de cum au fost făcute diapozitivele), altfel LibreOffice.</li>
 </ul>
 <p>Dacă nu e instalat niciunul, PraiseAV se oferă să deschidă pagina de descărcare LibreOffice. Instalează-l o dată, apoi adaugă din nou PowerPoint-ul.</p>
-<aside class="callout note"><p><strong>Sfat:</strong> Roagă vorbitorii să trimită și un PDF (în PowerPoint: <strong>Fișier › Export › PDF</strong>). E mai rapid și arată mereu bine.</p>
+<p><strong>Folosești Apache OpenOffice?</strong> PraiseAV nu îl detectează încă drept convertor automat. Deschide prezentarea în OpenOffice Impress, alege <strong>Fișier › Exportă în format PDF</strong>, apoi adaugă PDF-ul în PraiseAV. Nu ai nevoie de Microsoft PowerPoint pentru a arăta textul și imaginile ca diapozitive statice. Animațiile și videoclipurile încorporate nu rulează într-un PDF; cere fișierul video separat și adaugă-l din fila Media.</p>
+<p><strong>Folosești ONLYOFFICE Desktop Editors?</strong> PraiseAV nu îl detectează automat nici pe acesta. Deschide prezentarea în ONLYOFFICE, alege <strong>Fișier › Salvare ca › PDF</strong>, apoi adaugă PDF-ul în PraiseAV. Verifică PDF-ul exportat pe calculatorul bisericii: păstrează diapozitivele statice, dar animațiile și fișierele media încorporate au nevoie de altă metodă de redare. Vezi <a href="https://helpcenter.onlyoffice.com/docs/userguides/presentation_editor/SavePrintDownload.aspx">ghidul de export ONLYOFFICE</a>.</p>
+<aside class="callout note"><p><strong>Sfat:</strong> Roagă vorbitorii să trimită și un PDF. Se importă fără alt program de birou și e o rezervă utilă dacă prezentarea arată diferit pe calculatorul bisericii.</p>
 </aside>
 <h2 id="animations-and-videos-with-microsoft-powerpoint">Animații și videoclipuri (cu Microsoft PowerPoint)</h2>
-<p>Dacă <strong>Microsoft PowerPoint</strong> e instalat pe calculatorul care conduce serviciul, un PowerPoint rulează exact cum l-a făcut vorbitorul:</p>
+<p>Dacă <strong>Microsoft PowerPoint</strong> e instalat pe calculatorul care conduce serviciul, PraiseAV îl poate folosi pentru părțile interactive ale prezentării:</p>
 <ul>
 <li><strong>Animațiile</strong> merg: punctele apar pe rând.</li>
 <li><strong>Tranzițiile</strong> dintre diapozitive merg (o estompare, o ștergere…).</li>
 <li><strong>Videoclipurile din diapozitive</strong> se redau, cu sunet.</li>
 </ul>
+<p>Pentru un vorbitor invitat, testează un diapozitiv cu videoclip și sunet pe <strong>calculatorul bisericii</strong> înainte de serviciu; apoi scoate stickul USB și testează din nou. Redarea depinde de PowerPoint și de formatele disponibile pe acel calculator. Roagă vorbitorul să încorporeze videoclipurile, să folosească MP4 (video H.264 și audio AAC) când poate și să aducă un PDF de rezervă. PDF-ul păstrează imaginile și textul, dar nu redă animațiile sau videoclipurile din PowerPoint.</p>
 <p>Deasupra diapozitivelor scrie <strong>Rulează în PowerPoint</strong>. Pune primul diapozitiv pe ecran și apasă <strong>Următorul</strong> ca de obicei (tastele săgeți, Space, o telecomandă, sau telecomanda pe telefon). Fiecare apăsare face ce ar face un clic în PowerPoint: punctul următor, apoi diapozitivul următor. <strong>Înapoi</strong> merge un pas înapoi. Cât rulează, rândul de deasupra diapozitivelor spune unde ești, de exemplu „diapozitivul 2 din 12, pasul 1 din 3”.</p>
 <p>După ultimul diapozitiv, <strong>Următorul</strong> trece la elementul următor din serviciu, ca la cântări. Punerea a orice altceva pe ecran (o cântare, o citire) închide singură prezentarea.</p>
 <p><strong>Negru</strong> și <strong>Logo</strong> merg normal, la fel și <a href="parent-alerts.html">anunțurile pentru părinți</a>.</p>

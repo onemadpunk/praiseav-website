@@ -57,7 +57,7 @@
     </header>
     <main>
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated 21 October 2026 · applies to PraiseAV for Windows</p>
+      <p class="updated">Last updated 30 October 2026 · applies to PraiseAV for Windows</p>
 
       <div class="short">
         <strong>The short version</strong>
@@ -129,11 +129,14 @@
           </tr>
           <tr>
             <td>Speech recognition for live captions</td>
-            <td>Once, the first time you turn live captions on.</td>
+            <td>Once for each caption mode you use, the first time you turn that mode on.</td>
             <td>
-              PraiseAV downloads the speech recognition (about 100 MB) from GitHub, which sees your internet address as any
-              download would; <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s
-              privacy statement</a> applies. After that, captions work without the internet.
+              Fast captions download a speech model (about 100 MB) from GitHub. The optional More accurate mode downloads a
+              different model (about 375 MB) from Hugging Face. The download service sees your internet address, as with any
+              download. See <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s
+              privacy statement</a> and <a href="https://huggingface.co/privacy">Hugging Face’s privacy policy</a>.
+              After the selected model is downloaded, recognition works without the internet; your audio and caption words are
+              processed on this computer and are not sent to either service.
             </td>
           </tr>
           <tr>
@@ -178,7 +181,10 @@
         <strong>On your church’s own network only:</strong> the phone remote (a page served from the PraiseAV computer to phones on
         the same Wi-Fi, after you allow each one), phone cameras (a phone’s camera picture sent over the Wi-Fi to the PraiseAV
         computer), screens on the network (the words or the congregation screen as web pages, only while you have them turned on), and
-        an ATEM video switcher. These don’t go out to the internet, and only answer devices on your local network.
+        an ATEM video switcher. PraiseAV limits these pages to devices with local or private network addresses; don’t forward their
+        ports from your router to the internet. The phone remote and phone camera use HTTPS with a certificate made on the PraiseAV
+        computer. A phone may ask you to accept that local certificate before opening either page. Network screens and the
+        words-on-phones page use HTTP on your local network. Previously allowed remote devices must pair again after this change.
       </p>
 
       <h2>Folders you choose to sync</h2>
@@ -197,8 +203,9 @@
         you’re going live. Windows shows when the camera or microphone is in use.
       </p>
       <p>
-        If you turn on <strong>live captions</strong>, PraiseAV listens to the microphone or sound input you choose and turns speech
-        into words on this computer. What’s said is never sent anywhere and isn’t saved: the words are shown on screen and then cleared.
+        If you turn on <strong>live captions</strong>, PraiseAV listens to the microphone or sound input you choose and uses local
+        speech recognition to turn speech into words on this computer. Recognition can make mistakes, especially with names,
+        accents or background sound. What’s said is never sent anywhere and isn’t saved: the words are shown on screen and then cleared.
       </p>
 
       <h2>Background music (Spotify and other music apps)</h2>

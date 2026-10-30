@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PowerPoint y PDF · Ayuda de PraiseAV</title>
-<meta name="description" content="Trae el PowerPoint de un predicador invitado o un PDF. Con Microsoft PowerPoint en el ordenador, las animaciones y los vídeos funcionan como deben; sin él, cada diapositiva es una imagen.">
+<meta name="description" content="Trae el PowerPoint o PDF de un invitado. LibreOffice gratuito permite importar diapositivas fijas; Microsoft PowerPoint es necesario para reproducir animaciones y vídeos incrustados.">
 <link rel="stylesheet" href="../help.css">
 <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
 </head>
@@ -26,6 +26,7 @@
 <h2 id="adding-slides">Añadir diapositivas</h2>
 <p>En la pestaña <strong>Medios</strong>, haz clic en <strong>+ Añadir PowerPoint o PDF</strong> y elige el archivo. O arrastra el archivo al culto.</p>
 <p>PraiseAV hace una imagen de cada diapositiva. Va diciendo por dónde va («Creando diapositivas… 4 de 12») y luego añade las diapositivas al culto.</p>
+<p>Espera a que termine la importación antes de retirar el USB del predicador. PraiseAV guarda su propia copia del PowerPoint junto a las imágenes de las diapositivas. Las imágenes y los vídeos <strong>incrustados en el PowerPoint</strong> viajan con esa copia. Un vídeo <strong>vinculado a otro archivo o a una web</strong> sigue necesitando ese archivo o conexión a internet en la iglesia.</p>
 <p><figure><img src="../images/presentation-added.png" alt="Las diapositivas añadidas al culto" loading="lazy"></figure></p>
 <p><figure><img src="../images/presentation-slides.png" alt="Las diapositivas de una presentación" loading="lazy"></figure></p>
 <p>Haz clic en una diapositiva para ponerla en pantalla y usa <strong>Siguiente</strong> como siempre. Las diapositivas se guardan en la pestaña Medios, en <strong>Presentaciones</strong>, para que puedas añadirlas a otro culto.</p>
@@ -35,15 +36,18 @@
 <li><strong>PowerPoint</strong> (PPTX, PPT, PPS, PPSX), <strong>LibreOffice</strong> (ODP) y <strong>Keynote</strong> (KEY): necesitan <strong>Microsoft PowerPoint</strong> o el gratuito <strong>LibreOffice</strong> en este ordenador. PraiseAV usa PowerPoint si está (lo más parecido a como se hicieron las diapositivas) y, si no, LibreOffice.</li>
 </ul>
 <p>Si no hay ninguno instalado, PraiseAV ofrece abrir la página de descarga de LibreOffice. Instálalo una vez y vuelve a añadir el PowerPoint.</p>
-<aside class="callout tip"><p><strong>Consejo:</strong> Pide a los predicadores que envíen también un PDF (en PowerPoint: <strong>Archivo › Exportar › PDF</strong>). Es más rápido y siempre se ve bien.</p>
+<p><strong>¿Usas Apache OpenOffice?</strong> PraiseAV todavía no lo detecta como conversor automático. Abre la presentación en OpenOffice Impress, elige <strong>Archivo › Exportar en formato PDF</strong> y añade ese PDF a PraiseAV. No necesitas Microsoft PowerPoint para mostrar el texto y las imágenes como diapositivas fijas. Las animaciones y los vídeos incrustados no se reproducen en un PDF; pide el archivo de vídeo por separado y añádelo desde Medios.</p>
+<p><strong>¿Usas ONLYOFFICE Desktop Editors?</strong> PraiseAV tampoco lo detecta automáticamente. Abre la presentación en ONLYOFFICE, elige <strong>Archivo › Guardar como › PDF</strong> y añade el PDF a PraiseAV. Comprueba el PDF exportado en el ordenador de la iglesia: conserva las diapositivas fijas, pero las animaciones y los archivos multimedia incrustados necesitan otra forma de reproducción. Consulta la <a href="https://helpcenter.onlyoffice.com/docs/userguides/presentation_editor/SavePrintDownload.aspx">guía de exportación de ONLYOFFICE</a>.</p>
+<aside class="callout tip"><p><strong>Consejo:</strong> Pide a los predicadores que envíen también un PDF. Se importa sin otro programa de oficina y sirve de respaldo si la presentación se ve diferente en el ordenador de la iglesia.</p>
 </aside>
 <h2 id="animations-and-videos-with-microsoft-powerpoint">Animaciones y vídeos (con Microsoft PowerPoint)</h2>
-<p>Si <strong>Microsoft PowerPoint</strong> está instalado en el ordenador que lleva el culto, un PowerPoint se reproduce tal como lo hizo el predicador:</p>
+<p>Si <strong>Microsoft PowerPoint</strong> está instalado en el ordenador que lleva el culto, PraiseAV puede usarlo para reproducir las partes interactivas de la presentación:</p>
 <ul>
 <li>Las <strong>animaciones</strong> funcionan: los puntos aparecen de uno en uno.</li>
 <li>Las <strong>transiciones</strong> entre diapositivas funcionan (un fundido, un barrido…).</li>
 <li>Los <strong>vídeos dentro de las diapositivas</strong> se reproducen, con su sonido.</li>
 </ul>
+<p>Con un predicador invitado, prueba una diapositiva con vídeo y sonido en el <strong>ordenador de la iglesia</strong> antes del culto; después retira el USB y vuelve a probarla. La reproducción depende de PowerPoint y de los formatos disponibles en ese ordenador. Pide que incrusten los vídeos, que usen MP4 (vídeo H.264 y audio AAC) cuando sea posible y que traigan un PDF de respaldo. El PDF conserva las imágenes y el texto, pero no reproduce las animaciones ni los vídeos del PowerPoint.</p>
 <p>Encima de las diapositivas pone <strong>Se reproduce en PowerPoint</strong>. Pon la primera diapositiva en pantalla y pulsa <strong>Siguiente</strong> como siempre (las flechas, Espacio, un presentador inalámbrico o el mando en el teléfono). Cada pulsación hace lo que haría un clic en PowerPoint: el punto siguiente, y luego la diapositiva siguiente. <strong>Anterior</strong> vuelve un paso atrás. Mientras se reproduce, la línea de encima de las diapositivas dice por dónde vas, por ejemplo «diapositiva 2 de 12, paso 1 de 3».</p>
 <p>Después de la última diapositiva, <strong>Siguiente</strong> pasa al siguiente elemento del culto, igual que con las canciones. Poner cualquier otra cosa en pantalla (una canción, una lectura) cierra la presentación sola.</p>
 <p><strong>Negro</strong> y <strong>Logo</strong> funcionan como siempre, y también los <a href="parent-alerts.html">avisos a los padres</a>.</p>

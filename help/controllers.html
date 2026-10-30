@@ -87,7 +87,7 @@
 <li>In the Stream Deck app, use a free <strong>web request</strong> plugin from the Stream Deck store (search “web request”), and paste the address into a button. In <strong>Bitfocus Companion</strong>, use the <strong>Generic HTTP</strong> module with a GET request.</li>
 </ol>
 <p>The addresses contain a secret key, so only your buttons can use them. <strong>Make a new key</strong> if you think someone else has the addresses: the old ones stop working.</p>
-<p>The copied addresses start <code>http://127.0.0.1</code>, for a Stream Deck plugged into the PraiseAV computer. For Companion on another computer, use the address shown in the window instead.</p>
+<p>The copied addresses start <code>http://127.0.0.1</code>, for a Stream Deck plugged into the PraiseAV computer. That listener accepts controller commands only from this computer. For Companion on another computer, use the <code>https://</code> address shown in the window instead. Companion may need to trust PraiseAV’s local certificate before its web requests work.</p>
 
     <nav class="pager">
       <a class="prev" href="parent-alerts.html">← Congregation alerts: parents and notices</a>

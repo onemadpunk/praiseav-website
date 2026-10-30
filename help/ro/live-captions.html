@@ -22,18 +22,19 @@
   <main>
     <p class="crumb">Ecrane și transmisie</p>
     <h1>Subtitrări în direct</h1>
-<p>Subtitrările în direct transformă ce se spune în microfon în text în partea de jos a ecranului adunării: predica, anunțurile, rugăciunile. Ajută celor care aud greu, și oricui stă unde sunetul e slab.</p>
+<p>Subtitrările în direct transformă vorbirea de la microfon sau dintr-un video redat pe ecranul adunării în text în partea de jos a acelui ecran: predica, anunțurile, rugăciunile. Ajută celor care aud greu, și oricui stă unde sunetul e slab.</p>
 <aside class="callout important"><p><strong>Important:</strong> Deocamdată, recunoașterea vorbirii înțelege doar <strong>engleza</strong>. Cu un predicator care vorbește în română, subtitrările nu vor ieși bine.</p>
 </aside>
 <p>Vorbirea e recunoscută <strong>pe acest calculator</strong>. Nimic din ce se spune nu e trimis nicăieri și nu e păstrat.</p>
 <h2 id="turning-them-on">Pornirea lor</h2>
 <ol>
 <li>În coloana din dreapta, deschide <strong>Subtitrări în direct</strong>. (Prima dată, bifează-le la <strong>+ Mai multe unelte</strong>, jos în coloană.)</li>
-<li>Alege <strong>Microfonul</strong> (vezi mai jos).</li>
+<li>La <strong>Precizia subtitrărilor</strong>, alege <strong>Rapid</strong> pentru text pe măsură ce se vorbește sau <strong>Mai precis</strong> pentru text cu mai puține greșeli, afișat câteva secunde mai târziu.</li>
+<li>La <strong>Sunet din</strong>, alege <strong>Microfon sau mixer audio</strong> (vezi mai jos) sau <strong>Video redat pe ecranul congregației</strong>.</li>
 <li>Bifează <strong>Pornit</strong>.</li>
 </ol>
-<p>Prima dată, PraiseAV descarcă recunoașterea vorbirii de pe GitHub: cam 100 MB, o singură dată, așa că are nevoie de internet acea dată. (Dacă filtrul web al bisericii o blochează, PraiseAV spune asta: cere să fie permis github.com, sau pornește întâi subtitrările acasă.) O bară arată cât a ajuns. După aceea, subtitrările merg fără internet.</p>
-<p>Când scrie <strong>Ascultă</strong>, vorbește și apare textul, pe ecran și în panou. Apare cât cineva încă vorbește și e pus în ordine când face o pauză. Se șterge după câteva secunde de liniște.</p>
+<p>Fiecare mod descarcă modelul o singură dată: aproximativ 100 MB de pe GitHub pentru Rapid sau 375 MB de pe Hugging Face pentru Mai precis. Bara arată progresul. Dacă filtrul bisericii blochează descărcarea, permite site-ul corespunzător sau pornește subtitrările întâi acasă. După aceea, recunoașterea unui predicator local merge fără internet; o transmisie online are în continuare nevoie de conexiune.</p>
+<p>Când scrie <strong>Ascultă</strong>, vorbește și apare textul pe ecran și în panou. Rapid arată cuvinte care se pot schimba în timp ce se vorbește. Mai precis așteaptă un scurt fragment de vorbire și poate avea câteva secunde de întârziere. Oprește subtitrările înainte de a schimba modul. Textul dispare după câteva secunde de liniște.</p>
 <h2 id="the-best-sound">Cel mai bun sunet</h2>
 <p>Subtitrările sunt doar atât de bune cât sunetul pe care îl aud.</p>
 <ul>
@@ -41,15 +42,18 @@
 <li><strong>Merge:</strong> un microfon USB lângă predicator, sau pe amvon.</li>
 <li><strong>Nu e bine:</strong> microfonul laptopului, în spatele sălii. Aude toată sala.</li>
 </ul>
+<h2 id="another-church-s-stream">Transmisia altei biserici</h2>
+<p>Adaugă legătura YouTube sau Vimeo a celeilalte biserici la serviciu și afișează videoul pe ecranul adunării. La <strong>Sunet din</strong>, alege <strong>Video redat pe ecranul congregației</strong>, apoi pornește subtitrările. PraiseAV preia direct sunetul acelui ecran, fără cablu sau microfon în sală. Videoul rămâne audibil. Subtitrările apar într-o bandă separată sub player și nu îl acoperă.</p>
+<p>Testează transmisia reală înainte de serviciu. Videoul are nevoie de internet chiar dacă modelul pentru subtitrări a fost deja descărcat. Reclamele și alte sunete din video pot fi și ele subtitrate. Pentru un predicator prezent în biserică, revino la <strong>Microfon sau mixer audio</strong>.</p>
 <h2 id="songs">Cântări</h2>
 <p>Cât o cântare e pe ecran, subtitrările fac pauză: versurile cântării sunt deja acolo, iar cântatul nu se subtitrează bine. Ca să subtitrezi și în timpul cântărilor (de exemplu pentru un solo ale cărui versuri nu sunt pe ecran), bifează <strong>Arată și în timpul cântărilor</strong>.</p>
 <h2 id="size-and-place">Mărime și loc</h2>
 <p>Alege <strong>Mic</strong>, <strong>Normal</strong> sau <strong>Mare</strong>. Subtitrările stau într-o bandă întunecată în partea de jos a ecranului adunării, deasupra eventualelor anunțuri pentru părinți, iar textul diapozitivului se mută în sus ca să le facă loc.</p>
 <h2 id="what-to-expect">La ce să te aștepți</h2>
-<p>Ca orice recunoaștere a vorbirii, uneori aude greșit: mai ales nume, locuri din Biblie și cuvinte neobișnuite, și când vorbesc doi oameni deodată. E bună ca să poți urmări, dar nu e o transcriere.</p>
-<p>Merge cel mai bine pe un calculator cumpărat în ultimii cinci ani. Pe unul mai vechi, textul poate veni cu o secundă sau două întârziere.</p>
+<p>Ambele moduri pot greși nume, locuri biblice, cuvinte neobișnuite și vorbirea suprapusă. Mai precis a redus greșelile în testele noastre cu înregistrări, dar nu garantează o transcriere exactă. Repetă cu mixerul și predicatorul real înainte de slujbă.</p>
+<p>Mai precis folosește mai multă putere de procesare. Dacă textul rămâne tot mai mult în urmă pe calculatorul bisericii, alege Rapid sau un calculator mai puternic.</p>
 <h2 id="credits">Mulțumiri</h2>
-<p>Recunoașterea vorbirii e modelul în engleză NeMo streaming FastConformer de la NVIDIA (licență CC BY 4.0), rulat cu setul gratuit de instrumente sherpa-onnx al proiectului k2-fsa (Apache 2.0).</p>
+<p>Rapid folosește modelul în engleză NeMo streaming FastConformer de la NVIDIA (CC BY 4.0). Mai precis folosește Whisper small English de la OpenAI (MIT), convertit în ONNX de sherpa-onnx. Ambele rulează cu sherpa-onnx (Apache 2.0).</p>
 
     <nav class="pager">
       <a class="prev" href="live-video.html">← Video în direct pe ecran</a>

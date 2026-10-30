@@ -22,16 +22,18 @@
   <main>
     <p class="crumb">Screens and livestream</p>
     <h1>Live captions</h1>
-<p>Live captions turn what&#39;s said into the microphone into words along the bottom of the congregation screen: the sermon, the notices, the prayers. They help people who are hard of hearing, and anyone sitting where the sound is poor.</p>
+<p>Live captions turn speech from a microphone or a video playing on the congregation screen into words along the bottom of that screen: the sermon, the notices, the prayers. They help people who are hard of hearing, and anyone sitting where the sound is poor.</p>
 <p>The speech is recognised <strong>on this computer</strong>. Nothing that&#39;s said is sent anywhere or kept.</p>
+<p>Live captions currently recognise <strong>English speech only</strong>.</p>
 <h2 id="turning-them-on">Turning them on</h2>
 <ol>
 <li>In the right-hand column, open <strong>Live captions</strong>. (The first time, tick it under <strong>+ More tools</strong> at the bottom of the column.)</li>
-<li>Choose the <strong>Microphone</strong> (see below).</li>
+<li>Under <strong>Caption accuracy</strong>, choose <strong>Fast</strong> for words as they are spoken, or <strong>More accurate</strong> for steadier words several seconds later.</li>
+<li>Under <strong>Sound from</strong>, choose <strong>Microphone or sound desk</strong> (see below) or <strong>Video playing on congregation screen</strong>.</li>
 <li>Tick <strong>On</strong>.</li>
 </ol>
-<p>The first time, PraiseAV downloads its speech recognition from GitHub: about 100 MB, once, so it needs the internet that one time. (If the church’s web filter blocks it, PraiseAV says so: ask for github.com to be allowed, or turn captions on at home first.) A bar shows how far it&#39;s got. After that, captions work without the internet.</p>
-<p>When it says <strong>Listening</strong>, speak and the words appear, on the screen and in the panel. They show while someone is still talking and are tidied up when they pause. They clear after a few seconds of quiet.</p>
+<p>Each mode downloads its speech model once: about 100 MB from GitHub for Fast, or about 375 MB from Hugging Face for More accurate. A bar shows progress. If the church’s web filter blocks the download, allow the relevant site or turn captions on at home first. After the model is downloaded, recognising a local preacher works without the internet. A web stream still needs its own connection.</p>
+<p>When it says <strong>Listening</strong>, speak and the words appear on the screen and in the panel. Fast shows changing words while someone is talking. More accurate waits for a short piece of speech before showing it, so its words may be several seconds behind. They clear after a few seconds of quiet. Turn captions off to change modes.</p>
 <h2 id="the-best-sound">The best sound</h2>
 <p>Captions are only as good as the sound they hear.</p>
 <ul>
@@ -39,15 +41,18 @@
 <li><strong>All right:</strong> a USB microphone near the preacher, or on the lectern.</li>
 <li><strong>Not good:</strong> the laptop&#39;s own microphone at the back of the room. It hears the whole room.</li>
 </ul>
+<h2 id="another-church-s-stream">Another church’s stream</h2>
+<p>Add the parent church’s YouTube or Vimeo link to the service and put its video on the congregation screen. Under <strong>Sound from</strong>, choose <strong>Video playing on congregation screen</strong>, then turn captions on. PraiseAV listens directly to that screen’s sound, without a cable or a room microphone. The video remains audible. Captions appear in a separate strip below the player, so they do not cover it.</p>
+<p>Test the actual stream before the service. Internet is needed for the video, even after the caption model has been downloaded. Advertisements and any other sound in the video may also be captioned. For a local preacher, switch <strong>Sound from</strong> back to <strong>Microphone or sound desk</strong>.</p>
 <h2 id="songs">Songs</h2>
 <p>While a song is on the screen, captions pause: the song&#39;s words are already there, and singing doesn&#39;t caption well. To caption during songs too (say, for a solo whose words aren&#39;t on screen), tick <strong>Show during songs too</strong>.</p>
 <h2 id="size-and-place">Size and place</h2>
 <p>Choose <strong>Small</strong>, <strong>Normal</strong> or <strong>Large</strong>. The captions sit in a dark strip along the bottom of the congregation screen, above any parent alerts, and the slide&#39;s words move up to make room.</p>
 <h2 id="what-to-expect">What to expect</h2>
-<p>Like any speech recognition, it sometimes mishears: names, Bible places and unusual words most of all, and when two people talk at once. It&#39;s good for following along, but it isn&#39;t a transcript.</p>
-<p>It works best on a computer bought in the last five years or so. On an older one the words may come a second or two late.</p>
+<p>Both modes can mishear names, Bible places, unusual words, and overlapping speakers. More accurate reduced mistakes in our recorded sermon and audiobook tests, but it does not promise a verbatim transcript. Rehearse with the actual sound desk and preacher before relying on it during a service.</p>
+<p>More accurate uses more processing power. If its words fall further and further behind on the church computer, switch to Fast or use a stronger computer.</p>
 <h2 id="credits">Credits</h2>
-<p>The speech recognition is NVIDIA&#39;s NeMo streaming FastConformer English model (licensed CC BY 4.0), run with the free sherpa-onnx toolkit from the k2-fsa project (Apache 2.0).</p>
+<p>Fast uses NVIDIA&#39;s NeMo streaming FastConformer English model (CC BY 4.0). More accurate uses OpenAI&#39;s Whisper small English model (MIT), converted to ONNX by the sherpa-onnx project. Both run with the free sherpa-onnx toolkit (Apache 2.0).</p>
 
     <nav class="pager">
       <a class="prev" href="live-video.html">← Live video on the screen</a>
