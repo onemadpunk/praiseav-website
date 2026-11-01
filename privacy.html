@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy policy · PraiseAV</title>
-    <meta name="description" content="PraiseAV has no account, no tracking and no adverts. What it keeps on your computer, and the few times it uses the internet." />
+    <meta name="description" content="Privacy for PraiseAV Windows and the optional PraiseAV Suite web companion, including church-owned Firebase data." />
     <style>
       :root {
         --bg: #f7f9fc;
@@ -57,12 +57,12 @@
     </header>
     <main>
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated 30 October 2026 · applies to PraiseAV for Windows</p>
+      <p class="updated">Last updated 1 November 2026 · PraiseAV Windows and optional PraiseAV Suite</p>
 
       <div class="short">
         <strong>The short version</strong>
         <ul>
-          <li>PraiseAV has <strong>no account</strong>, <strong>no tracking</strong>, <strong>no analytics</strong> and <strong>no adverts</strong>.</li>
+          <li>PraiseAV for Windows has <strong>no account</strong>, <strong>no tracking</strong>, <strong>no analytics</strong> and <strong>no adverts</strong>.</li>
           <li>Your songs, services, media and settings stay <strong>on your computer</strong>, or in a folder you choose (OneDrive, Google Drive or a USB stick).</li>
           <li>We (the people who make PraiseAV) don’t receive your songs, services, media or anything you put on screen.</li>
           <li>PraiseAV only uses the internet for the things listed below, and mostly only when you ask it to.</li>
@@ -229,16 +229,20 @@
         which help us fix problems. These don’t include your songs, services or anything you put on screen.
       </p>
 
+      <h2>Optional PraiseAV Suite web companion</h2>
+      <p>PraiseAV Suite is a separate web app. In church mode it uses the Firebase project that the church administrator creates and owns. People sign in with their own Google account. Firebase Authentication processes their account identifier, email and display name; Google&#39;s <a href="https://policies.google.com/privacy">privacy policy</a> applies. An administrator approves and assigns roles before church records can be read.</p>
+      <p>Cloud Firestore in the church&#39;s project stores the records that authorised users enter: service plans, songs, people and pastoral notes, child check-ins and medical notes, groups, room bookings, and giving records. The church chooses who may see each area through the Suite&#39;s roles and its Firestore rules. These records are hosted by Google in the location the church chose. The people who make PraiseAV do not receive a copy by default. Contact the church administrator about a record concerning you or your child.</p>
+      <p>The browser stores the chosen project connection details, which are not an administrator password. An older Suite version stored records in that browser&#39;s localStorage; the upgraded Suite can read them for backup but does not upload them automatically. Sample mode keeps example data in memory. Downloaded .praiseav service files and JSON backups are kept wherever the person saves them; JSON backups are not encrypted and can contain sensitive personal information.</p>
+      <p>The Suite does not send live projector commands or public parent alerts. A parent page uses a public pager reference separate from the private child pickup code. The Suite has no payment processor; giving records are entered by the church. See the <a href="https://github.com/onemadpunk/PraiseAV_Suite/blob/main/docs/roles-and-privacy.md">Suite roles and privacy guide</a>.</p>
+
       <h2>Children</h2>
       <p>
-        PraiseAV is used by churches and isn’t directed at children. It doesn’t collect information from anyone, including children.
-        Congregation alerts are shown on screen and not saved (see above).
+        PraiseAV Windows is used by churches and isn’t directed at children. Its congregation alerts are shown on screen and not saved (see above). The optional Suite can store child check-in records in the church&#39;s Firebase project when authorised church staff enter them.
       </p>
 
       <h2>Your rights</h2>
       <p>
-        Under UK data protection law (UK GDPR) you have rights over personal information held about you. Because PraiseAV keeps your
-        information on your own computer and we don’t receive it, we don’t hold personal information about you through the app. If
+        Under UK data protection law (UK GDPR) you have rights over personal information held about you. PraiseAV Windows keeps information on the church&#39;s computer or chosen folders. Suite church records are held in the church&#39;s Firebase project; ask the church administrator about access, correction or deletion of those records. We do not receive them by default. If
         you contact us, we’ll use your message only to reply, and delete it when it’s no longer needed. You can also complain to the
         <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner’s Office</a>.
       </p>
