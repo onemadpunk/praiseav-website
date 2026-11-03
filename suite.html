@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PraiseAV Suite · Plan services together</title>
+    <meta name="description" content="Explore PraiseAV Suite: a web companion for service plans, song keys, volunteer rotas and church records, with real screenshots and a clear route into PraiseAV Windows." />
+    <meta property="og:title" content="PraiseAV Suite · Plan services together" />
+    <meta property="og:description" content="Plan the service with your team, then open it in PraiseAV Windows. See the Suite pilot and real sample screens." />
+    <meta property="og:image" content="https://praiseav.com/help/images/suite-service-planning.png" />
+    <meta property="og:url" content="https://praiseav.com/suite.html" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <style>
+      :root { --bg:#08121e; --panel:#101f30; --panel-2:#142b41; --text:#f7f9fc; --muted:#b6c6d7; --rule:#284057; --blue:#078df8; --cyan:#00c9ff; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; background:var(--bg); color:var(--text); font:17px/1.58 'Segoe UI',system-ui,-apple-system,Roboto,sans-serif; }
+      a { color:var(--cyan); }
+      img { display:block; max-width:100%; height:auto; }
+      .nav { position:sticky; top:0; z-index:10; border-bottom:1px solid var(--rule); background:rgba(8,18,30,.94); backdrop-filter:blur(10px); }
+      .nav-inner { max-width:1180px; margin:auto; padding:12px 20px; display:flex; align-items:center; gap:24px; }
+      .nav img { width:154px; }
+      .nav-links { margin-left:auto; display:flex; align-items:center; gap:22px; }
+      .nav-links a { color:var(--text); text-decoration:none; font-size:15px; }
+      .nav-links a:hover, .nav-links a:focus-visible { color:var(--cyan); }
+      .button { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:46px; padding:11px 21px; border-radius:999px; border:1px solid #3489bb; color:var(--text); text-decoration:none; font-weight:700; line-height:1.25; }
+      .button:hover, .button:focus-visible { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(0,201,255,.16); }
+      .button.primary { border:0; background:linear-gradient(105deg,#00bde8,#087de5 65%,#0752de); color:#fff; }
+      .button.small { min-height:38px; padding:8px 17px; font-size:15px; }
+      .hero { padding:72px 20px 50px; background:radial-gradient(ellipse at 72% 0%,#16496b 0%,#0d2237 40%,var(--bg) 78%); }
+      .hero-inner, main { max-width:1180px; margin:auto; }
+      .hero-inner { display:grid; grid-template-columns:.9fr 1.1fr; gap:40px; align-items:center; }
+      .eyebrow { color:#75d8fc; text-transform:uppercase; letter-spacing:.16em; font-size:13px; font-weight:800; }
+      h1 { font-size:clamp(38px,5vw,68px); line-height:1.06; letter-spacing:-.04em; margin:14px 0 21px; }
+      .lead { color:var(--muted); font-size:clamp(18px,2vw,22px); max-width:590px; margin:0 0 27px; }
+      .actions { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:16px; }
+      .micro { color:var(--muted); font-size:14px; margin:0; }
+      figure { margin:0; }
+      .frame { overflow:hidden; border:1px solid #35536c; border-radius:17px; background:var(--panel); box-shadow:0 25px 65px rgba(0,0,0,.38); }
+      .frame img { width:100%; }
+      figcaption { color:var(--muted); font-size:14px; margin:10px 3px 0; }
+      main { padding:0 20px 75px; }
+      section { padding-top:76px; }
+      h2 { font-size:clamp(30px,4vw,43px); line-height:1.15; letter-spacing:-.025em; margin:0 0 14px; }
+      .section-intro { color:var(--muted); max-width:730px; margin:0 0 28px; font-size:18px; }
+      .feature-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; }
+      .feature-card { background:linear-gradient(145deg,var(--panel-2),var(--panel)); border:1px solid var(--rule); border-radius:15px; padding:24px; }
+      .feature-card .number { display:block; color:#69d3fa; font-size:13px; font-weight:800; letter-spacing:.08em; margin-bottom:14px; }
+      .feature-card h3 { font-size:20px; line-height:1.28; margin:0 0 8px; }
+      .feature-card p { color:var(--muted); font-size:16px; margin:0; }
+      .showcase { display:grid; grid-template-columns:.7fr 1.3fr; gap:35px; align-items:center; margin-top:34px; }
+      .showcase h3 { font-size:26px; line-height:1.2; margin:0 0 12px; }
+      .showcase p, .showcase li { color:var(--muted); }
+      .showcase ul { padding-left:20px; }
+      .flow { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; }
+      .step { border-left:3px solid var(--cyan); background:var(--panel); padding:20px 22px; border-radius:0 12px 12px 0; }
+      .step strong { display:block; font-size:19px; margin-bottom:6px; }
+      .step p { color:var(--muted); margin:0; font-size:16px; }
+      .access { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+      .access article { background:var(--panel); border:1px solid var(--rule); border-radius:14px; padding:23px; }
+      .access h3 { margin:0 0 8px; font-size:21px; }
+      .access p { color:var(--muted); margin:0 0 12px; }
+      .pilot { background:linear-gradient(120deg,#153450,#0d2135); border:1px solid #31536b; border-radius:18px; padding:30px; }
+      .pilot h2 { margin-top:0; }
+      .pilot p { color:var(--muted); max-width:810px; }
+      footer { border-top:1px solid var(--rule); padding:26px 20px 35px; text-align:center; color:var(--muted); font-size:14px; }
+      footer a { margin:0 9px; }
+      @media (max-width:900px) { .hero-inner,.showcase { grid-template-columns:1fr; } .hero { padding-top:52px; } .hero figure { max-width:800px; } .feature-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+      @media (max-width:620px) { .nav-inner { gap:12px; padding:10px 14px; } .nav img { width:126px; } .nav-links { gap:10px; } .nav-links .secondary { display:none; } .button.small { padding:7px 12px; } .hero,main { padding-left:16px; padding-right:16px; } section { padding-top:58px; } .feature-grid,.flow,.access { grid-template-columns:1fr; } }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" aria-label="Main">
+      <div class="nav-inner">
+        <a href="index.html" aria-label="PraiseAV home"><img src="logo.svg" alt="PraiseAV" /></a>
+        <div class="nav-links">
+          <a class="secondary" href="index.html">PraiseAV Windows</a>
+          <a class="secondary" href="#features">Suite features</a>
+          <a class="button primary small" href="https://praiseav-suite.web.app/">Open Suite</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow">PraiseAV Suite · web companion</span>
+          <h1>Plan together.<br />Run it in PraiseAV.</h1>
+          <p class="lead">Prepare the service, organise songs and volunteers, and keep church planning records in one web workspace. Then take your finished service into PraiseAV on the Windows laptop.</p>
+          <div class="actions">
+            <a class="button primary" href="https://praiseav-suite.web.app/">Open the Suite pilot ↗</a>
+            <a class="button" href="#features">See what it does</a>
+          </div>
+          <p class="micro">Optional pilot · church-owned cloud setup · no PraiseAV subscription</p>
+        </div>
+        <figure>
+          <div class="frame"><img src="help/images/suite-service-planning.png" width="1692" height="890" alt="Sample PraiseAV Suite service plan with an order of service, volunteer leaders and song keys" /></div>
+          <figcaption>Real Suite screen using sample church data. No real church records are shown.</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <main>
+      <section id="features" aria-labelledby="features-title">
+        <h2 id="features-title">What you can do today</h2>
+        <p class="section-intro">Plan the week with your team, then use PraiseAV Windows to run the service. The Suite is in pilot, and some member tools are still being built.</p>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="number">01 / PLAN</span><h3>Build an order of service</h3><p>Set timings, leaders, notes and the key and arrangement for each song in a service plan.</p></article>
+          <article class="feature-card"><span class="number">02 / MUSIC</span><h3>Prepare songs and charts</h3><p>Keep church-licensed words and chords, change keys, view a tablet-friendly band stand and print a songbook from the browser.</p></article>
+          <article class="feature-card"><span class="number">03 / PEOPLE</span><h3>Assign volunteer rotas</h3><p>Link volunteers to a service and see warnings for blockout dates and same-day assignments.</p></article>
+          <article class="feature-card"><span class="number">04 / SUNDAY</span><h3>Manage check-ins</h3><p>Record children’s check-ins and prepare a public parent pager reference for the AV operator.</p></article>
+          <article class="feature-card"><span class="number">05 / CHURCH</span><h3>Keep planning records together</h3><p>Work with people, groups, room bookings and giving records according to each person’s church role.</p></article>
+          <article class="feature-card"><span class="number">06 / HANDOFF</span><h3>Open the plan in PraiseAV</h3><p>Export a <code>.praiseav</code> service file for the Windows app, including per-service song keys and arrangements.</p></article>
+        </div>
+        <div class="showcase">
+          <div>
+            <h3>See the song library</h3>
+            <p>Search titles, writers and CCLI numbers, prepare a song in a new key, and add it to the current service.</p>
+            <p>These screens contain sample songs without licensed lyrics or chord charts. Your church adds the words and charts it has permission to use.</p>
+          </div>
+          <figure>
+            <div class="frame"><img src="help/images/suite-song-library.png" width="1692" height="890" loading="lazy" alt="Sample PraiseAV Suite song library with song search, key controls and service actions" /></div>
+            <figcaption>Real Suite screen using sample church data.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="connection-title">
+        <h2 id="connection-title">How it connects to PraiseAV Windows</h2>
+        <p class="section-intro">The service file is the handoff between planning and the live presentation app.</p>
+        <div class="flow">
+          <div class="step"><strong>1. Plan in the Suite</strong><p>Choose the running order, song keys and arrangements, timings and team.</p></div>
+          <div class="step"><strong>2. Export the service</strong><p>Download the <code>.praiseav</code> file, or send it to the Windows Services folder from a browser that supports folder access.</p></div>
+          <div class="step"><strong>3. Open it on the laptop</strong><p>Load the service in PraiseAV Windows before Sunday. Export and reopen it after any later Suite changes.</p></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="access-title">
+        <h2 id="access-title">How your church gets access</h2>
+        <p class="section-intro">Church data belongs to the church’s own Firebase project. PraiseAV Windows works on its own if you do not use the Suite.</p>
+        <div class="access">
+          <article><h3>For the church administrator</h3><p>Set up a Firebase project on the free Spark plan, connect the Suite, and share the church’s invite link. The administrator reviews access requests and chooses roles.</p><a href="https://github.com/onemadpunk/PraiseAV_Suite/blob/main/docs/church-setup.md">Church setup guide ↗</a></article>
+          <article><h3>For a church member</h3><p>Open your church’s link, sign in with your own Google account, and request access. An administrator must approve the request; they do not need to create your Google account for you.</p><p>Member access currently covers groups and room bookings. A member-facing address book and household profile are planned, not yet available.</p></article>
+        </div>
+      </section>
+
+      <section aria-labelledby="pilot-title">
+        <div class="pilot">
+          <h2 id="pilot-title">About the pilot</h2>
+          <p>Shared church mode uses Firestore in the church’s Firebase project and is available on the free Spark plan within Firebase’s usage limits. The public Suite address opens the PraiseAV pilot; other churches can choose “Use another church” to connect their own project.</p>
+          <p>The current Suite has a band chart reader and rota conflict warnings. Volunteer self-service scheduling, bulk song import inside the Suite, automatic projector parent alerts and a member-facing address book are still to come. PraiseAV Windows already has its own song import tools and manually operated congregation alerts.</p>
+          <div class="actions"><a class="button primary" href="https://praiseav-suite.web.app/">Open PraiseAV Suite ↗</a><a class="button" href="index.html">Explore PraiseAV Windows</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer><a href="index.html">PraiseAV Windows</a>·<a href="help/">Help</a>·<a href="privacy.html">Privacy</a>·<a href="mailto:onemadpunk+praiseav@gmail.com">Contact</a><p>PraiseAV · made in the UK for churches</p></footer>
+  </body>
+</html>
