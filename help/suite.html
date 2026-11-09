@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PraiseAV Suite: planning together · PraiseAV Help</title>
+<meta name="description" content="The free web companion: set up your church, invite the team, plan services and songs, send them to the church computer, let the band know, and who can see what.">
+<link rel="stylesheet" href="help.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="PraiseAV"> <span>Help</span></a>
+  <div class="search">
+    <input id="search" type="search" placeholder="Search the help" aria-label="Search the help" autocomplete="off">
+    <ol id="results" hidden></ol>
+  </div>
+  <button class="menu" id="menu" aria-label="Show the contents">☰</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"><div class="nav-section"><h3>Start here</h3><ul><li><a href="index.html">PraiseAV Help</a></li><li><a href="first-sunday.html">Your first Sunday</a></li><li><a href="coming-from-easyworship.html">Coming from EasyWorship</a></li><li><a href="keyboard-shortcuts.html">Keyboard shortcuts</a></li></ul></div><div class="nav-section"><h3>Building a service</h3><ul><li><a href="songs.html">Songs</a></li><li><a href="bible.html">The Bible</a></li><li><a href="services.html">Services</a></li><li><a href="suite.html" class="current" aria-current="page">PraiseAV Suite: planning together</a></li><li><a href="printing.html">Printing</a></li><li><a href="ccli-report.html">CCLI report</a></li></ul></div><div class="nav-section"><h3>Running a service</h3><ul><li><a href="running-a-service.html">Running a service</a></li><li><a href="without-a-volunteer.html">Running a service without an AV volunteer</a></li><li><a href="sermons.html">Sermons and the preacher’s screen</a></li><li><a href="timers-and-prompts.html">Band and preacher prompts: timers and prompts</a></li><li><a href="parent-alerts.html">Congregation alerts: parents and notices</a></li><li><a href="controllers.html">MIDI and Stream Deck</a></li></ul></div><div class="nav-section"><h3>Media and slides</h3><ul><li><a href="media.html">Media: videos, pictures and backgrounds</a></li><li><a href="web-pages.html">Web pages and YouTube videos</a></li><li><a href="music-and-audio.html">Music and audio</a></li><li><a href="powerpoint-and-pdf.html">PowerPoint and PDF</a></li><li><a href="slide-designer.html">Slide designer</a></li><li><a href="announcement-loops.html">Announcement loops</a></li><li><a href="themes.html">Themes: how the words look</a></li></ul></div><div class="nav-section"><h3>Screens and livestream</h3><ul><li><a href="screens.html">Screens</a></li><li><a href="projectors.html">Projectors and test patterns</a></li><li><a href="live-video.html">Live video on the screen</a></li><li><a href="live-captions.html">Live captions</a></li><li><a href="go-live.html">Going live on YouTube</a></li><li><a href="recording.html">Recording the service</a></li><li><a href="livestream-and-atem.html">Livestream and ATEM</a></li><li><a href="screens-on-the-network.html">Screens on the network</a></li><li><a href="words-on-phones.html">Words on phones</a></li><li><a href="phone-remote.html">Phone and tablet remote</a></li></ul></div><div class="nav-section"><h3>Setups and hardware</h3><ul><li><a href="example-setups.html">Example setups</a></li><li><a href="hardware.html">Hardware: what to buy</a></li></ul></div><div class="nav-section"><h3>Looking after PraiseAV</h3><ul><li><a href="church-setup.html">Church setup</a></li><li><a href="backups.html">Backups and moving to a new computer</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li></ul></div></nav>
+  <main>
+    <p class="crumb">Building a service</p>
+    <h1>PraiseAV Suite: planning together</h1>
+<p><strong>PraiseAV Suite</strong> is a free website for planning with your team: services, songs and keys, rotas, sermons, people, check-ins, groups, rooms and giving records. PraiseAV on the church computer then runs the service. You don’t need the Suite to use PraiseAV.</p>
+<p>Open it at <strong><a href="https://praiseav-suite.web.app/">praiseav-suite.web.app</a></strong>, or from your church’s invitation link. It works on a computer, tablet or phone.</p>
+<p><figure><img src="images/suite-service-planning.png" alt="Planning a service in the Suite" loading="lazy"></figure></p>
+<h2 id="setting-up-your-church">Setting up your church</h2>
+<p>One person, the church administrator, does this once. They need a Google account that the church controls. Everyone else just gets a link.</p>
+<ol>
+<li>Open the Suite, type your church’s name and town and click <strong>Find church</strong>. If your church is already there, ask its administrator for the church link instead.</li>
+<li>If it isn’t there, click <strong>Set up this church</strong> and sign in with the church’s Google account. This holds the name for about two weeks while you finish.</li>
+<li>Follow the <strong>Church setup checklist</strong>. It links straight to each page you need in Firebase (Google’s free service that keeps your church’s records): make a project on the free <strong>Spark</strong> plan, add a web app and paste its code into the Suite, switch on <strong>Google</strong> and <strong>Email/Password</strong> sign-in, and create the database.</li>
+<li>Click <strong>Copy security rules</strong>, paste them into Firebase’s Firestore <strong>Rules</strong> page, and publish.</li>
+<li>Tick <strong>I published these rules</strong>, then click <strong>Connect and sign in</strong>.</li>
+</ol>
+<p>Your church’s records live in your church’s own Firebase project, not with PraiseAV. Free use has limits; a typical church stays well inside them.</p>
+<p>When the Suite says your rules are out of date (after a Suite update), open <strong>Church access</strong>, copy the updated rules, and publish them in Firebase the same way.</p>
+<h2 id="inviting-the-team">Inviting the team</h2>
+<p>Open <strong>Church access</strong> and copy the church link, or type someone’s email to open an invitation in your own email app. People sign in with Google, or create an account with any email address and a password (they click the link in the email Firebase sends to confirm it). Nobody sees church records until an administrator approves them and gives them a role.</p>
+<p>Forgotten password? <strong>Reset password</strong> on the sign-in page sends a reset email.</p>
+<h2 id="connecting-the-church-computer">Connecting the church computer</h2>
+<p>Do this once, so services arrive in PraiseAV by themselves.</p>
+<ol>
+<li>In the Suite, open <strong>Church access → Set up the booth computer</strong> and click <strong>Copy booth code</strong>.</li>
+<li>On the church computer, open PraiseAV → <strong>More → Church sharing</strong>, paste the code under <strong>PraiseAV Suite</strong>, type an email and password for the booth, and click <strong>Create the booth login</strong>.</li>
+<li>Click the link in the email that arrives, then click <strong>Continue</strong> in PraiseAV.</li>
+<li>Back in the Suite, a request marked <strong>Booth computer</strong> appears. Click <strong>Approve as booth computer</strong>.</li>
+</ol>
+<p>Use a church email for the booth, such as <code>yourchurch.avdesk@gmail.com</code>. The booth login only sees services and songs, never people, giving or children’s records. PraiseAV checks for new things about once a minute while it’s open.</p>
+<h2 id="planning-a-service-and-sending-it">Planning a service and sending it</h2>
+<ol>
+<li>In <strong>Services &amp; Order</strong>, click <strong>New plan</strong>, then <strong>Add item</strong> for songs, readings, the sermon, prayers and notices. Choose each song’s key for this service.</li>
+<li>Open <strong>PraiseAV export</strong> and click <strong>Send to the booth</strong>. The Suite shows when the church computer has the latest version.</li>
+<li>Change something later? Send it again. If the service is already open in PraiseAV, the AV desk sees <strong>Load update</strong> and chooses a safe moment. Nothing on screen changes by surprise.</li>
+</ol>
+<p>A guest speaker’s PowerPoint or PDF can be added to its row from any device, even an iPad: it travels through the church cloud and PraiseAV turns it into slides. No booth connected? <strong>Send to PraiseAV folder</strong> (Chrome or Edge, with a shared OneDrive or Google Drive folder) or <strong>Download .praiseav</strong> still work. See <a href="services.html#plan-at-home-run-at-church">Services</a>.</p>
+<h2 id="sermons-from-home">Sermons from home</h2>
+<p>The planner puts the sermon in the service and gives the preacher’s email in <strong>My sermon &amp; tablet</strong>. The preacher signs in, writes private notes and congregation slides (use <code>---</code> between pages), adds videos, music, PowerPoint or PDF, and clicks <strong>Send my sermon to church</strong>. Videos up to 100 MB and music up to 50 MB go through the church cloud; bigger videos need the shared folder.</p>
+<p>On Sunday the preacher’s tablet joins the church Wi-Fi and is approved as a preacher remote. See <a href="phone-remote.html">Phone and tablet remote</a>.</p>
+<h2 id="letting-the-band-know">Letting the band know</h2>
+<p><figure><img src="images/suite-song-library.png" alt="The song library" loading="lazy"></figure></p>
+<p>When the songs and keys are set, the worship leader clicks <strong>Let the team know</strong> on the service. Everyone on the rota sees <strong>You’re on the rota</strong> in <strong>Band stand</strong> and answers <strong>I can serve</strong> or <strong>Can’t make it</strong>; their answers show beside the rota. It also opens the leader’s own email app with the team in Bcc and the order filled in, so one press of Send emails them too. <strong>Tell the team again</strong> repeats it after a change.</p>
+<p>Musicians can open <strong>Band stand</strong> at home to read the charts in their own key and capo, or print a songbook. At church, their tablets follow the live slides through PraiseAV’s <a href="phone-remote.html">band stand</a>.</p>
+<h2 id="who-can-see-what">Who can see what</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Can see</th>
+<th>Can change</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Owner, admin</td>
+<td>Everything</td>
+<td>Everything</td>
+</tr>
+<tr>
+<td>Planner, worship leader</td>
+<td>Services and songs</td>
+<td>Services and songs</td>
+</tr>
+<tr>
+<td>Preacher</td>
+<td>Services, songs and their own sermon drafts</td>
+<td>Their own sermons</td>
+</tr>
+<tr>
+<td>AV, musician</td>
+<td>Services and songs</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>People</td>
+<td>The people list, including pastoral notes</td>
+<td>The people list</td>
+</tr>
+<tr>
+<td>Kids</td>
+<td>Check-ins, pickup codes and medical notes</td>
+<td>Check-ins</td>
+</tr>
+<tr>
+<td>Finance</td>
+<td>Giving records</td>
+<td>Giving records</td>
+</tr>
+<tr>
+<td>Member, family</td>
+<td>Groups, rooms and the opt-in church directory</td>
+<td>Their own details</td>
+</tr>
+</tbody></table>
+<p>A person can have more than one role. In the <strong>Church directory</strong>, each adult chooses whether to show their name, household, email and phone; it’s all off until they choose. Giving records are a record for the church’s finance team, not a payment system or a Gift Aid claim. Backups you download contain personal details and aren’t encrypted, so keep them somewhere safe.</p>
+<p>See the <a href="https://praiseav.com/privacy.html">privacy policy</a> for more.</p>
+
+    <nav class="pager">
+      <a class="prev" href="services.html">← Services</a>
+      <a class="next" href="printing.html">Printing →</a>
+    </nav>
+  </main>
+</div>
+<script src="search-index.js"></script>
+<script src="help.js"></script>
+</body>
+</html>
