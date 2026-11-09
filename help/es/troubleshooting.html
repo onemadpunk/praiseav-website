@@ -35,6 +35,8 @@
 </ol>
 <h2 id="the-projector-shows-my-desktop-or-a-copy-of-my-screen">El proyector muestra mi escritorio, o una copia de mi pantalla</h2>
 <p>Windows está copiando (duplicando) tu pantalla en el proyector. PraiseAV se da cuenta y muestra un mensaje amarillo arriba: haz clic en <strong>Usarlo como pantalla aparte</strong>. O pulsa <kbd>Windows</kbd>+<kbd>P</kbd> y elige <strong>Extender</strong>. PraiseAV encuentra entonces el proyector y pone la letra en él.</p>
+<h2 id="the-projector-picture-stops">La imagen del proyector se detiene</h2>
+<p>Pulsa <strong>Restaurar la salida del proyector</strong>, debajo de <strong>En pantalla</strong>, para recargar la imagen y los mensajes sin avanzar la canción ni la diapositiva. Si está activado <strong>Negro</strong>, seguirá activado. Los vídeos y animaciones pueden empezar de nuevo. Si falla, guarda los diagnósticos con <strong>Informar de un problema…</strong>.</p>
 <h2 id="the-words-are-on-the-wrong-screen">La letra sale en la pantalla equivocada</h2>
 <p>Abre <strong>Pantallas…</strong>. En el <a href="screens.html#the-screen-map">mapa de pantallas</a>, toca las dos pantallas para intercambiarlas. PraiseAV lo recuerda para la próxima vez.</p>
 <h2 id="a-video-won-t-play">Un vídeo no se reproduce</h2>
@@ -52,10 +54,11 @@
 <h2 id="a-powerpoint-won-t-come-in">Un PowerPoint no entra</h2>
 <p>PraiseAV necesita <strong>Microsoft PowerPoint</strong> o el gratuito <strong>LibreOffice</strong> para importar archivos de PowerPoint automáticamente. Instala LibreOffice, o pide un PDF. Si usas <strong>ONLYOFFICE Desktop Editors</strong> o <strong>Apache OpenOffice</strong>, abre allí la presentación, expórtala como PDF y añade ese PDF a PraiseAV. Comprueba las diapositivas exportadas antes del culto: las animaciones y los vídeos incrustados no se reproducirán en el PDF. Mira <a href="powerpoint-and-pdf.html">PowerPoint y PDF</a>.</p>
 <h2 id="a-powerpoint-s-points-all-show-at-once-or-its-video-doesn-t-play">Los puntos de un PowerPoint salen todos a la vez, o su vídeo no se reproduce</h2>
-<p>Las animaciones y los vídeos necesitan <strong>Microsoft PowerPoint</strong> en el ordenador que lleva el culto. Sin él, PraiseAV muestra cada diapositiva como una imagen (pone <strong>Se muestran como imágenes</strong> encima de las diapositivas). Si PowerPoint está instalado y aun así lo pone, PraiseAV no consiguió que PowerPoint reprodujera el archivo: abre el archivo una vez en PowerPoint para comprobar que se abre sin preguntar nada (una contraseña, o <strong>Habilitar edición</strong>), y vuelve a añadirlo al culto. Mira <a href="powerpoint-and-pdf.html#animations-and-videos-with-microsoft-powerpoint">PowerPoint y PDF</a>.</p>
+<p>Las animaciones y los vídeos en directo necesitan <strong>Microsoft PowerPoint</strong> compatible o <strong>LibreOffice Impress</strong> en el ordenador del culto. PraiseAV prueba primero PowerPoint y después Impress. Si pone <strong>Se muestran como imágenes</strong>, ninguno pudo reproducir el archivo: ábrelo una vez en el programa instalado para comprobar si pide contraseña o muestra un aviso de importación. Impress puede interpretar los efectos de otra manera; comprueba la presentación real. Mira <a href="powerpoint-and-pdf.html#animations-and-videos-with-powerpoint-or-libreoffice-impress">PowerPoint y PDF</a>.</p>
 <h2 id="the-camera-isn-t-in-the-list">La cámara no aparece en la lista</h2>
 <ul>
 <li>Haz clic en <strong>Actualizar</strong> en Vídeo en directo.</li>
+<li>La primera vez que PraiseAV usa una cámara o un micrófono, Windows pregunta. Si elegiste No, abre <strong>Configuración › Privacidad y seguridad › Cámara</strong> de Windows (o <strong>Micrófono</strong> para el sonido y los subtítulos), activa el acceso para las aplicaciones, activa <strong>PraiseAV</strong> y vuelve a abrir PraiseAV.</li>
 <li>Cierra cualquier otro programa que esté usando la cámara (Zoom, Teams, OBS, la aplicación Cámara).</li>
 <li>Conecta la capturadora a un puerto <strong>USB 3 azul</strong>, directamente, no a través de un hub.</li>
 <li>Mira <a href="live-video.html">Vídeo en directo</a>.</li>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Phone and tablet remote · PraiseAV Help</title>
-<meta name="description" content="Control PraiseAV from a phone, tablet or laptop on the church Wi-Fi: AV remote or preacher remote. No app to install.">
+<meta name="description" content="Use PraiseAV from a phone, tablet or laptop on the church Wi-Fi: AV remote, preacher remote or read-only band stand. No app to install.">
 <link rel="stylesheet" href="help.css">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
@@ -22,10 +22,13 @@
   <main>
     <p class="crumb">Screens and livestream</p>
     <h1>Phone and tablet remote</h1>
-<p>Anyone you allow can control PraiseAV from a phone, tablet or laptop, in its web browser. Nothing to install, and it works on Android, iPhone, iPad and laptops.</p>
+<p>Anyone you allow can use PraiseAV from a phone, tablet or laptop, in its web browser. Nothing to install, and it works on Android, iPhone, iPad and laptops.</p>
 <ul>
 <li>An <strong>AV remote</strong> does what the desk does: Next, Black, Logo, any slide in the service.</li>
-<li>A <strong>preacher remote</strong> moves the preacher’s own slides and notes, and shows the timer.</li>
+<li>A <strong>preacher remote</strong> moves the current sermon’s slides and notes, shows the timer, and controls its video/music cues.</li>
+<li><strong>Band and preacher views</strong> combines these two views with one remembered approval.</li>
+<li><strong>All views</strong> is for one trusted tablet that does everything: it works as an AV remote and switches itself to the preacher’s view or the band stand, with no one at the computer.</li>
+<li>A <strong>Band stand</strong> shows the running order and song charts, follows the operator’s current song and slide, and cannot control PraiseAV.</li>
 </ul>
 <h2 id="switching-it-on">Switching it on</h2>
 <ol>
@@ -38,11 +41,13 @@
 <li>The phone must be on the <strong>same Wi-Fi</strong> as the PraiseAV computer.</li>
 <li><strong>Scan the code</strong> with the phone’s camera. Or type the <code>https://</code> address shown into the phone’s browser, then the <strong>PIN</strong>. The first time, Android or iPhone may warn that this local certificate is not recognised: open the details and choose to visit the site.</li>
 <li>Type a name (“Pastor Sam”) and tap <strong>Connect</strong>.</li>
-<li>On the PraiseAV computer, a message asks about it. Click <strong>Allow as AV remote</strong>, <strong>Allow as preacher remote</strong>, or <strong>No</strong>.</li>
+<li>On the PraiseAV computer, a message asks about it. Click <strong>Allow as AV remote</strong>, <strong>Allow as preacher remote</strong>, <strong>Allow as Band stand (read-only)</strong>, <strong>Allow band and preacher</strong>, <strong>Allow all views</strong>, or <strong>No</strong>.</li>
 </ol>
 <p><figure><img src="images/remote-request.png" alt="Allowing a phone" loading="lazy"></figure></p>
 <p>Nobody can control PraiseAV until you allow them at the desk. The PIN changes each time remote control is switched on.</p>
 <p>Allowed devices are listed under <strong>Allowed devices</strong>. Next time, they connect straight away. <strong>Remove</strong> stops one. After updating from an older HTTP version of PraiseAV, pair each phone again once so its old connection key is replaced.</p>
+<p>For a musician, choose <strong>Band stand (read-only)</strong>. The tablet opens on <strong>Play along</strong>: the slide that is on the screen now, as big as fits, with its chords above the words in the key the band plays, and the next slide underneath. It changes by itself as the AV desk moves on, so there is nothing to scroll. Songs without chords saved in PraiseAV show just the words. The running order stays at the side, and each musician can set a personal key, capo and text size (A− and A+) without changing the congregation slide. Tap a song in the running order, or untick <strong>Follow operator</strong>, to read through its whole chart; tap <strong>Play along</strong> to go back to following the AV desk. Bookmark the page for later Sundays; reconnecting does not need a new approval while that tablet remains in <strong>Allowed devices</strong>. The Suite offline Band Music Stand file remains available for rehearsal away from the church network.</p>
+<p><figure><img src="images/band-tablet.png" alt="The band stand on a tablet, in Play along" loading="lazy"></figure></p>
 <h2 id="the-av-remote">The AV remote</h2>
 <p><figure><img src="images/phone-remote.png" alt="The AV remote on a phone" loading="lazy"></figure></p>
 <ul>
@@ -55,21 +60,19 @@
 <h2 id="the-preacher-remote">The preacher remote</h2>
 <p><figure><img src="images/phone-preacher.png" alt="The preacher remote, before the sermon" loading="lazy"></figure></p>
 <ul>
-<li><strong>▶ Start my sermon</strong>: puts the sermon on screen, for when there’s no one at the laptop. It shows whenever the sermon isn’t on screen.</li>
+<li><strong>▶ Start my sermon</strong>: puts the sermon on screen, for when there’s no one at the laptop. It shows whenever the sermon isn’t on screen, and asks before it does anything.</li>
+<li><strong>Reading ahead</strong>: before the sermon, the remote shows the notes for the sermon that’s next, with <strong>◀ Page</strong> and <strong>Page ▶</strong>. Paging here only changes the tablet: the preacher’s screen and the congregation screen stay as they are, so the preacher can read through the notes during the songs. During the sermon, <strong>Read ahead (only on this tablet)</strong> does the same, and <strong>Back to the live notes</strong> returns to the shared page.</li>
 <li><strong>◀ Slide</strong> and <strong>Slide ▶</strong> for the congregation slides (while the sermon is on screen).</li>
 <li><strong>◀ Notes</strong> and <strong>Notes ▶</strong>, with the notes themselves on the phone or laptop.</li>
+<li><strong>Play/Pause</strong>, <strong>From start</strong> and <strong>Stop</strong> when the current sermon slide is a video or music cue.</li>
 <li>The <strong>timer</strong>, which turns amber and then red, like the preacher’s screen.</li>
 </ul>
 <p>A preacher with a laptop on the lectern can use it as a notes screen and a clicker together.</p>
 <p>No one free for the laptop? See <a href="without-a-volunteer.html">Running a service without an AV volunteer</a>.</p>
 <h2 id="leading-worship-and-preaching-from-one-phone">Leading worship and preaching from one phone</h2>
-<p>Someone who leads worship <em>and</em> preaches (a worship leader who is also the youth pastor, say) only needs one phone, allowed once as an <strong>AV remote</strong>:</p>
-<ul>
-<li>At the bottom of the AV remote, tap <strong>⇄ Switch to the preacher’s view</strong> for the sermon: the notes, the timer, <strong>Start my sermon</strong> and the slide buttons.</li>
-<li>Tap <strong>⇄ Switch to the AV view</strong> to lead worship again and finish the service.</li>
-</ul>
-<p>Switch as often as you like. There’s no pairing again, and nobody needs to go to the laptop.</p>
-<p>A <strong>preacher remote</strong> can’t switch, so a visiting speaker can’t change the songs. To give someone more, change their phone at the laptop: <strong>Remote</strong> → <strong>Allowed devices</strong>, choose <strong>AV remote (and preacher’s view)</strong> next to their name. There’s no need to pair again.</p>
+<p>Choose <strong>Allow band and preacher</strong> once at the desk. The tablet opens Band view; tap <strong>Preacher view</strong> for notes and sermon controls, then <strong>Band view</strong> to return. You do not need to assign the tablet to a particular sermon or repeat pairing each Sunday. A preacher-approved tablet is trusted to use the current sermon and read its notes. Band-only tablets cannot read notes or change slides.</p>
+<p>For someone who runs the service from a tablet and also preaches or plays, choose <strong>Allow all views</strong> (or <strong>All views (AV, preacher and band stand)</strong> under <strong>Allowed devices</strong>). The tablet opens as the AV remote. At the bottom of the AV remote and the preacher’s view there are buttons to switch to the other two views; on the band stand, tap <strong>Preacher view</strong> or <strong>AV remote</strong> in the toolbar. It has full control of the service, so give it only to a tablet you would trust at the desk.</p>
+<p>Only choose <strong>AV remote</strong> if that person needs control over the whole service. The AV operator can take over at any time. To change an existing approval, use <strong>Remote → Allowed devices</strong>.</p>
 <p><strong>Forget this phone</strong> (or <strong>Switch to a different remote</strong> on a preacher remote) takes the phone off the list; it then has to join again.</p>
 <h2 id="if-the-laptop-s-battery-is-low">If the laptop’s battery is low</h2>
 <p>The remotes show <strong>Laptop battery 25%: plug it in</strong> at the top when the laptop is running low on battery.</p>

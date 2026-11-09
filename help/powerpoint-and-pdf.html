@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PowerPoint and PDF · PraiseAV Help</title>
-<meta name="description" content="Bring in a guest speaker's PowerPoint or PDF. Free LibreOffice can turn PowerPoint files into still slides; Microsoft PowerPoint is needed for live animations and embedded videos.">
+<meta name="description" content="Bring in a guest speaker's PowerPoint or PDF. Play animations and embedded video with supported Microsoft PowerPoint or free LibreOffice Impress.">
 <link rel="stylesheet" href="help.css">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
@@ -36,29 +36,29 @@
 <li><strong>PowerPoint</strong> (PPTX, PPT, PPS, PPSX), <strong>LibreOffice</strong> (ODP) and <strong>Keynote</strong> (KEY): need a supported desktop <strong>Microsoft 365 or Office 2024 PowerPoint</strong> installation, or the free <strong>LibreOffice</strong>, on this computer. PraiseAV uses PowerPoint first (closest to how the slides were made), otherwise LibreOffice. Office 2021 and older are no longer selected for live PowerPoint playback.</li>
 </ul>
 <p>If neither is installed, PraiseAV offers to open the LibreOffice download page. Install it once, then add the PowerPoint again.</p>
-<p><strong>Check the result of an automatic LibreOffice import.</strong> A PowerPoint file can look different when another program renders it: fonts, text boxes, layered pictures and effects may shift. PraiseAV uses LibreOffice to make still slide pictures; it does not run Impress animations during the service. Preview every imported slide before the service, especially a visiting speaker&#39;s file.</p>
+<p><strong>Check the result of an automatic LibreOffice import.</strong> A PowerPoint file can look different when another program renders it: fonts, text boxes, layered pictures and effects may shift. PraiseAV uses LibreOffice to make slide pictures and, when PowerPoint is unavailable, to play the original file in Impress. Preview every imported slide and test the live show before the service, especially a visiting speaker&#39;s file.</p>
 <p><strong>Using Apache OpenOffice?</strong> PraiseAV does not currently detect Apache OpenOffice as an automatic converter. Open the presentation in OpenOffice Impress, choose <strong>File › Export as PDF</strong>, then add the PDF to PraiseAV. This needs no Microsoft PowerPoint. The PDF shows the text and pictures as still slides; animations and embedded videos do not play. If the speaker needs a video, ask for the video file separately and add it from the Media tab.</p>
 <p><strong>Using ONLYOFFICE Desktop Editors?</strong> PraiseAV does not currently detect it as an automatic converter either. Open the presentation in ONLYOFFICE, choose <strong>File › Save as › PDF</strong>, then add the PDF to PraiseAV. Check every exported page on the church computer. In our test, ONLYOFFICE included a hidden slide in the PDF, so remove any unwanted pages before the service. Animations and embedded media need another playback route. See <a href="https://helpcenter.onlyoffice.com/docs/userguides/presentation_editor/SavePrintDownload.aspx">ONLYOFFICE&#39;s presentation export guide</a>.</p>
 <aside class="callout tip"><p><strong>Tip:</strong> Ask speakers to send a PDF too. It imports without another office program and is a useful fallback if a presentation looks different on the church computer.</p>
 </aside>
-<h2 id="animations-and-videos-with-microsoft-powerpoint">Animations and videos (with Microsoft PowerPoint)</h2>
-<p>If <strong>Microsoft PowerPoint</strong> is installed on the computer that runs the service, PraiseAV can use it to play the presentation&#39;s interactive parts:</p>
+<h2 id="animations-and-videos-with-powerpoint-or-libreoffice-impress">Animations and videos (with PowerPoint or LibreOffice Impress)</h2>
+<p>PraiseAV uses a supported <strong>Microsoft 365 or Office 2024 PowerPoint</strong> installation first. If that is unavailable or cannot open a particular file, it uses <strong>LibreOffice Impress</strong> if installed. Either program can play the presentation&#39;s interactive parts:</p>
 <ul>
 <li><strong>Animations</strong> work: points appear one at a time.</li>
 <li><strong>Transitions</strong> between slides work (a fade, a wipe…).</li>
 <li><strong>Videos inside the slides</strong> play, with their sound.</li>
 </ul>
-<p>For a visiting speaker, test one slide with a video and its sound on the <strong>church computer</strong> before the service, then remove the USB stick and test it again. Video playback depends on PowerPoint and the formats installed on that computer. Ask the speaker to embed videos, use MP4 (H.264 video and AAC audio) where possible, and bring a PDF copy as a fallback. A PDF preserves pictures and text but cannot play its embedded PowerPoint animations or videos.</p>
-<p>Above the slides it says <strong>Plays in PowerPoint</strong>. Put the first slide on screen and press <strong>Next</strong> as usual (the arrow keys, Space, a clicker, or the phone remote). Each press does what a click would do in PowerPoint: the next point, then the next slide. <strong>Back</strong> goes back a step. While it plays, the line above the slides says where you are, for example “slide 2 of 12, step 1 of 3”.</p>
+<p>For a visiting speaker, test one slide with a video and its sound on the <strong>church computer</strong> before the service, then remove the USB stick and test it again. Video playback depends on the chosen presentation program and the formats installed on that computer. Ask the speaker to embed videos, use MP4 (H.264 video and AAC audio) where possible, and bring a PDF copy as a fallback. A PDF preserves pictures and text but cannot play its embedded PowerPoint animations or videos. Impress may render PowerPoint animations, triggers or layouts differently, so test the whole presentation.</p>
+<p>Above the slides it says <strong>Plays in PowerPoint</strong> or <strong>Plays in LibreOffice Impress</strong>. Put the first slide on screen and press <strong>Next</strong> as usual (the arrow keys, Space, a clicker, or the phone remote). Each press advances an animation or a slide. <strong>Back</strong> goes back a step. While PowerPoint plays, the line above the slides also shows the animation step. Impress shows the slide number.</p>
 <p>After the last slide, <strong>Next</strong> goes on to the next item in the service, as with songs. Putting anything else on screen (a song, a reading) closes the slide show by itself.</p>
 <p><strong>Black</strong> and <strong>Logo</strong> work as normal, and so do <a href="parent-alerts.html">parent alerts</a>.</p>
 <p>Good to know:</p>
 <ul>
-<li>PowerPoint opens out of sight when you click the presentation in the service, so it starts quickly when you show it. The very first time can take a few seconds; the screen stays black meanwhile, so nobody sees all the points before the speaker gets to them.</li>
-<li><strong>Don’t close PowerPoint</strong> or click on it while the slides are showing. PraiseAV works it for you.</li>
+<li>The presentation opens out of sight when you click it in the service, so it starts quickly when you show it. The very first time can take a few seconds; the screen stays black meanwhile, so nobody sees all the points before the speaker gets to them.</li>
+<li><strong>Don’t close PowerPoint or LibreOffice</strong> while the slides are showing. PraiseAV controls the show for you.</li>
 <li>The <strong>sound</strong> of videos in the slides comes out of the computer’s normal sound output, the same as PraiseAV’s own videos.</li>
 <li>Slides that move on by themselves (if the speaker set timings in PowerPoint) do so here too, and the slide cards follow.</li>
-<li>If PowerPoint can’t play the file, PraiseAV says so above the slides and shows the pictures instead.</li>
+<li>If PowerPoint cannot play the file, PraiseAV tries Impress. If neither can play it, PraiseAV says so above the slides and shows the pictures instead.</li>
 </ul>
 <h3 id="what-the-livestream-recording-and-other-screens-show">What the livestream, recording and other screens show</h3>
 <ul>
@@ -66,13 +66,13 @@
 <li>The <strong>preacher’s screen</strong> says which slide is on and what’s next, as it does for pictures.</li>
 <li><strong>Screens on the network</strong> (such as OBS) show each slide as a still picture: the slide as it looks when all its points are in.</li>
 </ul>
-<h2 id="without-microsoft-powerpoint">Without Microsoft PowerPoint</h2>
-<p>On a computer with only LibreOffice, or for a PDF, each slide is a still picture, so:</p>
+<h2 id="without-powerpoint-or-libreoffice-impress">Without PowerPoint or LibreOffice Impress</h2>
+<p>If neither presentation program can play the file, or if you add a PDF, each slide is a still picture, so:</p>
 <ul>
 <li><strong>Animations</strong> (points appearing one by one) and <strong>transitions</strong> don’t happen. Each slide shows as it looks at the end.</li>
 <li><strong>Videos inside the PowerPoint</strong> don’t play. Ask for the video file separately and add it from the Media tab.</li>
 </ul>
-<p>Above the slides it says <strong>Shown as pictures</strong>. The PowerPoint file itself is kept with the pictures in the media folder, so on a computer that has PowerPoint (and the same media folder) it plays with its animations.</p>
+<p>Above the slides it says <strong>Shown as pictures</strong>. The PowerPoint file itself is kept with the pictures in the media folder, so a computer with PowerPoint or LibreOffice Impress can try to play it live.</p>
 <h2 id="speaker-s-notes">Speaker’s notes</h2>
 <p>The <strong>speaker’s notes</strong> aren’t brought in. Paste them into a <a href="sermons.html">sermon</a> to show on the preacher’s screen.</p>
 <h2 id="moving-on-by-itself">Moving on by itself</h2>

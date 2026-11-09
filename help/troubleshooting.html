@@ -35,6 +35,8 @@
 </ol>
 <h2 id="the-projector-shows-my-desktop-or-a-copy-of-my-screen">The projector shows my desktop, or a copy of my screen</h2>
 <p>Windows is copying (duplicating) your screen onto the projector. PraiseAV notices this and shows a yellow message at the top: click <strong>Use it as a separate screen</strong>. Or press <kbd>Windows</kbd>+<kbd>P</kbd> and choose <strong>Extend</strong>. PraiseAV then finds the projector and puts the words on it.</p>
+<h2 id="the-projector-picture-stops">The projector picture stops</h2>
+<p>If the picture stops or a room message appears over black, use <strong>Restore projector output</strong> below <strong>On screen</strong>. It reloads the picture and message layer without advancing the service. If <strong>Black</strong> is on, turn it off when you want the picture visible. A playing video or animation can restart during recovery. If recovery fails, use <strong>Report a problem…</strong> to save the recent diagnostics.</p>
 <h2 id="the-words-are-on-the-wrong-screen">The words are on the wrong screen</h2>
 <p>Open <strong>Screens…</strong>. On the <a href="screens.html#the-screen-map">screen map</a>, tap the two screens to swap them. PraiseAV remembers this for next time.</p>
 <h2 id="a-video-won-t-play">A video won’t play</h2>
@@ -52,10 +54,11 @@
 <h2 id="a-powerpoint-won-t-come-in">A PowerPoint won’t come in</h2>
 <p>PraiseAV needs <strong>Microsoft PowerPoint</strong> or the free <strong>LibreOffice</strong> to import PowerPoint files automatically. Install LibreOffice, or ask for a PDF. If you use <strong>ONLYOFFICE Desktop Editors</strong> or <strong>Apache OpenOffice</strong>, open the presentation there, export it as a PDF, then add that PDF to PraiseAV. Check the exported slides before the service: animations and embedded videos will not play in the PDF. See <a href="powerpoint-and-pdf.html">PowerPoint and PDF</a>.</p>
 <h2 id="a-powerpoint-s-points-all-show-at-once-or-its-video-doesn-t-play">A PowerPoint’s points all show at once, or its video doesn’t play</h2>
-<p>Animations and videos need <strong>Microsoft PowerPoint</strong> on the computer running the service. Without it, PraiseAV shows each slide as a picture (it says <strong>Shown as pictures</strong> above the slides). If PowerPoint is installed but it still says that, PraiseAV couldn’t get PowerPoint to play the file: open the file in PowerPoint once to check it opens without asking anything (a password, or <strong>Enable Editing</strong>), then add it to the service again. See <a href="powerpoint-and-pdf.html#animations-and-videos-with-microsoft-powerpoint">PowerPoint and PDF</a>.</p>
+<p>Live animations and videos need supported <strong>Microsoft PowerPoint</strong> or <strong>LibreOffice Impress</strong> on the service computer. PraiseAV tries PowerPoint first, then Impress. If it says <strong>Shown as pictures</strong>, neither could play the file: open it in the installed program once to check for a password or import warning, then test it again. Impress can render PowerPoint effects differently, so check the actual slide show. See <a href="powerpoint-and-pdf.html#animations-and-videos-with-powerpoint-or-libreoffice-impress">PowerPoint and PDF</a>.</p>
 <h2 id="the-camera-isn-t-in-the-list">The camera isn’t in the list</h2>
 <ul>
 <li>Click <strong>Refresh</strong> in Live video.</li>
+<li>The first time PraiseAV uses a camera or microphone, Windows asks. If you chose No, open Windows <strong>Settings › Privacy &amp; security › Camera</strong> (or <strong>Microphone</strong> for sound and captions), turn on access for apps, switch <strong>PraiseAV</strong> on, then restart PraiseAV.</li>
 <li>Close any other program using the camera (Zoom, Teams, OBS, the Camera app).</li>
 <li>Plug the capture device into a <strong>blue USB 3</strong> socket, directly, not through a hub.</li>
 <li>See <a href="live-video.html">Live video</a>.</li>
